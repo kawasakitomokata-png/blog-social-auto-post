@@ -1,0 +1,39 @@
+name: RSS新記事チェック＆投稿スケジュール登録
+
+on:
+  schedule:
+    - cron: '0,30 * * * *'  # 毎時0分・30分
+  workflow_dispatch:          # 手動実行ボタンも有効化
+
+permissions:
+  contents: write  # scheduled_posts.json をコミットするために必要
+
+jobs:
+  check-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install -r requirements.txt
+
+      - name: RSS チェック実行
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python check_new_post.py
+
+      - name: 変更があればコミット＆プッシュ
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scheduled_posts.json posted_urls.txt || true
+          git diff --cached --quiet || git commit -m "chore: スケジュール投稿を登録 [skip ci]"
+          git push
