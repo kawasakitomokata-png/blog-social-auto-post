@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """
-RSSフィードを監視し、新記事を検知したらClaude APIで3パターンのSNS投稿文を生成して
+RSSフィードを監視し、新記事を検知したらGemini APIで3パターンのSNS投稿文を生成して
 翌日9時・12時・17時にスケジュールするスクリプト。
 
-使い方: cronで1〜2時間おきに実行
-例: 0 * * * * /path/to/venv/bin/python /path/to/check_new_post.py
+使い方: GitHub Actionsで30分おきに自動実行
 """
 
 import os
 import json
 import logging
+import re
+import urllib.request
+import urllib.parse
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import feedparser
-import anthropic
 try:
     from dotenv import load_dotenv
     load_dotenv(Path(__file__).parent / ".env")
@@ -63,11 +64,12 @@ def save_scheduled_posts(posts: list):
     SCHEDULED_POSTS_FILE.write_text(json.dumps(posts, ensure_ascii=False, indent=2))
 
 
-# ── Claude API で投稿文生成 ─────────────────────────────
+# ── Gemini API で投稿文生成 ────────────────────────────
 
 def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     """3つの切り口でX投稿文（140字以内）＋ハッシュタグを生成して返す。"""
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    api_key = os.environ["GEMINI_API_KEY"]
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
     prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
@@ -82,7 +84,7 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
 - 切り口はそれぞれ明確に異なる視点にする（例: コスパ、機能紹介、ターゲットユーザー など）
 - 読者の興味を引く自然な日本語で書く
 
-以下のJSON形式で返してください（```json ``` は不要）:
+以下のJSON形式のみで返してください（前後に余分な文字・```は不要）:
 [
   {{
     "angle": "切り口の説明（10字以内）",
@@ -101,19 +103,28 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
   }}
 ]"""
 
-    message = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=1024,
-        messages=[{"role": "user", "content": prompt}],
+    payload = json.dumps({
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 1024}
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        api_url,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST"
     )
 
-    raw = message.content[0].text.strip()
-    # JSON以外の余分な文字を除去
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    return json.loads(raw.strip())
+    with urllib.request.urlopen(req, timeout=30) as res:
+        result = json.loads(res.read().decode("utf-8"))
+
+    raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+
+    # JSON部分のみ抽出
+    match = re.search(r'\[.*\]', raw, re.DOTALL)
+    if match:
+        raw = match.group(0)
+    return json.loads(raw)
 
 
 # ── スケジュール登録 ──────────────────────────────────
@@ -161,6 +172,7 @@ def main():
     new_entries = [e for e in feed.entries if e.link not in posted_urls]
     if not new_entries:
         logging.info("No new posts found.")
+        print("新着記事なし")
         return
 
     for entry in new_entries:
