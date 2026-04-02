@@ -27,7 +27,7 @@ jobs:
 
       - name: RSS チェック実行
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python check_new_post.py
 
       - name: 変更があればコミット＆プッシュ
