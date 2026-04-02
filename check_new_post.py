@@ -69,7 +69,7 @@ def save_scheduled_posts(posts: list):
 def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     """3つの切り口でX投稿文（140字以内）＋ハッシュタグを生成して返す。"""
     api_key = os.environ["GEMINI_API_KEY"]
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
 
     prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
@@ -115,8 +115,12 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
         method="POST"
     )
 
-    with urllib.request.urlopen(req, timeout=30) as res:
-        result = json.loads(res.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=30) as res:
+            result = json.loads(res.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8")
+        raise Exception(f"Gemini API エラー {e.code}: {body[:300]}")
 
     raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
 
