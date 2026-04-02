@@ -12,6 +12,7 @@ import logging
 import re
 import urllib.request
 import urllib.parse
+import urllib.error
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -69,7 +70,7 @@ def save_scheduled_posts(posts: list):
 def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     """3つの切り口でX投稿文（140字以内）＋ハッシュタグを生成して返す。"""
     api_key = os.environ["GEMINI_API_KEY"]
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
 
     prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
