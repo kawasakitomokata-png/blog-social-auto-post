@@ -34,14 +34,15 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 最新のリモート状態を取得
+          git fetch origin main
+          # リモートに合わせてリセット（作業ファイルは保持）
+          git reset --mixed origin/main
+          # データファイルだけを再ステージング
           git add scheduled_posts.json posted_urls.txt || true
           if git diff --cached --quiet; then
             echo "変更なし、スキップ"
           else
             git commit -m "chore: スケジュール投稿を登録 [skip ci]"
-            for i in 1 2 3; do
-              git pull --rebase origin main && git push && break
-              echo "リトライ $i..."
-              sleep 5
-            done
+            git push
           fi
