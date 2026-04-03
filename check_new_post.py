@@ -116,12 +116,25 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
         method="POST"
     )
 
-    try:
-        with urllib.request.urlopen(req, timeout=30) as res:
-            result = json.loads(res.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8")
-        raise Exception(f"Gemini API エラー {e.code}: {body[:300]}")
+    import time
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as res:
+                result = json.loads(res.read().decode("utf-8"))
+            break  # 成功したらループを抜ける
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8")
+            if e.code == 429 and attempt < 2:
+                wait = (attempt + 1) * 30  # 30秒, 60秒待機
+                print(f"  レート制限(429)、{wait}秒後にリトライ ({attempt+1}/3)...")
+                time.sleep(wait)
+                # リクエストを再作成（bodyが消費されるため）
+                req = urllib.request.Request(
+                    api_url, data=payload,
+                    headers={"Content-Type": "application/json"}, method="POST"
+                )
+            else:
+                raise Exception(f"Gemini API エラー {e.code}: {body[:300]}")
 
     raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
 
