@@ -48,9 +48,11 @@ def post_to_x(text: str) -> bool:
         response = client.create_tweet(text=text)
         tweet_id = response.data["id"]
         logging.info(f"X posted: tweet_id={tweet_id}")
+        print(f"  ✅ X投稿成功: tweet_id={tweet_id}")
         return True
     except Exception as e:
         logging.error(f"X post failed: {e}")
+        print(f"  ❌ X投稿失敗: {e}")
         return False
 
 

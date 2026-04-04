@@ -39,6 +39,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --mixed origin/main
           git add scheduled_posts.json || true
-          git diff --cached --quiet || git commit -m "chore: 投稿送信済みを更新 [skip ci]"
-          git push
+          if git diff --cached --quiet; then
+            echo "変更なし、スキップ"
+          else
+            git commit -m "chore: 投稿送信済みを更新 [skip ci]"
+            git push --force-with-lease
+          fi
