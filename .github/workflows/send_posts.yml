@@ -2,8 +2,12 @@ name: スケジュール投稿送信（X・Threads）
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 5分おき（GitHub Actionsの最短間隔）
+    - cron: '*/10 * * * *'  # 10分おき
   workflow_dispatch:
+
+concurrency:
+  group: send-posts
+  cancel-in-progress: false
 
 permissions:
   contents: write
