@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RSSフィードを監視し、新記事を検知したらGemini APIで3パターンのSNS投稿文を生成して
+RSSフィードを監視し、新記事を検知したらClaude APIで3パターンのSNS投稿文を生成して
 翌日9時・12時・17時にスケジュールするスクリプト。
 
 使い方: GitHub Actionsで30分おきに自動実行
@@ -10,14 +10,13 @@ import os
 import json
 import logging
 import re
-import urllib.request
-import urllib.parse
-import urllib.error
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import feedparser
+import anthropic
+
 try:
     from dotenv import load_dotenv
     load_dotenv(Path(__file__).parent / ".env")
@@ -65,12 +64,11 @@ def save_scheduled_posts(posts: list):
     SCHEDULED_POSTS_FILE.write_text(json.dumps(posts, ensure_ascii=False, indent=2))
 
 
-# ── Gemini API で投稿文生成 ────────────────────────────
+# ── Claude API で投稿文生成 ────────────────────────────
 
 def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     """3つの切り口でX投稿文（140字以内）＋ハッシュタグを生成して返す。"""
-    api_key = os.environ["GEMINI_API_KEY"]
-    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
     prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
@@ -104,39 +102,13 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
   }}
 ]"""
 
-    payload = json.dumps({
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 1024}
-    }).encode("utf-8")
-
-    req = urllib.request.Request(
-        api_url,
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST"
+    message = client.messages.create(
+        model="claude-haiku-4-5",
+        max_tokens=1024,
+        messages=[{"role": "user", "content": prompt}]
     )
 
-    import time
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=30) as res:
-                result = json.loads(res.read().decode("utf-8"))
-            break  # 成功したらループを抜ける
-        except urllib.error.HTTPError as e:
-            body = e.read().decode("utf-8")
-            if e.code == 429 and attempt < 2:
-                wait = (attempt + 1) * 30  # 30秒, 60秒待機
-                print(f"  レート制限(429)、{wait}秒後にリトライ ({attempt+1}/3)...")
-                time.sleep(wait)
-                # リクエストを再作成（bodyが消費されるため）
-                req = urllib.request.Request(
-                    api_url, data=payload,
-                    headers={"Content-Type": "application/json"}, method="POST"
-                )
-            else:
-                raise Exception(f"Gemini API エラー {e.code}: {body[:300]}")
-
-    raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+    raw = message.content[0].text.strip()
 
     # JSON部分のみ抽出
     match = re.search(r'\[.*\]', raw, re.DOTALL)
@@ -202,14 +174,17 @@ def main():
         print(f"[新記事検知] {title}")
         print(f"  URL: {url}")
 
+        # ★ 先にURLを記録してリトライ無限ループを防ぐ
+        save_posted_url(url)
+
         try:
             posts = generate_posts(title, url, summary)
             schedule_posts(title, url, posts)
-            save_posted_url(url)
             print(f"  → 翌日 9時・12時・17時にスケジュール登録しました")
         except Exception as e:
             logging.error(f"Error processing {url}: {e}")
             print(f"  エラー: {e}")
+            print(f"  ※ URLは記録済みのため次回からスキップされます")
 
     logging.info("=== RSS check finished ===")
 
