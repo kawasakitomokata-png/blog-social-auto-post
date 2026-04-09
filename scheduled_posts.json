@@ -161,5 +161,41 @@
       "threads"
     ],
     "cancelled": true
+  },
+  {
+    "send_at": "2026-04-11T09:00:00+09:00",
+    "angle": "新着記事",
+    "text": "かわさきの最新記事が公開されました！環境の変化にも負けずに元気にやっていますよこちゃんも家ではリラックスしているみたいで嬉しいです\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #最新記事 #リラックス",
+    "title": "着手中",
+    "url": "https://kawasakitomokata.life/archives/12870",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-11T12:00:00+09:00",
+    "angle": "日常紹介",
+    "text": "かわさきの日常が垣間見える新着記事をチェック！新しい環境に挑戦中の彼の姿が伝わってきます\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #日常 #新しい環境",
+    "title": "着手中",
+    "url": "https://kawasakitomokata.life/archives/12870",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-11T17:00:00+09:00",
+    "angle": "心温まる",
+    "text": "かわさきの記事で心が温まります！よこちゃんとの関係がとても嬉しそうです\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #心温まる #よこちゃん",
+    "title": "着手中",
+    "url": "https://kawasakitomokata.life/archives/12870",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
   }
 ]
