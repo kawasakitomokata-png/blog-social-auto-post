@@ -78,5 +78,77 @@
       "x",
       "threads"
     ]
+  },
+  {
+    "send_at": "2026-04-10T09:00:00+09:00",
+    "angle": "新着",
+    "text": "かわさきさんの最新記事！今夜はソーキそばを紹介\nhttps://kawasakitomokata.life/archives/12824\n\n#ソーキそば #ブログ #最新記事",
+    "title": "今夜はソーキそば",
+    "url": "https://kawasakitomokata.life/archives/12824",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-10T12:00:00+09:00",
+    "angle": "AI活用",
+    "text": "ブログのダイジェストを自動投稿する Claude Codeとは\nhttps://kawasakitomokata.life/archives/12824\n\n#AI #ClaudeCode #ブログ自動投稿 #エージェント型AI",
+    "title": "今夜はソーキそば",
+    "url": "https://kawasakitomokata.life/archives/12824",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-10T17:00:00+09:00",
+    "angle": "食レポ",
+    "text": "かわさきさんが紹介するソーキそば、夜のごはんにぴったり\nhttps://kawasakitomokata.life/archives/12824\n\n#ソーキそば #夜のごはん #食レポ",
+    "title": "今夜はソーキそば",
+    "url": "https://kawasakitomokata.life/archives/12824",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-10T09:00:00+09:00",
+    "angle": "新着記事",
+    "text": "かわさきの新しい記事「春の決意」をチェック！個展の報告や新しい決意を語っています\nhttps://kawasakitomokata.life/archives/12807\n\n#かわさき #春の決意 #新着記事",
+    "title": "春の決意",
+    "url": "https://kawasakitomokata.life/archives/12807",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-10T12:00:00+09:00",
+    "angle": "写真展",
+    "text": "Bar HATISさんでの個展を無事に終了しました！かわさきの新しい作品をチェックしてみてください\nhttps://kawasakitomokata.life/archives/12807\n\n#かわさき #写真展 #BarHATIS #個展",
+    "title": "春の決意",
+    "url": "https://kawasakitomokata.life/archives/12807",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-10T17:00:00+09:00",
+    "angle": "アーティスト",
+    "text": "かわさきの新しい挑戦「春の決意」を読んでみてください。新しい作品や個展の報告が満載です\nhttps://kawasakitomokata.life/archives/12807\n\n#かわさき #アーティスト #新しい挑戦",
+    "title": "春の決意",
+    "url": "https://kawasakitomokata.life/archives/12807",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
   }
 ]
