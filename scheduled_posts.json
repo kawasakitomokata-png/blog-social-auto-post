@@ -73,11 +73,16 @@
     "text": "自然な街並みを撮りたい。でも人に声をかける勇気はまだない。\nそんな葛藤を抱えながら、今日も半径1kmを歩いた。\nNikon Z5 + Z40mm f2、近所の景色で。\nhttps://kawasakitomokata.life/archives/12843\n\n#スナップ写真 #NikonZ5 #街撮り #写真散歩 #日常写真",
     "title": "半径1km",
     "url": "https://kawasakitomokata.life/archives/12843",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
-    ]
+    ],
+    "sent_at": "2026-04-09T19:20:33.216496+09:00",
+    "results": {
+      "x": false,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-10T09:00:00+09:00",
