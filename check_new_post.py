@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RSSフィードを監視し、新記事を検知したらClaude APIで3パターンのSNS投稿文を生成して
+RSSフィードを監視し、新記事を検知したらGroq APIで3パターンのSNS投稿文を生成して
 翌日9時・12時・17時にスケジュールするスクリプト。
 
 使い方: GitHub Actionsで30分おきに自動実行
@@ -15,7 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import feedparser
-import anthropic
+from groq import Groq
 
 try:
     from dotenv import load_dotenv
@@ -64,11 +64,11 @@ def save_scheduled_posts(posts: list):
     SCHEDULED_POSTS_FILE.write_text(json.dumps(posts, ensure_ascii=False, indent=2))
 
 
-# ── Claude API で投稿文生成 ────────────────────────────
+# ── Groq API で投稿文生成 ─────────────────────────────
 
 def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     """3つの切り口でX投稿文（140字以内）＋ハッシュタグを生成して返す。"""
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
     prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
@@ -102,13 +102,14 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
   }}
 ]"""
 
-    message = client.messages.create(
-        model="claude-haiku-4-5",
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
         max_tokens=1024,
+        temperature=0.7,
         messages=[{"role": "user", "content": prompt}]
     )
 
-    raw = message.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
 
     # JSON部分のみ抽出
     match = re.search(r'\[.*\]', raw, re.DOTALL)
