@@ -202,15 +202,52 @@
     "text": "かわさきの近況がわかる記事「着手中」少し大変そうだけど元気にやっておりますよこちゃんも大変そう\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #近況 #よこちゃん #大変",
     "title": "着手中",
     "url": "https://kawasakitomokata.life/archives/12870",
-    "sent": true,
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ]
+  },
+  {
+    "send_at": "2026-04-11T08:21:46.569049+09:00",
+    "angle": "テクノロジー",
+    "text": "Claude Codeを使ってブログの自動投稿を試みた結果、エラー出たら対策を講じる日々が始まった\nhttps://kawasakitomokata.life/archives/12888\n\n#テクノロジー #ブログ #自動投稿",
+    "title": "トライアンドエラーの日々",
+    "url": "https://kawasakitomokata.life/archives/12888",
+    "sent": false,
     "platforms": [
       "x",
       "threads"
     ],
-    "sent_at": "2026-04-10T17:12:39.282961+09:00",
-    "results": {
-      "x": true,
-      "threads": true
-    }
+    "image_path": "eyecatch/eyecatch_12888_1.jpg",
+    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_1.jpg"
+  },
+  {
+    "send_at": "2026-04-11T12:00:00+09:00",
+    "angle": "学習",
+    "text": "トライアンドエラーを繰り返して、徐々に解決策を見つけていくプロセスを経験した\nhttps://kawasakitomokata.life/archives/12888\n\n#学習 #トライアンドエラー #挑戦",
+    "title": "トライアンドエラーの日々",
+    "url": "https://kawasakitomokata.life/archives/12888",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_path": "eyecatch/eyecatch_12888_2.jpg",
+    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_2.jpg"
+  },
+  {
+    "send_at": "2026-04-11T17:00:00+09:00",
+    "angle": "日常",
+    "text": "ブログの自動投稿に奮闘している日々、エラーに振り回されながらも前進している\nhttps://kawasakitomokata.life/archives/12888\n\n#日常 #ブログ #自動投稿",
+    "title": "トライアンドエラーの日々",
+    "url": "https://kawasakitomokata.life/archives/12888",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_path": "eyecatch/eyecatch_12888_3.jpg",
+    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_3.jpg"
   }
 ]

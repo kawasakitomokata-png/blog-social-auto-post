@@ -279,7 +279,7 @@ def download_image(url: str, dest: Path) -> bool:
         return False
 
 
-def generate_eyecatch_images(title: str, article_url: str) -> list[str | None]:
+def generate_eyecatch_images(title: str, article_url: str) -> list:
     """
     記事内の写真を最大3枚使い、それぞれ異なるスタイルのアイキャッチを生成する。
     写真が1〜2枚しかない場合は同じ写真を使い回す。
