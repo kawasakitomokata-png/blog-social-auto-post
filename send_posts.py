@@ -33,7 +33,7 @@ logging.basicConfig(
 
 # ── X（Twitter）投稿 ──────────────────────────────────
 
-def post_to_x(text: str, image_path: str | None = None) -> bool:
+def post_to_x(text: str, image_path=None) -> bool:
     try:
         client = tweepy.Client(
             consumer_key=os.environ["X_API_KEY"],
@@ -74,7 +74,7 @@ def post_to_x(text: str, image_path: str | None = None) -> bool:
 
 # ── Threads 投稿 ──────────────────────────────────────
 
-def post_to_threads(text: str, image_url: str | None = None) -> bool:
+def post_to_threads(text: str, image_url=None) -> bool:
     access_token = os.environ.get("THREADS_ACCESS_TOKEN", "")
     user_id      = os.environ.get("THREADS_USER_ID", "")
 

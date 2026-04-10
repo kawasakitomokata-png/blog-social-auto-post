@@ -202,11 +202,16 @@
     "text": "かわさきの近況がわかる記事「着手中」少し大変そうだけど元気にやっておりますよこちゃんも大変そう\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #近況 #よこちゃん #大変",
     "title": "着手中",
     "url": "https://kawasakitomokata.life/archives/12870",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
-    ]
+    ],
+    "sent_at": "2026-04-11T08:22:44.697428+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-11T08:21:46.569049+09:00",
@@ -214,13 +219,18 @@
     "text": "Claude Codeを使ってブログの自動投稿を試みた結果、エラー出たら対策を講じる日々が始まった\nhttps://kawasakitomokata.life/archives/12888\n\n#テクノロジー #ブログ #自動投稿",
     "title": "トライアンドエラーの日々",
     "url": "https://kawasakitomokata.life/archives/12888",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
     "image_path": "eyecatch/eyecatch_12888_1.jpg",
-    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0817-TK033227-0013.jpg",
+    "sent_at": "2026-04-11T08:22:44.697428+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-11T12:00:00+09:00",
@@ -234,7 +244,7 @@
       "threads"
     ],
     "image_path": "eyecatch/eyecatch_12888_2.jpg",
-    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_2.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0817-TK033227-0013.jpg"
   },
   {
     "send_at": "2026-04-11T17:00:00+09:00",
@@ -248,6 +258,6 @@
       "threads"
     ],
     "image_path": "eyecatch/eyecatch_12888_3.jpg",
-    "image_url": "https://raw.githubusercontent.com/kawasakitomokata-png/blog-social-auto-post/main/eyecatch/eyecatch_12888_3.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0816-TK033214-0003.jpg"
   }
 ]

@@ -375,19 +375,16 @@ def get_post_times() -> list:
 
 # ── スケジュール登録 ──────────────────────────────────
 
-def schedule_posts(title: str, url: str, posts: list[dict], image_paths: list):
+def schedule_posts(title: str, url: str, posts: list[dict], image_paths: list, article_images: list):
     times = get_post_times()
     scheduled = load_scheduled_posts()
 
-    for send_at, post, img_path in zip(times, posts, image_paths):
+    for i, (send_at, post, img_path) in enumerate(zip(times, posts, image_paths)):
         hashtag_str = " ".join(f"#{tag.lstrip('#')}" for tag in post["hashtags"])
         full_text = f"{post['text']}\n{url}\n\n{hashtag_str}"
 
-        # GitHub Raw URL（Threads用）
-        image_github_url = None
-        if img_path:
-            filename = Path(img_path).name
-            image_github_url = f"{GITHUB_RAW}/{filename}"
+        # Threads用: WordPressに既にある記事内写真を使う（i枚目、なければ先頭）
+        threads_image_url = article_images[min(i, len(article_images) - 1)] if article_images else None
 
         scheduled.append({
             "send_at": send_at.isoformat(),
@@ -397,8 +394,8 @@ def schedule_posts(title: str, url: str, posts: list[dict], image_paths: list):
             "url": url,
             "sent": False,
             "platforms": ["x", "threads"],
-            "image_path": img_path,           # X用（ローカルファイル）
-            "image_url": image_github_url,    # Threads用（GitHub Raw URL）
+            "image_path": img_path,              # X用（ローカルファイル・アイキャッチ）
+            "image_url": threads_image_url,      # Threads用（WordPress画像URL）
         })
         logging.info(f"Scheduled [{post['angle']}] at {send_at.isoformat()} img={img_path}")
 
@@ -433,9 +430,10 @@ def main():
         save_posted_url(url)
 
         try:
-            posts       = generate_posts(title, url, summary)
-            image_paths = generate_eyecatch_images(title, url)
-            schedule_posts(title, url, posts, image_paths)
+            posts           = generate_posts(title, url, summary)
+            article_images  = get_article_images(url)
+            image_paths     = generate_eyecatch_images(title, url)
+            schedule_posts(title, url, posts, image_paths, article_images)
             print(f"  → 今すぐ＋8・12・17時にスケジュール登録しました（画像付き）")
         except Exception as e:
             logging.error(f"Error processing {url}: {e}")
