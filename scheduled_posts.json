@@ -163,19 +163,24 @@
     "cancelled": true
   },
   {
-    "send_at": "2026-04-11T09:00:00+09:00",
+    "send_at": "2026-04-10T09:20:00+09:00",
     "angle": "最新記事",
     "text": "かわさきの最新記事「着手中」が公開！環境の変化にも負けずに元気にやっていますよこちゃんもリラックスしてくれて嬉しいです\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #最新記事 #着手中 #よこちゃん",
     "title": "着手中",
     "url": "https://kawasakitomokata.life/archives/12870",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
-    ]
+    ],
+    "sent_at": "2026-04-10T09:21:07.092251+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
-    "send_at": "2026-04-11T12:00:00+09:00",
+    "send_at": "2026-04-10T12:00:00+09:00",
     "angle": "日常の様子",
     "text": "かわさきの日常の様子が見れる記事「着手中」家ではリラックスしてくれているよこちゃんの姿がかわいい\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #日常の様子 #よこちゃん #リラックス",
     "title": "着手中",
@@ -187,7 +192,7 @@
     ]
   },
   {
-    "send_at": "2026-04-11T17:00:00+09:00",
+    "send_at": "2026-04-10T17:00:00+09:00",
     "angle": "作者の近況",
     "text": "かわさきの近況がわかる記事「着手中」少し大変そうだけど元気にやっておりますよこちゃんも大変そう\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #近況 #よこちゃん #大変",
     "title": "着手中",
