@@ -6,7 +6,7 @@ on:
     - cron: '0 23 * * *'   # 毎朝 8:00 JST
     - cron: '0 3 * * *'    # 正午 12:00 JST
     - cron: '0 8 * * *'    # 夕方 17:00 JST
-  workflow_dispatch:         # 手動実行ボタンも有効化
+  workflow_dispatch:
 
 concurrency:
   group: check-and-post
@@ -32,12 +32,29 @@ jobs:
       - name: 依存パッケージをインストールする
         run: pip install -r requirements.txt
 
-      - name: RSS チェック実行（新記事をスケジュール登録）
+      - name: RSS チェック実行（新記事＆アイキャッチ画像生成）
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python check_new_post.py
 
-      - name: 投稿送信実行（スケジュール済みの投稿を送信）
+      - name: 変更があればコミット＆プッシュ（画像を含む）
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --mixed origin/main
+          git add scheduled_posts.json posted_urls.txt eyecatch/*.jpg || true
+          if git diff --cached --quiet; then
+            echo "変更なし、スキップ"
+          else
+            git commit -m "chore: 自動投稿をスケジュール登録 [skip ci]"
+            git push --force-with-lease
+          fi
+
+      - name: GitHub反映を待つ（Threads用画像URLが有効になるまで）
+        run: sleep 20
+
+      - name: 投稿送信実行（アイキャッチ画像付きでX・Threadsに投稿）
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -47,16 +64,16 @@ jobs:
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
         run: python send_posts.py
 
-      - name: 変更があればコミット＆プッシュ
+      - name: 送信済みフラグをコミット＆プッシュ
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
           git reset --mixed origin/main
-          git add scheduled_posts.json posted_urls.txt || true
+          git add scheduled_posts.json || true
           if git diff --cached --quiet; then
             echo "変更なし、スキップ"
           else
-            git commit -m "chore: 自動投稿を実行 [skip ci]"
+            git commit -m "chore: 送信済みフラグを更新 [skip ci]"
             git push --force-with-lease
           fi
