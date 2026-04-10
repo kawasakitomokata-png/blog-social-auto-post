@@ -185,11 +185,16 @@
     "text": "かわさきの日常の様子が見れる記事「着手中」家ではリラックスしてくれているよこちゃんの姿がかわいい\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #日常の様子 #よこちゃん #リラックス",
     "title": "着手中",
     "url": "https://kawasakitomokata.life/archives/12870",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
-    ]
+    ],
+    "sent_at": "2026-04-10T15:19:14.775792+09:00",
+    "results": {
+      "x": false,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-10T17:00:00+09:00",
