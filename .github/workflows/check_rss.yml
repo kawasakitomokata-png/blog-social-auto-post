@@ -1,15 +1,22 @@
-name: RSS新記事チェック＆投稿スケジュール登録
+name: RSS新記事チェック＆自動投稿
 
 on:
   schedule:
-    - cron: '0,30 * * * *'  # 毎時0分・30分
-  workflow_dispatch:          # 手動実行ボタンも有効化
+    # JST 8:00 = UTC 23:00, JST 12:00 = UTC 3:00, JST 17:00 = UTC 8:00
+    - cron: '0 23 * * *'   # 毎朝 8:00 JST
+    - cron: '0 3 * * *'    # 正午 12:00 JST
+    - cron: '0 8 * * *'    # 夕方 17:00 JST
+  workflow_dispatch:         # 手動実行ボタンも有効化
+
+concurrency:
+  group: check-and-post
+  cancel-in-progress: false
 
 permissions:
-  contents: write  # scheduled_posts.json をコミットするために必要
+  contents: write
 
 jobs:
-  check-rss:
+  check-and-post:
     runs-on: ubuntu-latest
     steps:
       - name: リポジトリをチェックアウト
@@ -17,18 +24,28 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Python セットアップ
+      - name: Pythonのセットアップ
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 依存パッケージをインストール
+      - name: 依存パッケージをインストールする
         run: pip install -r requirements.txt
 
-      - name: RSS チェック実行
+      - name: RSS チェック実行（新記事をスケジュール登録）
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python check_new_post.py
+
+      - name: 投稿送信実行（スケジュール済みの投稿を送信）
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: python send_posts.py
 
       - name: 変更があればコミット＆プッシュ
         run: |
@@ -40,6 +57,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "変更なし、スキップ"
           else
-            git commit -m "chore: スケジュール投稿を登録 [skip ci]"
+            git commit -m "chore: 自動投稿を実行 [skip ci]"
             git push --force-with-lease
           fi

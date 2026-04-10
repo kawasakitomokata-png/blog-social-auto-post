@@ -39,7 +39,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
-SCHEDULE_HOURS = [9, 12, 17]  # 翌日 9時、12時、17時
+CHECK_HOURS = [8, 12, 17]  # チェック・投稿する時刻（JST）
 
 # ── ユーティリティ ────────────────────────────────────
 
@@ -118,25 +118,46 @@ def generate_posts(title: str, url: str, summary: str) -> list[dict]:
     return json.loads(raw)
 
 
+# ── 投稿時刻を決定 ───────────────────────────────────
+
+def get_post_times() -> list:
+    """今すぐ＋次の2つのチェック時刻（8・12・17時）を返す。"""
+    now = datetime.now(JST)
+
+    # 1つ目：今すぐ（確実にsend_postsに拾わせるため少し前に設定）
+    immediate = now - timedelta(seconds=10)
+
+    # 2つ目・3つ目：今後の 8・12・17時
+    upcoming = []
+    for day_offset in [0, 1]:
+        base = (now + timedelta(days=day_offset)).replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
+        for h in CHECK_HOURS:
+            t = base.replace(hour=h)
+            if t > now:
+                upcoming.append(t)
+            if len(upcoming) == 2:
+                break
+        if len(upcoming) == 2:
+            break
+
+    return [immediate] + upcoming
+
+
 # ── スケジュール登録 ──────────────────────────────────
 
 def schedule_posts(title: str, url: str, posts: list[dict]):
-    """3パターンを翌日9・12・17時にスケジュール登録する。"""
-    now = datetime.now(JST)
-    tomorrow = (now + timedelta(days=1)).date()
+    """1投稿目は今すぐ、残り2つを次の8・12・17時にスケジュール登録する。"""
+    times = get_post_times()
     scheduled = load_scheduled_posts()
 
-    for hour, post in zip(SCHEDULE_HOURS, posts):
-        send_at = datetime(
-            tomorrow.year, tomorrow.month, tomorrow.day,
-            hour, 0, 0, tzinfo=JST
-        ).isoformat()
-
+    for send_at, post in zip(times, posts):
         hashtag_str = " ".join(f"#{tag.lstrip('#')}" for tag in post["hashtags"])
         full_text = f"{post['text']}\n{url}\n\n{hashtag_str}"
 
         scheduled.append({
-            "send_at": send_at,
+            "send_at": send_at.isoformat(),
             "angle": post["angle"],
             "text": full_text,
             "title": title,
@@ -144,7 +165,7 @@ def schedule_posts(title: str, url: str, posts: list[dict]):
             "sent": False,
             "platforms": ["x", "threads"],
         })
-        logging.info(f"Scheduled [{post['angle']}] at {send_at}")
+        logging.info(f"Scheduled [{post['angle']}] at {send_at.isoformat()}")
 
     save_scheduled_posts(scheduled)
 
@@ -181,7 +202,7 @@ def main():
         try:
             posts = generate_posts(title, url, summary)
             schedule_posts(title, url, posts)
-            print(f"  → 翌日 9時・12時・17時にスケジュール登録しました")
+            print(f"  → 今すぐ＋本日内の8・12・17時にスケジュール登録しました")
         except Exception as e:
             logging.error(f"Error processing {url}: {e}")
             print(f"  エラー: {e}")
