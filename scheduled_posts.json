@@ -202,10 +202,15 @@
     "text": "かわさきの近況がわかる記事「着手中」少し大変そうだけど元気にやっておりますよこちゃんも大変そう\nhttps://kawasakitomokata.life/archives/12870\n\n#かわさき #近況 #よこちゃん #大変",
     "title": "着手中",
     "url": "https://kawasakitomokata.life/archives/12870",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
-    ]
+    ],
+    "sent_at": "2026-04-10T17:12:39.282961+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
