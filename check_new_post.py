@@ -62,21 +62,76 @@ def load_scheduled_posts() -> list:
 def save_scheduled_posts(posts: list):
     SCHEDULED_POSTS_FILE.write_text(json.dumps(posts, ensure_ascii=False, indent=2))
 
-# ── WordPress アイキャッチ画像URL取得 ─────────────────
+# ── WordPress 記事内の画像URL一覧を取得 ───────────────
 
-def get_article_image_url(article_url: str) -> str | None:
-    """WordPress REST APIで記事のアイキャッチ画像URLを取得"""
+def get_article_images(article_url: str) -> list[str]:
+    """
+    記事内で使われている写真URLを最大3枚取得する。
+    優先順位:
+      1. メディアライブラリ（記事に添付された画像）
+      2. 本文中の <img> タグ
+      3. アイキャッチ画像（featured_media）
+    """
+    post_id = article_url.rstrip("/").split("/")[-1]
+    images = []
+
     try:
-        post_id = article_url.rstrip("/").split("/")[-1]
-        r = requests.get(f"{WP_API}/posts/{post_id}?_fields=featured_media", timeout=10)
-        media_id = r.json().get("featured_media")
-        if not media_id:
-            return None
-        r2 = requests.get(f"{WP_API}/media/{media_id}?_fields=source_url", timeout=10)
-        return r2.json().get("source_url")
+        # 1. 記事に添付されたメディア一覧（実際に使用した写真が含まれる）
+        r = requests.get(
+            f"{WP_API}/media",
+            params={"parent": post_id, "per_page": 10,
+                    "media_type": "image", "_fields": "source_url"},
+            timeout=10
+        )
+        if r.status_code == 200:
+            for m in r.json():
+                src = m.get("source_url", "")
+                # スケールされたサムネイルは除外（元サイズのみ）
+                if src and "-scaled" not in src or src.endswith(".jpg") or src.endswith(".jpeg"):
+                    if src not in images:
+                        images.append(src)
     except Exception as e:
-        logging.warning(f"アイキャッチ取得失敗: {e}")
-        return None
+        logging.warning(f"メディア一覧取得失敗: {e}")
+
+    # 2. 本文中の <img> タグからURL抽出
+    if len(images) < 3:
+        try:
+            r2 = requests.get(
+                f"{WP_API}/posts/{post_id}",
+                params={"_fields": "content,featured_media"},
+                timeout=10
+            )
+            if r2.status_code == 200:
+                data = r2.json()
+                content_html = data.get("content", {}).get("rendered", "")
+                # src= からURLを抽出
+                found = re.findall(
+                    r'src=["\']([^"\']+\.(?:jpg|jpeg|png|webp))["\']',
+                    content_html, re.IGNORECASE
+                )
+                # 大きい画像のみ（-150x150 等のサムネは除外）
+                for url in found:
+                    if not re.search(r'-\d+x\d+\.', url) and url not in images:
+                        images.append(url)
+                    if len(images) >= 3:
+                        break
+
+                # 3. アイキャッチ（featured_media）をフォールバックに追加
+                media_id = data.get("featured_media")
+                if media_id and len(images) < 3:
+                    r3 = requests.get(
+                        f"{WP_API}/media/{media_id}",
+                        params={"_fields": "source_url"}, timeout=10
+                    )
+                    if r3.status_code == 200:
+                        src = r3.json().get("source_url")
+                        if src and src not in images:
+                            images.insert(0, src)  # アイキャッチは先頭に
+        except Exception as e:
+            logging.warning(f"本文画像取得失敗: {e}")
+
+    print(f"  取得した記事内写真: {len(images)}枚")
+    return images[:3]  # 最大3枚
 
 # ── フォント ───────────────────────────────────────────
 
@@ -211,39 +266,56 @@ def style3(bg: Image.Image, title: str) -> Image.Image:
 
 # ── アイキャッチ3枚生成 ───────────────────────────────
 
+def download_image(url: str, dest: Path) -> bool:
+    """画像をダウンロードしてdestに保存。成功したらTrue。"""
+    try:
+        headers = {"User-Agent": "Mozilla/5.0"}
+        r = requests.get(url, headers=headers, timeout=15)
+        r.raise_for_status()
+        dest.write_bytes(r.content)
+        return True
+    except Exception as e:
+        logging.warning(f"画像DL失敗 {url}: {e}")
+        return False
+
+
 def generate_eyecatch_images(title: str, article_url: str) -> list[str | None]:
-    """3種類のアイキャッチ画像を生成してパスリストを返す（失敗時はNone）"""
-    img_url = get_article_image_url(article_url)
-    if not img_url:
-        print("  アイキャッチ画像URLが取得できませんでした（テキストのみで投稿）")
+    """
+    記事内の写真を最大3枚使い、それぞれ異なるスタイルのアイキャッチを生成する。
+    写真が1〜2枚しかない場合は同じ写真を使い回す。
+    """
+    img_urls = get_article_images(article_url)
+    if not img_urls:
+        print("  記事内の画像が取得できませんでした（テキストのみで投稿）")
         return [None, None, None]
 
     EYECATCH_DIR.mkdir(exist_ok=True)
     post_id = article_url.rstrip("/").split("/")[-1]
-    tmp = EYECATCH_DIR / f"_src_{post_id}.jpg"
+    styles  = [style1, style2, style3]
+    paths   = []
 
-    try:
-        urllib.request.urlretrieve(img_url, tmp)
-        bg = Image.open(tmp).convert("RGB")
-    except Exception as e:
-        logging.warning(f"画像ダウンロード失敗: {e}")
-        return [None, None, None]
-    finally:
-        if tmp.exists():
-            tmp.unlink()
-
-    styles = [style1, style2, style3]
-    paths = []
     for i, style_fn in enumerate(styles, 1):
+        # 使う写真: i枚目があればそれ、なければ最後の写真を使い回す
+        url = img_urls[min(i - 1, len(img_urls) - 1)]
+        tmp = EYECATCH_DIR / f"_src_{post_id}_{i}.jpg"
         out = EYECATCH_DIR / f"eyecatch_{post_id}_{i}.jpg"
+
+        if not download_image(url, tmp):
+            paths.append(None)
+            continue
+
         try:
+            bg     = Image.open(tmp).convert("RGB")
             result = style_fn(bg, title)
             result.save(out, "JPEG", quality=93)
             paths.append(str(out.relative_to(BASE_DIR)))
-            print(f"  アイキャッチ生成: {out.name}")
+            print(f"  アイキャッチ{i}生成: {out.name}（写真{min(i, len(img_urls))}枚目）")
         except Exception as e:
             logging.warning(f"スタイル{i}生成失敗: {e}")
             paths.append(None)
+        finally:
+            if tmp.exists():
+                tmp.unlink()
 
     return paths
 
