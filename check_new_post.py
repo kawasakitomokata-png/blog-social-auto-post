@@ -125,24 +125,38 @@ def get_article_images(article_url: str) -> list:
 
 def generate_posts(title: str, url: str, summary: str) -> list:
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
-    prompt = f"""以下のブログ記事をX（Twitter）で紹介する投稿文を「3つの異なる切り口」で作成してください。
+    prompt = f"""以下のブログ記事をSNS（X・Threads）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
 【記事タイトル】{title}
-【記事URL】{url}
 【内容概要】{summary}
 
-【要件】
-- 各投稿は本文＋URLで140字以内に収める
-- 各投稿にハッシュタグを3〜5個付ける（投稿本文の後に）
-- URLは含めず、本文とハッシュタグだけを返す（URLは別途付加します）
-- 切り口はそれぞれ明確に異なる視点にする
-- 読者の興味を引く自然な日本語で書く
+【投稿フォーマット】
+各投稿は必ず以下の順番で構成してください：
+1. タイトル行：記事タイトルをそのまま1行目に
+2. 紹介文：2〜3文で、読んだ人が「読んでみたい」と自然に思えるような文章
+3. ハッシュタグ：3〜4個
+
+【紹介文の書き方】
+- 必ず2文以上で書く（1文だけはNG）
+- まるで日記や手紙のような、温かく親しみやすい語り口
+- 読者が「あ、わかるな」と共感できるような日常的な視点を盛り込む
+- 「！」は1投稿に1個まで
+
+【紹介文の良い例】
+- 「うまくいかない日が続いても、少しずつ前に進んでいる気がします。今日の出来事、よかったら読んでみてください。」
+- 「試行錯誤しながらも、ちゃんと解決できた。そんな小さな積み重ねが、毎日を少し豊かにしてくれる気がしています。」
+
+【制約】
+- 紹介文は40字以上・80字以内の完全な文章で書く
+- URLは含めない（別途付加します）
+- ハッシュタグはブログの内容に合ったものを選ぶ
+- 3つの切り口はそれぞれ異なる視点で
 
 以下のJSON形式のみで返してください（前後に余分な文字・```は不要）:
 [
-  {{"angle":"切り口（10字以内）","text":"本文（120字以内）","hashtags":["タグ1","タグ2","タグ3"]}},
-  {{"angle":"切り口","text":"本文","hashtags":["タグ1","タグ2","タグ3"]}},
-  {{"angle":"切り口","text":"本文","hashtags":["タグ1","タグ2","タグ3"]}}
+  {{"angle":"切り口（10字以内）","title":"{title}","body":"紹介文（60字以内）","hashtags":["タグ1","タグ2","タグ3"]}},
+  {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}},
+  {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}}
 ]"""
 
     response = client.chat.completions.create(
@@ -183,7 +197,10 @@ def schedule_posts(title: str, url: str, posts: list, images: list):
 
     for i, (send_at, post) in enumerate(zip(times, posts)):
         hashtag_str = " ".join(f"#{tag.lstrip('#')}" for tag in post["hashtags"])
-        full_text = f"{post['text']}\n{url}\n\n{hashtag_str}"
+        # フォーマット: タイトル → 紹介文 → URL → ハッシュタグ
+        post_title = post.get("title", title)
+        body       = post.get("body", post.get("text", ""))
+        full_text  = f"{post_title}\n\n{body}\n{url}\n\n{hashtag_str}"
 
         # X・Threads共通: 記事内の写真を順番に割り当て（枚数が足りなければ使い回し）
         image_url = images[min(i, len(images) - 1)] if images else None
