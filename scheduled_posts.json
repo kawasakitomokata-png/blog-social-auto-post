@@ -238,13 +238,18 @@
     "text": "トライアンドエラーを繰り返して、徐々に解決策を見つけていくプロセスを経験した\nhttps://kawasakitomokata.life/archives/12888\n\n#学習 #トライアンドエラー #挑戦",
     "title": "トライアンドエラーの日々",
     "url": "https://kawasakitomokata.life/archives/12888",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
     "image_path": "eyecatch/eyecatch_12888_2.jpg",
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0817-TK033227-0013.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0817-TK033227-0013.jpg",
+    "sent_at": "2026-04-11T14:19:15.467022+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-11T17:00:00+09:00",
