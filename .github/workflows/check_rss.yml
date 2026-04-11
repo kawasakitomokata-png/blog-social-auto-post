@@ -32,18 +32,18 @@ jobs:
       - name: 依存パッケージをインストールする
         run: pip install -r requirements.txt
 
-      - name: RSS チェック実行（新記事＆アイキャッチ画像生成）
+      - name: RSS チェック実行（新記事検知＆スケジュール登録）
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python check_new_post.py
 
-      - name: 変更があればコミット＆プッシュ（画像を含む）
+      - name: 変更があればコミット＆プッシュ
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
           git reset --mixed origin/main
-          git add scheduled_posts.json posted_urls.txt eyecatch/*.jpg || true
+          git add scheduled_posts.json posted_urls.txt || true
           if git diff --cached --quiet; then
             echo "変更なし、スキップ"
           else
@@ -51,10 +51,7 @@ jobs:
             git push --force-with-lease
           fi
 
-      - name: GitHub反映を待つ（Threads用画像URLが有効になるまで）
-        run: sleep 20
-
-      - name: 投稿送信実行（アイキャッチ画像付きでX・Threadsに投稿）
+      - name: 投稿送信実行（記事写真付きでX・Threadsに投稿）
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}

@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 スケジュール済みの投稿を時刻になったらX（Twitter）とThreadsに送信するスクリプト。
-アイキャッチ画像がある場合は画像付きで投稿する。
+image_url（WordPress写真）をダウンロードしてXにアップロード、ThreadsにはURLをそのまま渡す。
 """
 
 import os
 import json
 import logging
+import tempfile
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -33,7 +34,7 @@ logging.basicConfig(
 
 # ── X（Twitter）投稿 ──────────────────────────────────
 
-def post_to_x(text: str, image_path=None) -> bool:
+def post_to_x(text: str, image_url: str = None) -> bool:
     try:
         client = tweepy.Client(
             consumer_key=os.environ["X_API_KEY"],
@@ -43,10 +44,16 @@ def post_to_x(text: str, image_path=None) -> bool:
         )
 
         media_id = None
-        if image_path:
-            abs_path = BASE_DIR / image_path
-            if abs_path.exists():
-                # v1 API でメディアアップロード
+        if image_url:
+            # WordPress写真をダウンロードして一時ファイルに保存しXにアップロード
+            try:
+                r = requests.get(image_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+                r.raise_for_status()
+                suffix = ".jpg" if "jpg" in image_url.lower() or "jpeg" in image_url.lower() else ".png"
+                with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
+                    tmp.write(r.content)
+                    tmp_path = tmp.name
+
                 auth = tweepy.OAuth1UserHandler(
                     os.environ["X_API_KEY"],
                     os.environ["X_API_SECRET"],
@@ -54,9 +61,17 @@ def post_to_x(text: str, image_path=None) -> bool:
                     os.environ["X_ACCESS_TOKEN_SECRET"],
                 )
                 api_v1 = tweepy.API(auth)
-                media = api_v1.media_upload(filename=str(abs_path))
+                media = api_v1.media_upload(filename=tmp_path)
                 media_id = media.media_id
                 print(f"  📷 画像アップロード完了: media_id={media_id}")
+            except Exception as e:
+                logging.warning(f"X画像アップロード失敗（テキストのみで続行）: {e}")
+                media_id = None
+            finally:
+                try:
+                    Path(tmp_path).unlink()
+                except Exception:
+                    pass
 
         if media_id:
             response = client.create_tweet(text=text, media_ids=[media_id])
@@ -74,7 +89,7 @@ def post_to_x(text: str, image_path=None) -> bool:
 
 # ── Threads 投稿 ──────────────────────────────────────
 
-def post_to_threads(text: str, image_url=None) -> bool:
+def post_to_threads(text: str, image_url: str = None) -> bool:
     access_token = os.environ.get("THREADS_ACCESS_TOKEN", "")
     user_id      = os.environ.get("THREADS_USER_ID", "")
 
@@ -86,30 +101,21 @@ def post_to_threads(text: str, image_url=None) -> bool:
         create_url = f"https://graph.threads.net/v1.0/{user_id}/threads"
 
         if image_url:
-            # 画像付き投稿
-            params = {
-                "media_type": "IMAGE",
-                "image_url": image_url,
-                "text": text,
-                "access_token": access_token,
-            }
+            params = {"media_type": "IMAGE", "image_url": image_url,
+                      "text": text, "access_token": access_token}
         else:
-            # テキストのみ
-            params = {
-                "media_type": "TEXT",
-                "text": text,
-                "access_token": access_token,
-            }
+            params = {"media_type": "TEXT", "text": text, "access_token": access_token}
 
         res = requests.post(create_url, params=params)
         res.raise_for_status()
         container_id = res.json()["id"]
 
-        publish_url = f"https://graph.threads.net/v1.0/{user_id}/threads_publish"
-        res2 = requests.post(publish_url, params={
-            "creation_id": container_id,
-            "access_token": access_token,
-        })
+        import time; time.sleep(3)
+
+        res2 = requests.post(
+            f"https://graph.threads.net/v1.0/{user_id}/threads_publish",
+            params={"creation_id": container_id, "access_token": access_token}
+        )
         res2.raise_for_status()
         post_id = res2.json()["id"]
         logging.info(f"Threads posted: post_id={post_id}")
@@ -138,11 +144,10 @@ def main():
         if now < send_at:
             continue
 
-        text        = post["text"]
-        platforms   = post.get("platforms", ["x"])
-        angle       = post.get("angle", "")
-        image_path  = post.get("image_path")   # X用（ローカルファイル）
-        image_url   = post.get("image_url")    # Threads用（GitHub Raw URL）
+        text      = post["text"]
+        platforms = post.get("platforms", ["x"])
+        angle     = post.get("angle", "")
+        image_url = post.get("image_url")   # X・Threads共通のWordPress写真URL
 
         logging.info(f"Sending [{angle}]: {text[:40]}...")
         print(f"[送信] {angle}")
@@ -150,7 +155,7 @@ def main():
         results = {}
 
         if "x" in platforms:
-            results["x"] = post_to_x(text, image_path)
+            results["x"] = post_to_x(text, image_url)
 
         if "threads" in platforms:
             results["threads"] = post_to_threads(text, image_url)
