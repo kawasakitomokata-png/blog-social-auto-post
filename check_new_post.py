@@ -173,21 +173,36 @@ def generate_posts(title: str, url: str, summary: str) -> list:
 # ── 投稿時刻を決定 ───────────────────────────────────
 
 def get_post_times() -> list:
+    """
+    SCHEDULE_ONLY=1 の場合（21時チェックのみ）:
+        → 翌日の8・12・17時の3枠を返す（即時投稿なし）
+    通常（8・12・17時の実行）:
+        → 今すぐ + 次の2つのチェック時刻を返す
+    """
     now = datetime.now(JST)
-    immediate = now - timedelta(seconds=10)
+    schedule_only = os.environ.get("SCHEDULE_ONLY") == "1"
+
+    # 次の3チェック時刻を探す
     upcoming = []
-    for day_offset in [0, 1]:
+    for day_offset in [0, 1, 2]:
         base = (now + timedelta(days=day_offset)).replace(
             hour=0, minute=0, second=0, microsecond=0)
         for h in CHECK_HOURS:
             t = base.replace(hour=h)
             if t > now:
                 upcoming.append(t)
-            if len(upcoming) == 2:
+            if len(upcoming) == 3:
                 break
-        if len(upcoming) == 2:
+        if len(upcoming) == 3:
             break
-    return [immediate] + upcoming
+
+    if schedule_only:
+        # 21時チェック: 即時投稿なし、翌日8・12・17時の3枠
+        print("  [チェックのみモード] 翌日3枠にスケジュール登録")
+        return upcoming[:3]
+    else:
+        # 通常: 今すぐ + 次の2枠
+        return [now - timedelta(seconds=10)] + upcoming[:2]
 
 # ── スケジュール登録 ──────────────────────────────────
 

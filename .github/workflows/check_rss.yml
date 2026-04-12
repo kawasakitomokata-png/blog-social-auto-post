@@ -2,10 +2,14 @@ name: RSS新記事チェック＆自動投稿
 
 on:
   schedule:
-    # JST 8:00 = UTC 23:00, JST 12:00 = UTC 3:00, JST 17:00 = UTC 8:00
-    - cron: '0 23 * * *'   # 毎朝 8:00 JST
-    - cron: '0 3 * * *'    # 正午 12:00 JST
-    - cron: '0 8 * * *'    # 夕方 17:00 JST
+    # JST 21:00 = UTC 12:00 ★チェックのみ（翌日8・12・17時に投稿）
+    - cron: '0 12 * * *'
+    # JST  8:00 = UTC 23:00 ★チェック＋投稿
+    - cron: '0 23 * * *'
+    # JST 12:00 = UTC  3:00 ★チェック＋投稿
+    - cron: '0 3 * * *'
+    # JST 17:00 = UTC  8:00 ★チェック＋投稿
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -32,9 +36,20 @@ jobs:
       - name: 依存パッケージをインストールする
         run: pip install -r requirements.txt
 
+      - name: 21時チェックかどうか判定
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
+            echo "SCHEDULE_ONLY=1" >> $GITHUB_ENV
+            echo "▶ 21時チェックのみモード（投稿は翌日8・12・17時）"
+          else
+            echo "SCHEDULE_ONLY=0" >> $GITHUB_ENV
+            echo "▶ チェック＋投稿モード"
+          fi
+
       - name: RSS チェック実行（新記事検知＆スケジュール登録）
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SCHEDULE_ONLY: ${{ env.SCHEDULE_ONLY }}
         run: python check_new_post.py
 
       - name: 変更があればコミット＆プッシュ
@@ -51,7 +66,8 @@ jobs:
             git push --force-with-lease
           fi
 
-      - name: 投稿送信実行（記事写真付きでX・Threadsに投稿）
+      - name: 投稿送信（21時チェックのみの場合はスキップ）
+        if: env.SCHEDULE_ONLY != '1'
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
@@ -61,7 +77,8 @@ jobs:
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
         run: python send_posts.py
 
-      - name: 送信済みフラグをコミット＆プッシュ
+      - name: 送信済みフラグをコミット＆プッシュ（21時はスキップ）
+        if: env.SCHEDULE_ONLY != '1'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
