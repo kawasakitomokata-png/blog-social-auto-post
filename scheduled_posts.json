@@ -245,10 +245,10 @@
     ],
     "image_path": "eyecatch/eyecatch_12888_2.jpg",
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0817-TK033227-0013.jpg",
-    "sent_at": "2026-04-11T14:19:15.467022+09:00",
+    "sent_at": "2026-04-11T12:00:01.381743+09:00",
     "results": {
       "x": true,
-      "threads": true
+      "threads": false
     }
   },
   {
@@ -264,10 +264,54 @@
     ],
     "image_path": "eyecatch/eyecatch_12888_3.jpg",
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-0816-TK033214-0003.jpg",
-    "sent_at": "2026-04-11T19:01:06.803416+09:00",
+    "sent_at": "2026-04-11T17:00:01.078404+09:00",
     "results": {
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-04-13T08:46:50.678092+09:00",
+    "angle": "ペット",
+    "text": "頑張ったねニコ\n\n飼い主として心配なときもありますが、大切なペットの健康を守るために頑張ります\nhttps://kawasakitomokata.life/archives/12907\n\n#ペット #愛犬 #動物病院",
+    "title": "頑張ったねニコ",
+    "url": "https://kawasakitomokata.life/archives/12907",
+    "sent": true,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/117ef280005830ddd323dc6850d8ff49.jpg",
+    "sent_at": "2026-04-13T08:47:01.252649+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
+  },
+  {
+    "send_at": "2026-04-13T12:00:00+09:00",
+    "angle": "健康",
+    "text": "頑張ったねニコ\n\n突然の病気に直面して、困惑することもありますが、治療に尽力することで、回復を目指します\nhttps://kawasakitomokata.life/archives/12907\n\n#健康 #ペットケア #動物病院",
+    "title": "頑張ったねニコ",
+    "url": "https://kawasakitomokata.life/archives/12907",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260407-0730-TK033204-0036-1.jpg"
+  },
+  {
+    "send_at": "2026-04-13T17:00:00+09:00",
+    "angle": "家族",
+    "text": "頑張ったねニコ\n\n家族の一員であるペットのために、我々ができることは何かを考えます\nhttps://kawasakitomokata.life/archives/12907\n\n#家族 #愛犬 #ペットファミリー",
+    "title": "頑張ったねニコ",
+    "url": "https://kawasakitomokata.life/archives/12907",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-1052-TK033252-0033.jpg"
   }
 ]
