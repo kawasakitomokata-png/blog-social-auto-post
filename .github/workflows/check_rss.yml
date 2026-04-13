@@ -2,8 +2,8 @@ name: RSS新記事チェック＆自動投稿
 
 on:
   schedule:
-    # JST 21:00 = UTC 12:00 ★チェックのみ（翌日8・12・17時に投稿）
-    - cron: '0 12 * * *'
+    # JST 23:00 = UTC 14:00 ★チェックのみ（翌日8・12・17時に投稿）
+    - cron: '0 14 * * *'
     # JST  8:00 = UTC 23:00 ★チェック＋投稿
     - cron: '0 23 * * *'
     # JST 12:00 = UTC  3:00 ★チェック＋投稿
@@ -36,11 +36,11 @@ jobs:
       - name: 依存パッケージをインストールする
         run: pip install -r requirements.txt
 
-      - name: 21時チェックかどうか判定
+      - name: 23時チェックかどうか判定
         run: |
-          if [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
+          if [ "${{ github.event.schedule }}" = "0 14 * * *" ]; then
             echo "SCHEDULE_ONLY=1" >> $GITHUB_ENV
-            echo "▶ 21時チェックのみモード（投稿は翌日8・12・17時）"
+            echo "▶ 23時チェックのみモード（投稿は翌日8・12・17時）"
           else
             echo "SCHEDULE_ONLY=0" >> $GITHUB_ENV
             echo "▶ チェック＋投稿モード"
