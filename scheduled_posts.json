@@ -294,12 +294,17 @@
     "text": "頑張ったねニコ\n\n突然の病気に直面して、困惑することもありますが、治療に尽力することで、回復を目指します\nhttps://kawasakitomokata.life/archives/12907\n\n#健康 #ペットケア #動物病院",
     "title": "頑張ったねニコ",
     "url": "https://kawasakitomokata.life/archives/12907",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260407-0730-TK033204-0036-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260407-0730-TK033204-0036-1.jpg",
+    "sent_at": "2026-04-13T15:33:42.817260+09:00",
+    "results": {
+      "x": false,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-13T17:00:00+09:00",
