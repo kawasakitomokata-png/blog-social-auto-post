@@ -312,11 +312,16 @@
     "text": "頑張ったねニコ\n\n家族の一員であるペットのために、我々ができることは何かを考えます\nhttps://kawasakitomokata.life/archives/12907\n\n#家族 #愛犬 #ペットファミリー",
     "title": "頑張ったねニコ",
     "url": "https://kawasakitomokata.life/archives/12907",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-1052-TK033252-0033.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260409-1052-TK033252-0033.jpg",
+    "sent_at": "2026-04-13T18:21:44.362820+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
