@@ -323,5 +323,44 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-04-14T08:33:07.702322+09:00",
+    "angle": "日常",
+    "text": "変わりゆく生活\n\n生活の質が上がってきている\nhttps://kawasakitomokata.life/archives/12917\n\n#生活 #変化 #進化",
+    "title": "変わりゆく生活",
+    "url": "https://kawasakitomokata.life/archives/12917",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_kawaru_seikatsu.jpg"
+  },
+  {
+    "send_at": "2026-04-14T12:00:00+09:00",
+    "angle": "家電",
+    "text": "変わりゆく生活\n\n大きな冷蔵庫や食洗機が生活を変える\nhttps://kawasakitomokata.life/archives/12917\n\n#家電 #生活改善 #便利",
+    "title": "変わりゆく生活",
+    "url": "https://kawasakitomokata.life/archives/12917",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1119-TK033282-0007.jpg"
+  },
+  {
+    "send_at": "2026-04-14T17:00:00+09:00",
+    "angle": "ロボット",
+    "text": "変わりゆく生活\n\nロボット掃除機が家事を減らす\nhttps://kawasakitomokata.life/archives/12917\n\n#ロボット #掃除機 #家事",
+    "title": "変わりゆく生活",
+    "url": "https://kawasakitomokata.life/archives/12917",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1119-TK033280-0005.jpg"
   }
 ]
