@@ -330,12 +330,17 @@
     "text": "変わりゆく生活\n\n生活の質が上がってきている\nhttps://kawasakitomokata.life/archives/12917\n\n#生活 #変化 #進化",
     "title": "変わりゆく生活",
     "url": "https://kawasakitomokata.life/archives/12917",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_kawaru_seikatsu.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_kawaru_seikatsu.jpg",
+    "sent_at": "2026-04-14T15:07:54.423439+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-14T12:00:00+09:00",
@@ -343,12 +348,17 @@
     "text": "変わりゆく生活\n\n大きな冷蔵庫や食洗機が生活を変える\nhttps://kawasakitomokata.life/archives/12917\n\n#家電 #生活改善 #便利",
     "title": "変わりゆく生活",
     "url": "https://kawasakitomokata.life/archives/12917",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1119-TK033282-0007.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1119-TK033282-0007.jpg",
+    "sent_at": "2026-04-14T15:07:54.423439+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-14T17:00:00+09:00",
