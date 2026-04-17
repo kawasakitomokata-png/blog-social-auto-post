@@ -402,12 +402,17 @@
     "text": "ニコニコ娘\n\nよこちゃんの教育活動に感銘を受けました\nhttps://kawasakitomokata.life/archives/12962\n\n#教育 #留学生 #交流",
     "title": "ニコニコ娘",
     "url": "https://kawasakitomokata.life/archives/12962",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-1241-TOM_4531-0035.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-1241-TOM_4531-0035.jpg",
+    "sent_at": "2026-04-17T17:18:23.242898+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-18T08:00:00+09:00",
