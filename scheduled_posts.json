@@ -384,12 +384,17 @@
     "text": "ニコニコ娘\n\n家族の愛を感じる瞬間が増えています\nhttps://kawasakitomokata.life/archives/12962\n\n#家族 #愛 #日常",
     "title": "ニコニコ娘",
     "url": "https://kawasakitomokata.life/archives/12962",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/niko_v2_bright.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/niko_v2_bright.jpg",
+    "sent_at": "2026-04-17T15:16:41.237868+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-17T17:00:00+09:00",
