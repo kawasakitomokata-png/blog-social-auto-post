@@ -377,5 +377,44 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-04-17T15:16:30.200616+09:00",
+    "angle": "家族愛",
+    "text": "ニコニコ娘\n\n家族の愛を感じる瞬間が増えています\nhttps://kawasakitomokata.life/archives/12962\n\n#家族 #愛 #日常",
+    "title": "ニコニコ娘",
+    "url": "https://kawasakitomokata.life/archives/12962",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/niko_v2_bright.jpg"
+  },
+  {
+    "send_at": "2026-04-17T17:00:00+09:00",
+    "angle": "教育",
+    "text": "ニコニコ娘\n\nよこちゃんの教育活動に感銘を受けました\nhttps://kawasakitomokata.life/archives/12962\n\n#教育 #留学生 #交流",
+    "title": "ニコニコ娘",
+    "url": "https://kawasakitomokata.life/archives/12962",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-1241-TOM_4531-0035.jpg"
+  },
+  {
+    "send_at": "2026-04-18T08:00:00+09:00",
+    "angle": "日常",
+    "text": "ニコニコ娘\n\n毎日の生活に小さな喜びを感じています\nhttps://kawasakitomokata.life/archives/12962\n\n#日常 #幸せ #家族愛",
+    "title": "ニコニコ娘",
+    "url": "https://kawasakitomokata.life/archives/12962",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-0851-TOM_4432-0002.jpg"
   }
 ]
