@@ -420,11 +420,16 @@
     "text": "ニコニコ娘\n\n毎日の生活に小さな喜びを感じています\nhttps://kawasakitomokata.life/archives/12962\n\n#日常 #幸せ #家族愛",
     "title": "ニコニコ娘",
     "url": "https://kawasakitomokata.life/archives/12962",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-0851-TOM_4432-0002.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260415-0851-TOM_4432-0002.jpg",
+    "sent_at": "2026-04-18T09:04:19.534668+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
