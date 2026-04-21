@@ -431,5 +431,44 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-04-22T08:00:00+09:00",
+    "angle": "日常",
+    "text": "かわさきはお熱いのがお好き？\n\nご近所さんとのやり取りはいつも面白い\nhttps://kawasakitomokata.life/archives/12982\n\n#ご近所さん #日常 #コミュニケーション",
+    "title": "かわさきはお熱いのがお好き？",
+    "url": "https://kawasakitomokata.life/archives/12982",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/71d2ae03785b1f8bca4fd4b96f82a1a4.jpg"
+  },
+  {
+    "send_at": "2026-04-22T12:00:00+09:00",
+    "angle": "家族",
+    "text": "かわさきはお熱いのがお好き？\n\n子どもを送り出す毎日が愛情に溢れている\nhttps://kawasakitomokata.life/archives/12982\n\n#家族愛 #子ども #送り出し",
+    "title": "かわさきはお熱いのがお好き？",
+    "url": "https://kawasakitomokata.life/archives/12982",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1119-TK033281-0006.jpg"
+  },
+  {
+    "send_at": "2026-04-22T17:00:00+09:00",
+    "angle": "自己表現",
+    "text": "かわさきはお熱いのがお好き？\n\n毎日の生活の中で自分らしさを大切に\nhttps://kawasakitomokata.life/archives/12982\n\n#自己表現 #日常 #人間関係",
+    "title": "かわさきはお熱いのがお好き？",
+    "url": "https://kawasakitomokata.life/archives/12982",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1559-TK033308-0022.jpg"
   }
 ]
