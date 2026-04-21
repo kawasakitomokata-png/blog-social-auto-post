@@ -438,12 +438,17 @@
     "text": "かわさきはお熱いのがお好き？\n\nご近所さんとのやり取りはいつも面白い\nhttps://kawasakitomokata.life/archives/12982\n\n#ご近所さん #日常 #コミュニケーション",
     "title": "かわさきはお熱いのがお好き？",
     "url": "https://kawasakitomokata.life/archives/12982",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/71d2ae03785b1f8bca4fd4b96f82a1a4.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/71d2ae03785b1f8bca4fd4b96f82a1a4.jpg",
+    "sent_at": "2026-04-22T08:55:19.842032+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-22T12:00:00+09:00",
