@@ -474,11 +474,16 @@
     "text": "かわさきはお熱いのがお好き？\n\n毎日の生活の中で自分らしさを大切に\nhttps://kawasakitomokata.life/archives/12982\n\n#自己表現 #日常 #人間関係",
     "title": "かわさきはお熱いのがお好き？",
     "url": "https://kawasakitomokata.life/archives/12982",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1559-TK033308-0022.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260410-1559-TK033308-0022.jpg",
+    "sent_at": "2026-04-22T18:05:30.814829+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
