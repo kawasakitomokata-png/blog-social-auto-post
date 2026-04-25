@@ -492,12 +492,17 @@
     "text": "なんでもない幸せ\n\n毎日を少し豊かにするために頑張っているようです。\nhttps://kawasakitomokata.life/archives/13009\n\n#幸せ #前向き #積極性",
     "title": "なんでもない幸せ",
     "url": "https://kawasakitomokata.life/archives/13009",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/thumbnail_nandemonal.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/thumbnail_nandemonal.jpg",
+    "sent_at": "2026-04-26T08:57:12.454714+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-26T12:00:00+09:00",
