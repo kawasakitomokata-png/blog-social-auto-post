@@ -528,11 +528,16 @@
     "text": "なんでもない幸せ\n\n新しいことに挑戦する姿に共感できます。\nhttps://kawasakitomokata.life/archives/13009\n\n#目標 #挑戦 #動画編集",
     "title": "なんでもない幸せ",
     "url": "https://kawasakitomokata.life/archives/13009",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260423-1057-TOM_5059-0042-2.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260423-1057-TOM_5059-0042-2.jpg",
+    "sent_at": "2026-04-26T17:07:43.743772+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
