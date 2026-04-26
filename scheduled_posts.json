@@ -510,12 +510,17 @@
     "text": "なんでもない幸せ\n\n小さな幸せを大切にしているように感じられます。\nhttps://kawasakitomokata.life/archives/13009\n\n#日常 #幸せ #感謝",
     "title": "なんでもない幸せ",
     "url": "https://kawasakitomokata.life/archives/13009",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260425-1800-TOM_5070-0044-2.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260425-1800-TOM_5070-0044-2.jpg",
+    "sent_at": "2026-04-26T15:30:13.364868+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-26T17:00:00+09:00",
