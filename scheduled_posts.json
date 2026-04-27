@@ -564,12 +564,17 @@
     "text": "春の庭と犬達の日々\n\nブログの更新で困ったとき、技術の助けがあってよかったです。\nhttps://kawasakitomokata.life/archives/13040\n\n#ブログ #テクノロジー #犬",
     "title": "春の庭と犬達の日々",
     "url": "https://kawasakitomokata.life/archives/13040",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A.jpg",
+    "sent_at": "2026-04-27T18:59:56.092102+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-28T08:00:00+09:00",
