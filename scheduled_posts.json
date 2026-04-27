@@ -539,5 +539,44 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-04-27T16:59:02.838437+09:00",
+    "angle": "日常から",
+    "text": "春の庭と犬達の日々\n\n庭で過ごす時間はとても贅沢に感じます。犬達と一緒に春の日々を楽しんでいます。\nhttps://kawasakitomokata.life/archives/13040\n\n#春 #庭 #犬",
+    "title": "春の庭と犬達の日々",
+    "url": "https://kawasakitomokata.life/archives/13040",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A-1.jpg"
+  },
+  {
+    "send_at": "2026-04-27T17:00:00+09:00",
+    "angle": "技術の助け",
+    "text": "春の庭と犬達の日々\n\nブログの更新で困ったとき、技術の助けがあってよかったです。\nhttps://kawasakitomokata.life/archives/13040\n\n#ブログ #テクノロジー #犬",
+    "title": "春の庭と犬達の日々",
+    "url": "https://kawasakitomokata.life/archives/13040",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A.jpg"
+  },
+  {
+    "send_at": "2026-04-28T08:00:00+09:00",
+    "angle": "自然と癒し",
+    "text": "春の庭と犬達の日々\n\n自然の中で犬達と過ごす時間は、心に癒しをもたらしてくれます。\nhttps://kawasakitomokata.life/archives/13040\n\n#自然 #癒し #犬の愛",
+    "title": "春の庭と犬達の日々",
+    "url": "https://kawasakitomokata.life/archives/13040",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-1406-TKA_2236-0035.jpg"
   }
 ]
