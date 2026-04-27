@@ -546,12 +546,17 @@
     "text": "春の庭と犬達の日々\n\n庭で過ごす時間はとても贅沢に感じます。犬達と一緒に春の日々を楽しんでいます。\nhttps://kawasakitomokata.life/archives/13040\n\n#春 #庭 #犬",
     "title": "春の庭と犬達の日々",
     "url": "https://kawasakitomokata.life/archives/13040",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/eyecatch_spring_A-1.jpg",
+    "sent_at": "2026-04-27T16:59:14.282874+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-04-27T17:00:00+09:00",
