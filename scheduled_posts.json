@@ -582,11 +582,16 @@
     "text": "春の庭と犬達の日々\n\n自然の中で犬達と過ごす時間は、心に癒しをもたらしてくれます。\nhttps://kawasakitomokata.life/archives/13040\n\n#自然 #癒し #犬の愛",
     "title": "春の庭と犬達の日々",
     "url": "https://kawasakitomokata.life/archives/13040",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-1406-TKA_2236-0035.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-1406-TKA_2236-0035.jpg",
+    "sent_at": "2026-04-28T08:31:14.619003+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
