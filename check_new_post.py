@@ -30,7 +30,7 @@ POSTED_URLS_FILE     = BASE_DIR / "posted_urls.txt"
 SCHEDULED_POSTS_FILE = BASE_DIR / "scheduled_posts.json"
 LOG_FILE             = BASE_DIR / "check_new_post.log"
 JST                  = ZoneInfo("Asia/Tokyo")
-CHECK_HOURS          = [8, 12, 17]
+CHECK_HOURS          = [9, 12, 17]
 
 logging.basicConfig(
     filename=LOG_FILE, level=logging.INFO,
@@ -57,15 +57,40 @@ def load_scheduled_posts() -> list:
 def save_scheduled_posts(posts: list):
     SCHEDULED_POSTS_FILE.write_text(json.dumps(posts, ensure_ascii=False, indent=2))
 
-# ── WordPress 記事内の写真URLを最大3枚取得 ──────────────
+# ── WordPress アイキャッチ画像を取得 ─────────────────────
+
+def get_featured_image(article_url: str) -> str:
+    """WordPressのアイキャッチ画像（featured_media）のURLを取得する。"""
+    post_id = article_url.rstrip("/").split("/")[-1]
+    try:
+        r = requests.get(
+            f"{WP_API}/posts/{post_id}",
+            params={"_fields": "featured_media"}, timeout=10
+        )
+        if r.status_code == 200:
+            media_id = r.json().get("featured_media")
+            if media_id:
+                r2 = requests.get(
+                    f"{WP_API}/media/{media_id}",
+                    params={"_fields": "source_url"}, timeout=10
+                )
+                if r2.status_code == 200:
+                    src = r2.json().get("source_url")
+                    if src:
+                        print(f"  アイキャッチ画像: {src.split('/')[-1]}")
+                        return src
+    except Exception as e:
+        logging.warning(f"アイキャッチ取得失敗: {e}")
+    return None
+
+# ── WordPress 記事内の写真URLを最大2枚取得 ──────────────
 
 def get_article_images(article_url: str) -> list:
     """
-    記事内で使われている写真URLを最大3枚取得する。
+    記事本文で使われている写真URLを最大2枚取得する（アイキャッチは除く）。
     優先順位:
       1. メディアライブラリ（記事に添付された画像）
       2. 本文中の <img> タグ
-      3. アイキャッチ画像（featured_media）
     """
     post_id = article_url.rstrip("/").split("/")[-1]
     images = []
@@ -85,16 +110,15 @@ def get_article_images(article_url: str) -> list:
     except Exception as e:
         logging.warning(f"メディア一覧取得失敗: {e}")
 
-    if len(images) < 3:
+    if len(images) < 5:
         try:
             r2 = requests.get(
                 f"{WP_API}/posts/{post_id}",
-                params={"_fields": "content,featured_media"},
+                params={"_fields": "content"},
                 timeout=10
             )
             if r2.status_code == 200:
-                data = r2.json()
-                content_html = data.get("content", {}).get("rendered", "")
+                content_html = r2.json().get("content", {}).get("rendered", "")
                 found = re.findall(
                     r'src=["\']([^"\']+\.(?:jpg|jpeg|png|webp))["\']',
                     content_html, re.IGNORECASE
@@ -102,24 +126,13 @@ def get_article_images(article_url: str) -> list:
                 for url in found:
                     if not re.search(r'-\d+x\d+\.', url) and url not in images:
                         images.append(url)
-                    if len(images) >= 3:
+                    if len(images) >= 5:
                         break
-
-                media_id = data.get("featured_media")
-                if media_id and len(images) < 3:
-                    r3 = requests.get(
-                        f"{WP_API}/media/{media_id}",
-                        params={"_fields": "source_url"}, timeout=10
-                    )
-                    if r3.status_code == 200:
-                        src = r3.json().get("source_url")
-                        if src and src not in images:
-                            images.insert(0, src)
         except Exception as e:
             logging.warning(f"本文画像取得失敗: {e}")
 
-    print(f"  取得した記事内写真: {len(images)}枚")
-    return images[:3]
+    print(f"  記事内写真候補: {len(images)}枚")
+    return images[:5]
 
 # ── Groq API で投稿文生成 ─────────────────────────────
 
@@ -206,19 +219,33 @@ def get_post_times() -> list:
 
 # ── スケジュール登録 ──────────────────────────────────
 
-def schedule_posts(title: str, url: str, posts: list, images: list):
+def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article_images: list):
+    """
+    投稿をスケジュール登録する。
+    - 1枚目（9時 or 即時）: WordPressアイキャッチ画像
+    - 2枚目（12時）: 記事内写真1枚目
+    - 3枚目（17時）: 記事内写真2枚目（なければ1枚目を使い回し）
+    """
     times = get_post_times()
     scheduled = load_scheduled_posts()
 
+    # アイキャッチと重複する画像を記事内写真から除外
+    body_images = [img for img in article_images if img != eyecatch_url]
+
+    # 画像リスト: [eyecatch, article_img1, article_img2]
+    image_map = [
+        eyecatch_url,
+        body_images[0] if len(body_images) > 0 else eyecatch_url,
+        body_images[1] if len(body_images) > 1 else (body_images[0] if body_images else eyecatch_url),
+    ]
+
     for i, (send_at, post) in enumerate(zip(times, posts)):
         hashtag_str = " ".join(f"#{tag.lstrip('#')}" for tag in post["hashtags"])
-        # フォーマット: タイトル → 紹介文 → URL → ハッシュタグ
         post_title = post.get("title", title)
         body       = post.get("body", post.get("text", ""))
         full_text  = f"{post_title}\n\n{body}\n{url}\n\n{hashtag_str}"
 
-        # X・Threads共通: 記事内の写真を順番に割り当て（枚数が足りなければ使い回し）
-        image_url = images[min(i, len(images) - 1)] if images else None
+        image_url = image_map[i] if i < len(image_map) else eyecatch_url
 
         scheduled.append({
             "send_at": send_at.isoformat(),
@@ -228,7 +255,7 @@ def schedule_posts(title: str, url: str, posts: list, images: list):
             "url":     url,
             "sent":    False,
             "platforms": ["x", "threads"],
-            "image_url": image_url,   # X・Threads共通で使うWordPress写真URL
+            "image_url": image_url,
         })
         logging.info(f"Scheduled [{post['angle']}] at {send_at.isoformat()} img={image_url}")
 
@@ -263,10 +290,11 @@ def main():
         save_posted_url(url)
 
         try:
-            posts  = generate_posts(title, url, summary)
-            images = get_article_images(url)
-            schedule_posts(title, url, posts, images)
-            print(f"  → 今すぐ＋8・12・17時にスケジュール登録しました（記事写真付き）")
+            posts          = generate_posts(title, url, summary)
+            eyecatch       = get_featured_image(url)
+            article_images = get_article_images(url)
+            schedule_posts(title, url, posts, eyecatch, article_images)
+            print(f"  → 今すぐ＋9・12・17時にスケジュール登録しました（9時=アイキャッチ、12・17時=記事内写真）")
         except Exception as e:
             logging.error(f"Error processing {url}: {e}")
             print(f"  エラー: {e}")
