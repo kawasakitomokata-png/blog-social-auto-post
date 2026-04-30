@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: check-and-post
+  group: blog-auto-post
   cancel-in-progress: false
 
 permissions:
@@ -66,28 +66,5 @@ jobs:
             git push --force-with-lease
           fi
 
-      - name: 投稿送信（21時チェックのみの場合はスキップ）
-        if: env.SCHEDULE_ONLY != '1'
-        env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-        run: python send_posts.py
-
-      - name: 送信済みフラグをコミット＆プッシュ（21時はスキップ）
-        if: env.SCHEDULE_ONLY != '1'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git reset --mixed origin/main
-          git add scheduled_posts.json || true
-          if git diff --cached --quiet; then
-            echo "変更なし、スキップ"
-          else
-            git commit -m "chore: 送信済みフラグを更新 [skip ci]"
-            git push --force-with-lease
-          fi
+      # 投稿送信は send_posts.yml（10分おき）に一本化
+      # check_rss.yml からは send_posts.py を呼ばない（重複投稿防止）

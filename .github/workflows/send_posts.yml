@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: send-posts
+  group: blog-auto-post
   cancel-in-progress: false
 
 permissions:
