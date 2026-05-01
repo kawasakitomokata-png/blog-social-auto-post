@@ -636,11 +636,16 @@
     "text": "花咲く春に、静かに決意する。\n\n小さな決意が、大きな違いをもたらします。春に、新しいスタートを切るには\nhttps://kawasakitomokata.life/archives/13098\n\n#前向き #春 #新しいスタート",
     "title": "花咲く春に、静かに決意する。",
     "url": "https://kawasakitomokata.life/archives/13098",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-1932-TKA_2400-0008.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-1932-TKA_2400-0008.jpg",
+    "sent_at": "2026-05-01T14:01:43.455070+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
