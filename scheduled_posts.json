@@ -618,12 +618,17 @@
     "text": "花咲く春に、静かに決意する。\n\n好きなアーティストのオリジナルアイテムは、特別な意味を持つものですよね\nhttps://kawasakitomokata.life/archives/13098\n\n#愛用品 #TicoMoon #春",
     "title": "花咲く春に、静かに決意する。",
     "url": "https://kawasakitomokata.life/archives/13098",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-2001-TKA_2410-0011.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/04/260426-2001-TKA_2410-0011.jpg",
+    "sent_at": "2026-05-01T10:23:58.243765+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-05-01T12:00:00+09:00",
