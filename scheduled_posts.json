@@ -654,12 +654,17 @@
     "text": "おうち焼肉で乾杯。慎ましく、たまに贅沢。\n\nおうちで焼肉を楽しむ贅沢な時間が気持ちよさそうです。\nhttps://kawasakitomokata.life/archives/13113\n\n#焼肉 #贅沢 #ごちそう",
     "title": "おうち焼肉で乾杯。慎ましく、たまに贅沢。",
     "url": "https://kawasakitomokata.life/archives/13113",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail2.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail2.jpg",
+    "sent_at": "2026-05-03T11:43:01.537601+09:00",
+    "results": {
+      "x": false,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-05-03T12:00:00+09:00",
