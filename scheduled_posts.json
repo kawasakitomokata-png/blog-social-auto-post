@@ -685,11 +685,16 @@
     "text": "おうち焼肉で乾杯。慎ましく、たまに贅沢。\n\n週末に家族でおうち焼肉を楽しむのは、最高の贅沢時間です。\nhttps://kawasakitomokata.life/archives/13113\n\n#週末 #家族 #おうちごはん",
     "title": "おうち焼肉で乾杯。慎ましく、たまに贅沢。",
     "url": "https://kawasakitomokata.life/archives/13113",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260501-0746-TKA_2697-0001.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260501-0746-TKA_2697-0001.jpg",
+    "sent_at": "2026-05-03T17:21:38.386702+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
