@@ -247,6 +247,9 @@ def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article
 
         image_url = image_map[i] if i < len(image_map) else eyecatch_url
 
+        # X は9時（i=0）と17時（i=2）のみ、12時（i=1）はThreadsのみ
+        platforms = ["x", "threads"] if i != 1 else ["threads"]
+
         scheduled.append({
             "send_at": send_at.isoformat(),
             "angle":   post["angle"],
@@ -254,10 +257,10 @@ def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article
             "title":   title,
             "url":     url,
             "sent":    False,
-            "platforms": ["x", "threads"],
+            "platforms": platforms,
             "image_url": image_url,
         })
-        logging.info(f"Scheduled [{post['angle']}] at {send_at.isoformat()} img={image_url}")
+        logging.info(f"Scheduled [{post['angle']}] at {send_at.isoformat()} platforms={platforms} img={image_url}")
 
     save_scheduled_posts(scheduled)
 
