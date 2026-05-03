@@ -2,7 +2,9 @@ name: スケジュール投稿送信（X・Threads）
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # 10分おき
+    - cron: '5 0 * * *'   # JST  9:05（RSSチェック後）
+    - cron: '5 3 * * *'   # JST 12:05（RSSチェック後）
+    - cron: '5 8 * * *'   # JST 17:05（RSSチェック後）
   workflow_dispatch:
 
 concurrency:
