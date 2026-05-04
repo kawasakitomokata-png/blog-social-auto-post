@@ -737,11 +737,16 @@
     "text": "お庭で冷やし中華。今が一番いい季節。\n\n日々の生活の中で、少しでもおいしいものを楽しむことが大切です。\nhttps://kawasakitomokata.life/archives/13128\n\n#日常 #食事 #おいしい",
     "title": "お庭で冷やし中華。今が一番いい季節。",
     "url": "https://kawasakitomokata.life/archives/13128",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260503-1300-TKA_3215-0022.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260503-1300-TKA_3215-0022.jpg",
+    "sent_at": "2026-05-04T19:21:50.517702+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
