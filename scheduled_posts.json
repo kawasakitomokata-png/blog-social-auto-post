@@ -703,12 +703,17 @@
     "text": "お庭で冷やし中華。今が一番いい季節。\n\n庭で冷やし中華を食べるのは、季節の移り変わりを感じる良い方法です。\nhttps://kawasakitomokata.life/archives/13128\n\n#庭園 #冷やし中華 #季節感",
     "title": "お庭で冷やし中華。今が一番いい季節。",
     "url": "https://kawasakitomokata.life/archives/13128",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail3.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail3.jpg",
+    "sent_at": "2026-05-04T13:01:36.510516+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-05-04T12:00:00+09:00",
@@ -716,11 +721,15 @@
     "text": "お庭で冷やし中華。今が一番いい季節。\n\n冷やし中華は夏の定番のメニューです。庭で食べるのはなんて贅沢なことか。\nhttps://kawasakitomokata.life/archives/13128\n\n#冷やし中華 #夏メニュー #贅沢",
     "title": "お庭で冷やし中華。今が一番いい季節。",
     "url": "https://kawasakitomokata.life/archives/13128",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/IMG_3698.jpeg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/IMG_3698.jpeg",
+    "sent_at": "2026-05-04T13:01:36.510516+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-05-04T17:00:00+09:00",
