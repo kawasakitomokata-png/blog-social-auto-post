@@ -290,18 +290,17 @@ def main():
         print(f"[新記事検知] {title}")
         print(f"  URL: {url}")
 
-        save_posted_url(url)
-
         try:
             posts          = generate_posts(title, url, summary)
             eyecatch       = get_featured_image(url)
             article_images = get_article_images(url)
             schedule_posts(title, url, posts, eyecatch, article_images)
+            save_posted_url(url)  # 成功時のみURLを記録
             print(f"  → 今すぐ＋9・12・17時にスケジュール登録しました（9時=アイキャッチ、12・17時=記事内写真）")
         except Exception as e:
             logging.error(f"Error processing {url}: {e}")
             print(f"  エラー: {e}")
-            print(f"  ※ URLは記録済みのため次回からスキップされます")
+            print(f"  ※ 次回のチェックで再試行します")
 
     logging.info("=== RSS check finished ===")
 

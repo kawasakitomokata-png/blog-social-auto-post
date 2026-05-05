@@ -748,5 +748,48 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-05-05T15:12:07.592282+09:00",
+    "angle": "日常",
+    "text": "箱入り娘は、無印がお好き。\n\n日々の生活で起きた出来事を通じて、自分自身を見つめ直す機会がありました。今日のブログではそんな日常のなかで感じたことを書いてみました\nhttps://kawasakitomokata.life/archives/13144\n\n#日常 #生活 #無印",
+    "title": "箱入り娘は、無印がお好き。",
+    "url": "https://kawasakitomokata.life/archives/13144",
+    "sent": true,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail4.jpg",
+    "sent_at": "2026-05-05T15:12:21.741286+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
+  },
+  {
+    "send_at": "2026-05-05T17:00:00+09:00",
+    "angle": "悩み",
+    "text": "箱入り娘は、無印がお好き。\n\nWi-Fiの調子が悪くて困惑していましたが、その経験から何kaを得ることができました\nhttps://kawasakitomokata.life/archives/13144\n\n#Wi-Fi #悩み #解決",
+    "title": "箱入り娘は、無印がお好き。",
+    "url": "https://kawasakitomokata.life/archives/13144",
+    "sent": false,
+    "platforms": [
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260504-1825-TKA_3229-0006.jpg"
+  },
+  {
+    "send_at": "2026-05-06T09:00:00+09:00",
+    "angle": "反省",
+    "text": "箱入り娘は、無印がお好き。\n\n昨日の出来事を振り返ってみると、改善できる点が見つかりました。そんな日々の反省を通じて成長できるように頑張ります\nhttps://kawasakitomokata.life/archives/13144\n\n#反省 #成長 #学び",
+    "title": "箱入り娘は、無印がお好き。",
+    "url": "https://kawasakitomokata.life/archives/13144",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260504-1826-TKA_3247-0013.jpg"
   }
 ]
