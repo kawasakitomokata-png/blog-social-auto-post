@@ -789,11 +789,16 @@
     "text": "箱入り娘は、無印がお好き。\n\n昨日の出来事を振り返ってみると、改善できる点が見つかりました。そんな日々の反省を通じて成長できるように頑張ります\nhttps://kawasakitomokata.life/archives/13144\n\n#反省 #成長 #学び",
     "title": "箱入り娘は、無印がお好き。",
     "url": "https://kawasakitomokata.life/archives/13144",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260504-1826-TKA_3247-0013.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260504-1826-TKA_3247-0013.jpg",
+    "sent_at": "2026-05-06T12:58:13.069480+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   }
 ]
