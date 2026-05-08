@@ -800,5 +800,43 @@
       "x": true,
       "threads": true
     }
+  },
+  {
+    "send_at": "2026-05-09T09:00:00+09:00",
+    "angle": "自然",
+    "text": "花咲く庭で、ひとやすみ。\n\n庭で花を見て、心が癒されました。自然の中でリラックスできる時間は、貴重です。\nhttps://kawasakitomokata.life/archives/13160\n\n#花 #庭 #自然",
+    "title": "花咲く庭で、ひとやすみ。",
+    "url": "https://kawasakitomokata.life/archives/13160",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail5.jpg"
+  },
+  {
+    "send_at": "2026-05-09T12:00:00+09:00",
+    "angle": "季節",
+    "text": "花咲く庭で、ひとやすみ。\n\n季節の変化を感じることができます。花が咲くのは、特別な瞬間です。\nhttps://kawasakitomokata.life/archives/13160\n\n#季節 #花 #庭",
+    "title": "花咲く庭で、ひとやすみ。",
+    "url": "https://kawasakitomokata.life/archives/13160",
+    "sent": false,
+    "platforms": [
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260506-1754-TKA_3661-0039.jpg"
+  },
+  {
+    "send_at": "2026-05-09T17:00:00+09:00",
+    "angle": "心癒し",
+    "text": "花咲く庭で、ひとやすみ。\n\n日々の疲れを忘れることができます。花の香りや色は、心を癒します。\nhttps://kawasakitomokata.life/archives/13160\n\n#心癒し #花 #庭",
+    "title": "花咲く庭で、ひとやすみ。",
+    "url": "https://kawasakitomokata.life/archives/13160",
+    "sent": false,
+    "platforms": [
+      "x",
+      "threads"
+    ],
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260506-1801-TKA_3694-0051.jpg"
   }
 ]
