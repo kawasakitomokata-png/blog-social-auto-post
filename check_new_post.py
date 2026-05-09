@@ -83,22 +83,23 @@ def get_featured_image(article_url: str) -> str:
         logging.warning(f"アイキャッチ取得失敗: {e}")
     return None
 
-# ── WordPress 記事内の写真URLを最大2枚取得 ──────────────
+# ── WordPress 記事内の写真URLを取得 ──────────────────────
 
 def get_article_images(article_url: str) -> list:
     """
-    記事本文で使われている写真URLを最大2枚取得する（アイキャッチは除く）。
+    記事本文で使われている写真URLを最大5枚取得する（アイキャッチは除く）。
     優先順位:
       1. メディアライブラリ（記事に添付された画像）
-      2. 本文中の <img> タグ
+      2. 本文中の src / data-src / data-lazy-src 属性
     """
     post_id = article_url.rstrip("/").split("/")[-1]
     images = []
 
+    # ① WordPress メディアライブラリ（添付画像）
     try:
         r = requests.get(
             f"{WP_API}/media",
-            params={"parent": post_id, "per_page": 10,
+            params={"parent": post_id, "per_page": 20,
                     "media_type": "image", "_fields": "source_url"},
             timeout=10
         )
@@ -110,6 +111,7 @@ def get_article_images(article_url: str) -> list:
     except Exception as e:
         logging.warning(f"メディア一覧取得失敗: {e}")
 
+    # ② 本文 HTML から img タグを解析（遅延読込属性も含む）
     if len(images) < 5:
         try:
             r2 = requests.get(
@@ -119,13 +121,20 @@ def get_article_images(article_url: str) -> list:
             )
             if r2.status_code == 200:
                 content_html = r2.json().get("content", {}).get("rendered", "")
-                found = re.findall(
-                    r'src=["\']([^"\']+\.(?:jpg|jpeg|png|webp))["\']',
-                    content_html, re.IGNORECASE
-                )
-                for url in found:
-                    if not re.search(r'-\d+x\d+\.', url) and url not in images:
-                        images.append(url)
+                # src / data-src / data-lazy-src を順に探す
+                img_attrs = [
+                    r'src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
+                    r'data-src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
+                    r'data-lazy-src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
+                ]
+                for pattern in img_attrs:
+                    found = re.findall(pattern, content_html, re.IGNORECASE)
+                    for url in found:
+                        # リサイズ版（-300x200.jpg など）は除外
+                        if not re.search(r'-\d+x\d+\.', url) and url not in images:
+                            images.append(url)
+                        if len(images) >= 5:
+                            break
                     if len(images) >= 5:
                         break
         except Exception as e:
@@ -224,20 +233,40 @@ def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article
     投稿をスケジュール登録する。
     - 1枚目（9時 or 即時）: WordPressアイキャッチ画像
     - 2枚目（12時）: 記事内写真1枚目
-    - 3枚目（17時）: 記事内写真2枚目（なければ1枚目を使い回し）
+    - 3枚目（17時）: 記事内写真2枚目（1枚しかない場合はアイキャッチで代替→2回目と被らない）
     """
     times = get_post_times()
     scheduled = load_scheduled_posts()
 
-    # アイキャッチと重複する画像を記事内写真から除外
-    body_images = [img for img in article_images if img != eyecatch_url]
-
-    # 画像リスト: [eyecatch, article_img1, article_img2]
-    image_map = [
-        eyecatch_url,
-        body_images[0] if len(body_images) > 0 else eyecatch_url,
-        body_images[1] if len(body_images) > 1 else (body_images[0] if body_images else eyecatch_url),
+    # アイキャッチと重複する画像を記事内写真から除外（ファイル名でも比較）
+    eyecatch_basename = eyecatch_url.split("/")[-1] if eyecatch_url else ""
+    body_images = [
+        img for img in article_images
+        if img != eyecatch_url and img.split("/")[-1] != eyecatch_basename
     ]
+
+    # 画像割り当て：3枚とも必ず異なる画像を使う
+    # 記事内写真が1枚しかない場合は 3回目にアイキャッチを再利用（2回目との重複を避ける）
+    # 記事内写真が0枚の場合は全枠アイキャッチ（やむを得ない）
+    if len(body_images) >= 2:
+        # 理想ケース: 3枚とも異なる
+        img0 = eyecatch_url
+        img1 = body_images[0]
+        img2 = body_images[1]
+    elif len(body_images) == 1:
+        # 記事内写真1枚: 2回目=記事内、3回目=アイキャッチ（2回目と異なる）
+        img0 = eyecatch_url
+        img1 = body_images[0]
+        img2 = eyecatch_url
+        logging.warning("記事内写真が1枚のみ: 3回目にアイキャッチを再利用")
+        print("  ⚠ 記事内写真1枚のみ → 3回目はアイキャッチを使用")
+    else:
+        # 記事内写真なし: 全枠アイキャッチ
+        img0 = img1 = img2 = eyecatch_url
+        logging.warning("記事内写真なし: 全枠アイキャッチを使用")
+        print("  ⚠ 記事内写真なし → 全枠アイキャッチを使用")
+
+    image_map = [img0, img1, img2]
 
     for i, (send_at, post) in enumerate(zip(times, posts)):
         hashtag_str = " ".join(f"#{tag.lstrip('#')}" for tag in post["hashtags"])
