@@ -111,7 +111,7 @@ def get_article_images(article_url: str) -> list:
     except Exception as e:
         logging.warning(f"メディア一覧取得失敗: {e}")
 
-    # ② 本文 HTML から img タグを解析（遅延読込属性も含む）
+    # ② 本文 HTML から画像URLを抽出（Jetpack スライドショー対応）
     if len(images) < 5:
         try:
             r2 = requests.get(
@@ -121,22 +121,45 @@ def get_article_images(article_url: str) -> list:
             )
             if r2.status_code == 200:
                 content_html = r2.json().get("content", {}).get("rendered", "")
-                # src / data-src / data-lazy-src を順に探す
-                img_attrs = [
-                    r'src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
-                    r'data-src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
-                    r'data-lazy-src=["\']([^"\']+\.(?:jpg|jpeg|png|webp|JPG|JPEG|PNG|WEBP))["\']',
-                ]
-                for pattern in img_attrs:
-                    found = re.findall(pattern, content_html, re.IGNORECASE)
-                    for url in found:
-                        # リサイズ版（-300x200.jpg など）は除外
-                        if not re.search(r'-\d+x\d+\.', url) and url not in images:
-                            images.append(url)
-                        if len(images) >= 5:
-                            break
+
+                # src / data-src / data-lazy-src を探す
+                # ※ Jetpack CDN URL はクエリパラメータ付きのため [^"\']*) で末尾まで取得
+                pattern = (r'(?:src|data-src|data-lazy-src)'
+                           r'=["\']([^"\']+\.(?:jpg|jpeg|png|webp)[^"\']*)["\']')
+                raw_matches = re.findall(pattern, content_html, re.IGNORECASE)
+
+                for raw_url in raw_matches:
+                    # ① HTML エンティティを解除して クエリパラメータを除去
+                    url = (raw_url
+                           .replace('&#038;', '&').replace('&amp;', '&')
+                           .split('?')[0])
+                    # ② Jetpack CDN (i0.wp.com / i1.wp.com) → オリジナル WordPress URL に変換
+                    url = re.sub(r'^https?://i\d+\.wp\.com/', 'https://', url)
+                    # ③ リサイズ版（-300x200.jpg など）は除外
+                    if re.search(r'-\d+x\d+\.', url):
+                        continue
+                    if url and url not in images:
+                        images.append(url)
                     if len(images) >= 5:
                         break
+
+                # ③ data-id フォールバック（src が取れなかった画像を補完）
+                if len(images) < 5:
+                    data_ids = re.findall(r'data-id=["\'](\d+)["\']', content_html)
+                    for mid in data_ids:
+                        if len(images) >= 5:
+                            break
+                        try:
+                            rm = requests.get(
+                                f"{WP_API}/media/{mid}",
+                                params={"_fields": "source_url"}, timeout=10
+                            )
+                            if rm.status_code == 200:
+                                src = rm.json().get("source_url", "")
+                                if src and src not in images:
+                                    images.append(src)
+                        except Exception:
+                            pass
         except Exception as e:
             logging.warning(f"本文画像取得失敗: {e}")
 
