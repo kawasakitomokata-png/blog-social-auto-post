@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: blog-auto-post
+  group: rss-check
   cancel-in-progress: false
 
 permissions:

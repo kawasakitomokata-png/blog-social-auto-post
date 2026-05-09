@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: blog-auto-post
+  group: send-posts
   cancel-in-progress: false
 
 permissions:
@@ -46,6 +46,28 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
+
+          # リモートの最新版に、ローカルの sent:true フラグをマージして上書き
+          git show origin/main:scheduled_posts.json > /tmp/remote_posts.json 2>/dev/null || cp scheduled_posts.json /tmp/remote_posts.json
+          python3 - << 'PYEOF'
+import json, sys
+with open('/tmp/remote_posts.json') as f:
+    remote = json.load(f)
+with open('scheduled_posts.json') as f:
+    local = json.load(f)
+# ローカルで sent:true になったものをリモートに反映
+local_map = {(p['send_at'], p.get('angle','')): p for p in local}
+for p in remote:
+    key = (p['send_at'], p.get('angle',''))
+    if key in local_map and local_map[key].get('sent'):
+        p['sent']    = True
+        p['sent_at'] = local_map[key].get('sent_at')
+        p['results'] = local_map[key].get('results', {})
+with open('scheduled_posts.json', 'w') as f:
+    json.dump(remote, f, ensure_ascii=False, indent=2)
+print('Merge OK')
+PYEOF
+
           git reset --mixed origin/main
           git add scheduled_posts.json || true
           if git diff --cached --quiet; then
