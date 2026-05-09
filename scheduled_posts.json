@@ -807,12 +807,17 @@
     "text": "花咲く庭で、ひとやすみ。\n\n庭で花を見て、心が癒されました。自然の中でリラックスできる時間は、貴重です。\nhttps://kawasakitomokata.life/archives/13160\n\n#花 #庭 #自然",
     "title": "花咲く庭で、ひとやすみ。",
     "url": "https://kawasakitomokata.life/archives/13160",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail5.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail5.jpg",
+    "sent_at": "2026-05-09T10:54:01.472924+09:00",
+    "results": {
+      "x": true,
+      "threads": true
+    }
   },
   {
     "send_at": "2026-05-09T12:00:00+09:00",
