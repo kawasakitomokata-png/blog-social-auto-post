@@ -19,7 +19,7 @@ BLUE = "#5fb0ff"
 SUB = 60          # 1ループのフレーム数
 FPS = 20
 CYCLES = 3        # 1ループ中に電子が落ちる回数(シームレス)
-SECONDS = 15
+SECONDS = 30
 
 Y_TOP = 130
 PX_PER_V = 85.0
@@ -78,10 +78,10 @@ def build_svg(frame):
     cols = "\n".join(column(c, t) for c in COLS)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
   <rect width="{W}" height="{H}" fill="{BG}"/>
-  <text x="{W/2}" y="50" font-family="Noto Sans CJK JP, sans-serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">落差大 ＝ 高電圧</text>
+  <text x="{W/2}" y="54" font-family="Noto Sans CJK JP, sans-serif" font-size="46" font-weight="bold" fill="#ffffff" text-anchor="middle">落差大 ＝ 高電圧</text>
   <line x1="{W/2}" y1="120" x2="{W/2}" y2="500" stroke="#1b2230" stroke-width="2"/>
   {cols}
-  <text x="{W/2}" y="565" font-family="Noto Sans CJK JP, sans-serif" font-size="30" font-weight="bold" fill="#7fc0ff" text-anchor="middle">硫黄 ＜＜＜ 酸素</text>
+  <text x="{W/2}" y="568" font-family="Noto Sans CJK JP, sans-serif" font-size="46" font-weight="bold" fill="#7fc0ff" text-anchor="middle">硫黄 ＜＜＜ 酸素</text>
 </svg>'''
 
 
