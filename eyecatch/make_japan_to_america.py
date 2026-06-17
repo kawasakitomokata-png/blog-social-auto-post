@@ -16,11 +16,10 @@ JP_GROUP = open("/tmp/jp_group.txt").read()
 JP_SCALE = 430 / 1024
 JP_TX, JP_TY = 70, 150
 
-# 飛行ルート（日本付近→右上のアメリカ方面）
-# 始点：本州あたり、終点：右上の画面外手前
-PX0, PY0 = 360, 330          # 出発（日本）
-PCX, PCY = 640, 120          # 制御点（弧）
-PX1, PY1 = 905, 175          # 機体の現在位置（アメリカへ向かう途中）
+# 飛行ルート（成田空港→アメリカ方面）。機体は日本に近い半分の距離に短縮。
+PX0, PY0 = 398, 388          # 出発（成田空港）
+PCX, PCY = 530, 270          # 制御点（弧）
+PX1, PY1 = 660, 258          # 機体の現在位置（アメリカへ向かう途中）
 
 JET = '''<g transform="translate({x},{y}) rotate({rot}) scale(1.25)">
   <path d="M38,0 L6,9 -26,7 -22,2 -8,2 -18,-7 -10,-7 6,-2 6,-9 12,-10 13,-2 Z"
@@ -69,9 +68,9 @@ def build_svg():
   <text x="{JP_TX+150}" y="{JP_TY+250}" font-family="Noto Sans CJK JP, sans-serif"
         font-size="40" font-weight="bold" fill="#16652f" text-anchor="middle"
         stroke="#ffffff" stroke-width="4" paint-order="stroke">日本</text>
-  <text x="905" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="30"
-        font-weight="bold" fill="#16466e" text-anchor="end"
-        stroke="#ffffff" stroke-width="4" paint-order="stroke">アメリカへ →</text>
+  <text x="{PX0+14}" y="{PY0+30}" font-family="Noto Sans CJK JP, sans-serif" font-size="20"
+        font-weight="bold" fill="#16466e" text-anchor="start"
+        stroke="#ffffff" stroke-width="3.5" paint-order="stroke">成田空港</text>
 </svg>'''
 
 

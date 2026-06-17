@@ -528,13 +528,13 @@ l3 129 -35 -22 c-19 -11 -41 -21 -50 -21 -8 0 -35 20 -59 44 -33 34 -52 45
   </g>
 
   <!-- 飛行ルート -->
-  <path d="M360,330 Q640,120 905,175" fill="none"
+  <path d="M398,388 Q530,270 660,258" fill="none"
         stroke="#ff5a52" stroke-width="4" stroke-linecap="round"
         stroke-dasharray="2 14"/>
-  <circle cx="360" cy="330" r="7" fill="#ff5a52" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="398" cy="388" r="7" fill="#ff5a52" stroke="#ffffff" stroke-width="2.5"/>
 
   <!-- ジェット機（ルート先端、進行方向へ機首） -->
-  <g transform="translate(905,175) rotate(11.72511201516508) scale(1.25)">
+  <g transform="translate(660,258) rotate(-5.2738959573517645) scale(1.25)">
   <path d="M38,0 L6,9 -26,7 -22,2 -8,2 -18,-7 -10,-7 6,-2 6,-9 12,-10 13,-2 Z"
         fill="#eef3f8" stroke="#9fb2c6" stroke-width="1.2" stroke-linejoin="round"/>
   <path d="M-2,-2 L-20,-22 -12,-22 8,-4 Z" fill="#d7e2ee" stroke="#9fb2c6" stroke-width="1"/>
@@ -547,7 +547,7 @@ l3 129 -35 -22 c-19 -11 -41 -21 -50 -21 -8 0 -35 20 -59 44 -33 34 -52 45
   <text x="220" y="400" font-family="Noto Sans CJK JP, sans-serif"
         font-size="40" font-weight="bold" fill="#16652f" text-anchor="middle"
         stroke="#ffffff" stroke-width="4" paint-order="stroke">日本</text>
-  <text x="905" y="120" font-family="Noto Sans CJK JP, sans-serif" font-size="30"
-        font-weight="bold" fill="#16466e" text-anchor="end"
-        stroke="#ffffff" stroke-width="4" paint-order="stroke">アメリカへ →</text>
+  <text x="412" y="418" font-family="Noto Sans CJK JP, sans-serif" font-size="20"
+        font-weight="bold" fill="#16466e" text-anchor="start"
+        stroke="#ffffff" stroke-width="3.5" paint-order="stroke">成田空港</text>
 </svg>
