@@ -82,21 +82,27 @@ def build_svg(frame):
   </g>
   {inner_s}
   {outer}
-  <text x="{CX}" y="555" font-family="Noto Sans CJK JP, sans-serif" font-size="22" font-weight="bold" fill="#e9eef5" text-anchor="middle">最外殻電子は放出されやすい</text>
 </svg>'''
 
 
-frames = []
+# FRAMES = 1ループ分。これをシームレスに繰り返して約15秒の尺にする。
+FPS = 20
+
+base = []
 for f in range(FRAMES):
     png = cairosvg.svg2png(bytestring=build_svg(f).encode("utf-8"),
                            output_width=W, output_height=H)
-    frames.append(Image.open(io.BytesIO(png)).convert("RGB"))
+    base.append(Image.open(io.BytesIO(png)).convert("RGB"))
 
-frames[len(frames) // 4].save("lithium_atom_dark.png")
+# 15秒 = FPS * 15 = 300 フレーム分（baseをシームレスに繰り返す）
+total = FPS * 15
+frames = [base[i % FRAMES] for i in range(total)]
+
+base[FRAMES // 4].save("lithium_atom_dark.png")
 frames[0].save("lithium_atom_dark.gif", save_all=True, append_images=frames[1:],
-               duration=45, loop=0, optimize=True)
-print("GIF OK")
+               duration=int(1000 / FPS), loop=0, optimize=True)
+print(f"GIF OK ({len(frames)} frames, {len(frames)/FPS:.1f}s)")
 
 imageio.mimwrite("lithium_atom_dark.mp4", [np.asarray(fr) for fr in frames],
-                 fps=30, codec="libx264", quality=8, macro_block_size=8)
-print("MP4 OK")
+                 fps=FPS, codec="libx264", quality=8, macro_block_size=8)
+print(f"MP4 OK ({len(frames)/FPS:.1f}s)")
