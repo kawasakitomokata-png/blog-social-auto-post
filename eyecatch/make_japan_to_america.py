@@ -63,14 +63,6 @@ def build_svg():
 
   <!-- ジェット機（ルート先端、進行方向へ機首） -->
   {jet}
-
-  <!-- ラベル -->
-  <text x="{JP_TX+150}" y="{JP_TY+250}" font-family="Noto Sans CJK JP, sans-serif"
-        font-size="40" font-weight="bold" fill="#16652f" text-anchor="middle"
-        stroke="#ffffff" stroke-width="4" paint-order="stroke">日本</text>
-  <text x="{PX0+14}" y="{PY0+30}" font-family="Noto Sans CJK JP, sans-serif" font-size="20"
-        font-weight="bold" fill="#16466e" text-anchor="start"
-        stroke="#ffffff" stroke-width="3.5" paint-order="stroke">成田空港</text>
 </svg>'''
 
 

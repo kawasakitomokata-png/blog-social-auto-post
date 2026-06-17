@@ -542,12 +542,4 @@ l3 129 -35 -22 c-19 -11 -41 -21 -50 -21 -8 0 -35 20 -59 44 -33 34 -52 45
   <circle cx="22" cy="0" r="2.4" fill="#7fc0ff"/>
   <circle cx="14" cy="0" r="2.0" fill="#9bd0ff"/>
 </g>
-
-  <!-- ラベル -->
-  <text x="220" y="400" font-family="Noto Sans CJK JP, sans-serif"
-        font-size="40" font-weight="bold" fill="#16652f" text-anchor="middle"
-        stroke="#ffffff" stroke-width="4" paint-order="stroke">日本</text>
-  <text x="412" y="418" font-family="Noto Sans CJK JP, sans-serif" font-size="20"
-        font-weight="bold" fill="#16466e" text-anchor="start"
-        stroke="#ffffff" stroke-width="3.5" paint-order="stroke">成田空港</text>
 </svg>
