@@ -1,0 +1,72 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="特許の管理を委託する">
+  <title>特許の管理を委託する</title>
+  <desc>発明（電球付き特許証）を本人から管理を任される専門家へ託すイラスト（4:3スライド用）</desc>
+
+  <!-- 背景 -->
+  <rect width="1200" height="900" fill="#F2F7FC"/>
+  <circle cx="600" cy="360" r="300" fill="#E5EFFA"/>
+  <circle cx="150" cy="150" r="70" fill="#E0ECF8"/>
+  <circle cx="1060" cy="760" r="90" fill="#E0ECF8"/>
+
+  <!-- ================= 中央：特許証（発明） ================= -->
+  <g transform="rotate(-6 600 320)">
+    <!-- 影 -->
+    <rect x="412" y="150" width="376" height="296" rx="20" fill="#C6D6EA"/>
+    <!-- 用紙 -->
+    <rect x="402" y="138" width="376" height="296" rx="20" fill="#FFFFFF" stroke="#D5E0EC" stroke-width="2"/>
+    <!-- ヘッダ帯 -->
+    <path d="M402 158 a20 20 0 0 1 20 -20 h336 a20 20 0 0 1 20 20 v44 h-376 z" fill="#1F4E96"/>
+    <text x="590" y="190" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">特 許 証</text>
+
+    <!-- 電球（発明） -->
+    <circle cx="498" cy="300" r="40" fill="#FFE082" stroke="#F4B400" stroke-width="4"/>
+    <rect x="484" y="334" width="28" height="18" rx="4" fill="#B58A2E"/>
+    <path d="M487 342 h22 M487 349 h22" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M498 256 v-18 M464 274 l-14 -14 M532 274 l14 -14" stroke="#F4B400" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- 本文ライン -->
+    <rect x="566" y="262" width="168" height="13" rx="6.5" fill="#DCE5F0"/>
+    <rect x="566" y="294" width="168" height="13" rx="6.5" fill="#DCE5F0"/>
+    <rect x="566" y="326" width="120" height="13" rx="6.5" fill="#DCE5F0"/>
+
+    <!-- 認印（朱印） -->
+    <circle cx="700" cy="382" r="32" fill="none" stroke="#E0533D" stroke-width="4"/>
+    <text x="700" y="394" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="24" font-weight="700" fill="#E0533D" text-anchor="middle">登録</text>
+  </g>
+
+  <!-- 委託の流れ（矢印） -->
+  <path d="M430 560 q170 80 340 0" stroke="#3D7BD9" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 22" fill="none"/>
+  <path d="M770 560 l-26 -16 m26 16 l-28 11" stroke="#3D7BD9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="528" y="600" width="144" height="56" rx="28" fill="#2E5AA8"/>
+  <text x="600" y="638" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">委託</text>
+
+  <!-- ================= 左：委託する本人（発明者） ================= -->
+  <g>
+    <path d="M150 900 v-70 q0 -150 120 -150 q120 0 120 150 v70 z" fill="#3D7BD9"/>
+    <rect x="246" y="616" width="48" height="50" rx="16" fill="#F2C49B"/>
+    <circle cx="270" cy="586" r="62" fill="#F7CFA6"/>
+    <path d="M211 576 q6 -68 59 -68 q53 0 59 68 q-25 -27 -59 -27 q-34 0 -59 27 z" fill="#3A2D26"/>
+    <path d="M335 742 q86 -14 150 -58" stroke="#3D7BD9" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <circle cx="494" cy="676" r="28" fill="#F7CFA6"/>
+  </g>
+
+  <!-- ================= 右：管理を任される専門家（代理人） ================= -->
+  <g>
+    <path d="M810 900 v-70 q0 -150 120 -150 q120 0 120 150 v70 z" fill="#34495E"/>
+    <path d="M908 686 l22 30 l22 -30 l-22 -12 z" fill="#FFFFFF"/>
+    <path d="M930 716 l-11 17 l11 50 l11 -50 z" fill="#C0392B"/>
+    <rect x="906" y="616" width="48" height="50" rx="16" fill="#F2C49B"/>
+    <circle cx="930" cy="586" r="62" fill="#F7CFA6"/>
+    <path d="M871 582 q5 -72 59 -72 q54 0 59 72 q-15 -37 -59 -37 q-44 0 -59 37 z" fill="#2B2320"/>
+    <path d="M865 742 q-86 -14 -150 -58" stroke="#34495E" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <circle cx="706" cy="676" r="28" fill="#F7CFA6"/>
+    <!-- 管理バッジ（チェック盾） -->
+    <g transform="translate(1018 520)">
+      <path d="M0 0 q40 16 70 16 q0 82 -70 112 q-70 -30 -70 -112 q30 0 70 -16 z" fill="#2E9E6B"/>
+      <path d="M-26 52 l19 19 l35 -40" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+
+  <!-- 地面 -->
+  <ellipse cx="600" cy="852" rx="560" ry="26" fill="#DAE4F0"/>
+</svg>
