@@ -1,0 +1,33 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="悪条件 B 嵐 逆境">
+  <title>悪条件B 嵐・逆境</title>
+  <circle cx="320" cy="320" r="300" fill="#E7EBF0"/>
+
+  <!-- 困っている人 -->
+  <g>
+    <path d="M232 540 q0 -96 88 -96 q88 0 88 96 z" fill="#5B6B7E"/>
+    <rect x="300" y="372" width="40" height="40" rx="14" fill="#EFC0A0"/>
+    <circle cx="320" cy="348" r="46" fill="#F4CBA8"/>
+    <path d="M277 342 q5 -50 43 -50 q38 0 43 50 q-19 -22 -43 -22 q-24 0 -43 22 z" fill="#4A3B33"/>
+    <!-- 困り顔 -->
+    <circle cx="304" cy="350" r="4" fill="#4A3B33"/>
+    <circle cx="336" cy="350" r="4" fill="#4A3B33"/>
+    <path d="M308 372 q12 -8 24 0" stroke="#4A3B33" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- 汗 -->
+    <path d="M356 330 q8 12 0 18 q-8 -6 0 -18 z" fill="#5AA9E6"/>
+  </g>
+
+  <!-- 雷雲 -->
+  <g transform="translate(316 196)">
+    <ellipse cx="-70" cy="10" rx="58" ry="42" fill="#7E8CA0"/>
+    <ellipse cx="0" cy="-18" rx="74" ry="56" fill="#8B98AC"/>
+    <ellipse cx="78" cy="6" rx="60" ry="44" fill="#7E8CA0"/>
+    <rect x="-120" y="6" width="240" height="46" rx="23" fill="#7E8CA0"/>
+    <!-- 稲妻 -->
+    <path d="M6 44 L-22 96 L4 96 L-18 150 L34 84 L8 84 L30 44 Z" fill="#FFD23F" stroke="#F4B400" stroke-width="2"/>
+    <!-- 雨 -->
+    <line x1="-86" y1="60" x2="-98" y2="92" stroke="#5AA9E6" stroke-width="7" stroke-linecap="round"/>
+    <line x1="-50" y1="64" x2="-62" y2="96" stroke="#5AA9E6" stroke-width="7" stroke-linecap="round"/>
+    <line x1="64" y1="62" x2="52" y2="94" stroke="#5AA9E6" stroke-width="7" stroke-linecap="round"/>
+    <line x1="100" y1="58" x2="88" y2="90" stroke="#5AA9E6" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

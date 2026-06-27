@@ -1,0 +1,32 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="悪条件 C 下降 警告">
+  <title>悪条件C 下降グラフ・警告</title>
+  <circle cx="320" cy="320" r="300" fill="#F4EEF0"/>
+
+  <!-- グラフパネル -->
+  <g>
+    <rect x="150" y="168" width="300" height="244" rx="18" fill="#FFFFFF" stroke="#E5DDE0" stroke-width="2"/>
+    <!-- 軸 -->
+    <line x1="186" y1="200" x2="186" y2="376" stroke="#C9BFC3" stroke-width="5" stroke-linecap="round"/>
+    <line x1="186" y1="376" x2="420" y2="376" stroke="#C9BFC3" stroke-width="5" stroke-linecap="round"/>
+    <!-- 下降エリア -->
+    <path d="M196 228 L260 268 L320 300 L408 360 L408 376 L196 376 Z" fill="#FBE0E0"/>
+    <!-- 下降ライン -->
+    <polyline points="196,228 260,268 320,300 408,360" fill="none" stroke="#D93B3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 終点の下向き矢印 -->
+    <path d="M408 360 l16 -10 m-16 10 l-2 -19 m2 19 l14 6" stroke="#D93B3B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="196" cy="228" r="7" fill="#D93B3B"/>
+    <circle cx="320" cy="300" r="7" fill="#D93B3B"/>
+  </g>
+
+  <!-- 大きな下降矢印 -->
+  <g transform="translate(470 300)">
+    <path d="M-16 -70 h32 v70 h26 l-42 56 l-42 -56 h26 z" fill="#D93B3B"/>
+  </g>
+
+  <!-- 警告マーク -->
+  <g transform="translate(250 470)">
+    <path d="M0 -40 L40 32 H-40 Z" fill="#E8A33D" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="-6" y="-16" width="12" height="28" rx="6" fill="#FFFFFF"/>
+    <circle cx="0" cy="22" r="6.5" fill="#FFFFFF"/>
+  </g>
+</svg>
