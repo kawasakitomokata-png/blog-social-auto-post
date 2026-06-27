@@ -1,0 +1,35 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="特許証と委託">
+  <title>特許証と委託</title>
+  <desc>特許証（発明）と「委託」を表す円のパーツ（背景透過）</desc>
+
+  <g transform="translate(-280 -40)">
+    <!-- 円 -->
+    <circle cx="600" cy="360" r="300" fill="#E5EFFA"/>
+
+    <!-- 特許証 -->
+    <g transform="rotate(-6 600 320)">
+      <rect x="412" y="150" width="376" height="296" rx="20" fill="#C6D6EA"/>
+      <rect x="402" y="138" width="376" height="296" rx="20" fill="#FFFFFF" stroke="#D5E0EC" stroke-width="2"/>
+      <path d="M402 158 a20 20 0 0 1 20 -20 h336 a20 20 0 0 1 20 20 v44 h-376 z" fill="#1F4E96"/>
+      <text x="590" y="190" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">特 許 証</text>
+
+      <circle cx="498" cy="300" r="40" fill="#FFE082" stroke="#F4B400" stroke-width="4"/>
+      <rect x="484" y="334" width="28" height="18" rx="4" fill="#B58A2E"/>
+      <path d="M487 342 h22 M487 349 h22" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M498 256 v-18 M464 274 l-14 -14 M532 274 l14 -14" stroke="#F4B400" stroke-width="4" stroke-linecap="round"/>
+
+      <rect x="566" y="262" width="168" height="13" rx="6.5" fill="#DCE5F0"/>
+      <rect x="566" y="294" width="168" height="13" rx="6.5" fill="#DCE5F0"/>
+      <rect x="566" y="326" width="120" height="13" rx="6.5" fill="#DCE5F0"/>
+
+      <circle cx="700" cy="382" r="32" fill="none" stroke="#E0533D" stroke-width="4"/>
+      <text x="700" y="394" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="24" font-weight="700" fill="#E0533D" text-anchor="middle">登録</text>
+    </g>
+
+    <!-- 委託の矢印 -->
+    <path d="M430 560 q170 80 340 0" stroke="#3D7BD9" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 22" fill="none"/>
+    <path d="M770 560 l-26 -16 m26 16 l-28 11" stroke="#3D7BD9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="528" y="600" width="144" height="56" rx="28" fill="#2E5AA8"/>
+    <text x="600" y="638" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">委託</text>
+  </g>
+</svg>
