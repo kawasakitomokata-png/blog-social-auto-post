@@ -1,33 +1,39 @@
 <svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="悪条件 A 不利な契約">
   <title>悪条件A 不利な契約条件</title>
-  <circle cx="320" cy="320" r="300" fill="#FBEDED"/>
+  <desc>契約書＋大きな虫眼鏡で不利な条項(✗)を発見、目立つ警告マーク（背景透過）</desc>
 
   <!-- 契約書 -->
-  <g transform="rotate(-5 320 300)">
-    <rect x="208" y="150" width="240" height="300" rx="16" fill="#C9B3B3"/>
-    <rect x="200" y="140" width="240" height="300" rx="16" fill="#FFFFFF" stroke="#E3D3D3" stroke-width="2"/>
-    <path d="M200 158 a18 18 0 0 1 18 -18 h204 a18 18 0 0 1 18 18 v40 h-240 z" fill="#9B3A3A"/>
-    <text x="320" y="187" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">契 約 書</text>
-    <rect x="232" y="232" width="176" height="11" rx="5.5" fill="#E0D2D2"/>
-    <rect x="232" y="262" width="176" height="11" rx="5.5" fill="#E0D2D2"/>
-    <rect x="232" y="292" width="120" height="11" rx="5.5" fill="#E0D2D2"/>
-    <rect x="232" y="338" width="176" height="11" rx="5.5" fill="#E0D2D2"/>
-    <rect x="232" y="368" width="100" height="11" rx="5.5" fill="#E0D2D2"/>
+  <g transform="rotate(-5 300 300)">
+    <rect x="168" y="120" width="248" height="320" rx="16" fill="#C9B3B3"/>
+    <rect x="160" y="110" width="248" height="320" rx="16" fill="#FFFFFF" stroke="#E3D3D3" stroke-width="2"/>
+    <path d="M160 128 a18 18 0 0 1 18 -18 h212 a18 18 0 0 1 18 18 v42 h-248 z" fill="#9B3A3A"/>
+    <text x="284" y="159" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="31" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">契 約 書</text>
+    <rect x="192" y="206" width="184" height="11" rx="5.5" fill="#E0D2D2"/>
+    <rect x="192" y="238" width="184" height="11" rx="5.5" fill="#E0D2D2"/>
+    <rect x="192" y="270" width="124" height="11" rx="5.5" fill="#E0D2D2"/>
+    <rect x="192" y="320" width="184" height="11" rx="5.5" fill="#E0D2D2"/>
+    <rect x="192" y="352" width="104" height="11" rx="5.5" fill="#E0D2D2"/>
   </g>
 
-  <!-- 虫眼鏡（細かい条項を読む） -->
-  <g transform="translate(372 360)">
-    <circle cx="0" cy="0" r="58" fill="#FFFFFF" fill-opacity="0.55" stroke="#5A6B7B" stroke-width="12"/>
-    <line x1="42" y1="42" x2="92" y2="92" stroke="#5A6B7B" stroke-width="20" stroke-linecap="round"/>
+  <!-- 虫眼鏡（大きく：不利な条項を発見） -->
+  <g transform="translate(388 392)">
+    <line x1="62" y1="62" x2="132" y2="132" stroke="#46586A" stroke-width="30" stroke-linecap="round"/>
+    <line x1="62" y1="62" x2="132" y2="132" stroke="#5A6B7B" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="86" fill="#FFFFFF" fill-opacity="0.6" stroke="#5A6B7B" stroke-width="16"/>
     <!-- 拡大された不利条項 ✗ -->
-    <circle cx="0" cy="0" r="40" fill="#FDECEC"/>
-    <path d="M-18 -18 L18 18 M18 -18 L-18 18" stroke="#D93B3B" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="62" fill="#FDECEC"/>
+    <path d="M-28 -28 L28 28 M28 -28 L-28 28" stroke="#D93B3B" stroke-width="15" stroke-linecap="round"/>
   </g>
 
-  <!-- 警告 -->
-  <g transform="translate(150 200)">
-    <path d="M0 -34 L34 28 H-34 Z" fill="#E8A33D" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
-    <rect x="-5" y="-14" width="10" height="24" rx="5" fill="#FFFFFF"/>
-    <circle cx="0" cy="18" r="5.5" fill="#FFFFFF"/>
+  <!-- 警告マーク（大きく目立たせる） -->
+  <g transform="translate(458 150)">
+    <!-- ハロー（強調の発光） -->
+    <circle cx="0" cy="0" r="78" fill="#F6C453" fill-opacity="0.28"/>
+    <!-- 影 -->
+    <path d="M0 -58 L62 50 H-62 Z" fill="#C97A18" transform="translate(4 6)"/>
+    <!-- 本体 -->
+    <path d="M0 -58 L62 50 H-62 Z" fill="#F5A623" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="-9" y="-26" width="18" height="42" rx="9" fill="#FFFFFF"/>
+    <circle cx="0" cy="32" r="9.5" fill="#FFFFFF"/>
   </g>
 </svg>
