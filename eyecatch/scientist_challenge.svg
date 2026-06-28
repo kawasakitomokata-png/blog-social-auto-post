@@ -1,0 +1,93 @@
+<svg width="880" height="660" viewBox="0 0 880 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="科学者の挑戦イメージ">
+  <title>科学者の挑戦 イメージ</title>
+  <desc>白衣の研究者がフラスコを掲げ、目標（頂上の旗）に挑むオリジナルイメージ（背景透過）。</desc>
+  <defs>
+    <radialGradient id="goalglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE9A8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFE9A8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 目標の後光 -->
+  <circle cx="715" cy="150" r="120" fill="url(#goalglow)"/>
+
+  <!-- 上昇する挑戦の矢印 -->
+  <path d="M250 520 Q470 470 660 230" fill="none" stroke="#F0A500" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 26"/>
+  <path d="M660 230 l-26 6 m26 -6 l-10 24" fill="none" stroke="#F0A500" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 頂上の旗（ゴール） -->
+  <g>
+    <polygon points="450,640 880,640 880,612 470,612" fill="#DCE6F1" opacity="0"/>
+    <rect x="708" y="150" width="9" height="150" rx="3" fill="#7E868E"/>
+    <path d="M717 156 l78 18 -78 26 z" fill="#E5392F" stroke="#B5271E" stroke-width="2"/>
+    <polygon points="680.0,194.0 684.1,204.3 695.2,205.1 686.7,212.2 689.4,222.9 680.0,217.0 670.6,222.9 673.3,212.2 664.8,205.1 675.9,204.3" fill="#FFD23F"/>
+    <ellipse cx="712" cy="300" rx="60" ry="14" fill="#CBD7E5"/>
+  </g>
+
+  <!-- 科学モチーフ -->
+  <!-- 分子 -->
+  <g transform="translate(500 300)">
+    <line x1="0" y1="0" x2="40" y2="-22" stroke="#9AA6B4" stroke-width="5"/>
+    <line x1="0" y1="0" x2="36" y2="26" stroke="#9AA6B4" stroke-width="5"/>
+    <circle cx="0" cy="0" r="16" fill="#7C45B4"/>
+    <circle cx="40" cy="-22" r="12" fill="#34B97E"/>
+    <circle cx="36" cy="26" r="12" fill="#E5736B"/>
+  </g>
+  <!-- 電球 -->
+  <g transform="translate(560 150)">
+    <circle cx="0" cy="0" r="26" fill="#FFE08A" stroke="#E8A300" stroke-width="4"/>
+    <rect x="-9" y="22" width="18" height="12" rx="3" fill="#B58A2E"/>
+    <g stroke="#F4B400" stroke-width="4" stroke-linecap="round"><line x1="0" y1="-32" x2="0" y2="-44"/><line x1="-24" y1="-18" x2="-34" y2="-26"/><line x1="24" y1="-18" x2="34" y2="-26"/></g>
+  </g>
+  <!-- 歯車 -->
+  <g><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(90.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(135.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(180.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(225.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(270.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(315.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(360.0 165 180)"/><rect x="160" y="144" width="10" height="14" rx="2" fill="#90A0B0" transform="rotate(405.0 165 180)"/><circle cx="165" cy="180" r="20" fill="#90A0B0"/><circle cx="165" cy="180" r="9.0" fill="#FFFFFF"/></g>
+
+  <!-- ===== 科学者 ===== -->
+  <g>
+    <!-- 脚 -->
+    <rect x="214" y="470" width="30" height="96" rx="10" fill="#34495E"/>
+    <rect x="252" y="470" width="30" height="96" rx="10" fill="#34495E"/>
+    <ellipse cx="222" cy="572" rx="26" ry="13" fill="#2B3A47"/>
+    <ellipse cx="288" cy="572" rx="26" ry="13" fill="#2B3A47"/>
+    <!-- 下げた左腕（白衣袖） -->
+    <path d="M196 360 q-26 44 -22 92" fill="none" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+    <path d="M196 360 q-26 44 -22 92" fill="none" stroke="#D8DEE5" stroke-width="3" stroke-linecap="round" opacity="0.0"/>
+    <circle cx="172" cy="458" r="17" fill="#F7CFA6"/>
+    <!-- 白衣 -->
+    <path d="M192 350 q56 -30 112 0 l20 150 q-76 28 -152 0 z" fill="#FFFFFF" stroke="#D2DAE3" stroke-width="3"/>
+    <path d="M248 332 l-18 70 18 24 18 -24 z" fill="#9FC3E8"/>
+    <line x1="248" y1="356" x2="248" y2="498" stroke="#E2E8EF" stroke-width="3"/>
+    <circle cx="248" cy="430" r="4" fill="#C7D0DA"/>
+    <circle cx="248" cy="460" r="4" fill="#C7D0DA"/>
+    <!-- 上げた右腕（フラスコを掲げる） -->
+    <path d="M300 350 q56 -70 70 -150" fill="none" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+    <circle cx="372" cy="196" r="17" fill="#F7CFA6"/>
+    <!-- フラスコ -->
+    <g transform="translate(372 150)">
+      <rect x="-7" y="-34" width="14" height="20" rx="2" fill="none" stroke="#6FA8C0" stroke-width="4"/>
+      <path d="M-6 -16 L-26 30 a10 10 0 0 0 9 15 h34 a10 10 0 0 0 9 -15 L6 -16 z" fill="#EAF6FB" stroke="#6FA8C0" stroke-width="4"/>
+      <path d="M-18 14 L-22 24 a10 10 0 0 0 9 15 h26 a10 10 0 0 0 9 -15 L17 14 z" fill="#34B97E"/>
+      <circle cx="-6" cy="20" r="4" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="8" cy="10" r="3" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+    <!-- 首・頭 -->
+    <rect x="234" y="300" width="34" height="34" rx="12" fill="#F2C49B"/>
+    <circle cx="251" cy="280" r="48" fill="#F7CFA6"/>
+    <path d="M205 274 q4 -52 46 -52 q42 0 46 52 q-22 -24 -46 -24 q-24 0 -46 24 z" fill="#4A3B2E"/>
+    <!-- ゴーグル -->
+    <rect x="214" y="266" width="74" height="6" rx="3" fill="#5A6B7B"/>
+    <circle cx="236" cy="284" r="15" fill="#BFE3F2" stroke="#5A6B7B" stroke-width="4"/>
+    <circle cx="268" cy="284" r="15" fill="#BFE3F2" stroke="#5A6B7B" stroke-width="4"/>
+    <line x1="251" y1="284" x2="253" y2="284" stroke="#5A6B7B" stroke-width="4"/>
+    <!-- 口（やる気） -->
+    <path d="M240 312 q12 12 24 0" stroke="#7A3B2E" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- きらめき -->
+  <polygon points="700,92 703.96,106.04 718,110 703.96,113.96 700,128 696.04,113.96 682,110 696.04,106.04" fill="#FFFFFF"/><polygon points="640,158 642.64,167.36 652,170 642.64,172.64 640,182 637.36,172.64 628,170 637.36,167.36" fill="#FFFFFF"/><polygon points="770,166 773.08,176.92 784,180 773.08,183.08 770,194 766.92,183.08 756,180 766.92,176.92" fill="#FFFFFF"/><polygon points="160,138 162.64,147.36 172,150 162.64,152.64 160,162 157.36,152.64 148,150 157.36,147.36" fill="#FFFFFF"/><polygon points="520,108 522.64,117.36 532,120 522.64,122.64 520,132 517.36,122.64 508,120 517.36,117.36" fill="#FFFFFF"/>
+
+  <!-- タイトル -->
+  <text x="440" y="636" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+        font-size="50" font-weight="900" fill="#243042" stroke="#FFFFFF" stroke-width="8" paint-order="stroke"
+        text-anchor="middle">科学者の挑戦</text>
+</svg>
