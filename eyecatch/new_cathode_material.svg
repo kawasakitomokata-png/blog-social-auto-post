@@ -1,0 +1,52 @@
+<svg width="820" height="620" viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="新たな正極材料イメージ">
+  <title>新たな正極材料 イメージ</title>
+  <desc>輝く新素材の結晶で「新たな正極材料」を表現したオリジナルイメージ（背景透過）。</desc>
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C9A6F2" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#A877E6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#A877E6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 後光 -->
+  <circle cx="400" cy="320" r="250" fill="url(#glow)"/>
+
+  <!-- 結晶（新素材） -->
+  <g stroke="#43236F" stroke-width="3" stroke-linejoin="round">
+    <polygon points="410,225 348,305 410,305" fill="#CBA3EC"/>
+    <polygon points="410,225 472,305 410,305" fill="#B488E0"/>
+    <polygon points="348,305 410,305 410,472 360,450" fill="#9663CC"/>
+    <polygon points="472,305 410,305 410,472 460,450" fill="#7C45B4"/>
+    <polygon points="360,450 410,472 410,486" fill="#6A3CA8"/>
+    <polygon points="460,450 410,472 410,486" fill="#5A3092"/>
+  </g>
+  <!-- 反射ハイライト -->
+  <polygon points="372,300 392,255 402,300" fill="#FFFFFF" fill-opacity="0.55"/>
+  <polygon points="395,440 405,320 412,440" fill="#FFFFFF" fill-opacity="0.18"/>
+
+  <!-- きらめき -->
+  <polygon points="250,228 254.84,245.16 272,250 254.84,254.84 250,272 245.16,254.84 228,250 245.16,245.16" fill="#FFFFFF"/><polygon points="580,222 586.16,243.84 608,250 586.16,256.16 580,278 573.84,256.16 552,250 573.84,243.84" fill="#FFFFFF"/><polygon points="600,382 603.96,396.04 618,400 603.96,403.96 600,418 596.04,403.96 582,400 596.04,396.04" fill="#FFFFFF"/><polygon points="250,404 253.52,416.48 266,420 253.52,423.52 250,436 246.48,423.52 234,420 246.48,416.48" fill="#FFFFFF"/><polygon points="470,196 473.08,206.92 484,210 473.08,213.08 470,224 466.92,213.08 456,210 466.92,206.92" fill="#FFFFFF"/><polygon points="560,450 564.4,465.6 580,470 564.4,474.4 560,490 555.6,474.4 540,470 555.6,465.6" fill="#FFFFFF"/><polygon points="300,506 303.08,516.92 314,520 303.08,523.08 300,534 296.92,523.08 286,520 296.92,516.92" fill="#FFFFFF"/>
+
+  <!-- ＋ 正極 タグ -->
+  <g transform="translate(410 512)">
+    <rect x="-118" y="-30" width="236" height="60" rx="30" fill="#C0392B" stroke="#FFFFFF" stroke-width="5"/>
+    <circle cx="-78" cy="0" r="20" fill="#FFFFFF"/>
+    <text x="-78" y="11" font-family="sans-serif" font-size="34" font-weight="900" fill="#C0392B" text-anchor="middle">+</text>
+    <text x="22" y="13" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="middle">正極材料</text>
+  </g>
+
+  <!-- NEW バッジ -->
+  
+  <g transform="translate(648 196)">
+    <polygon points="0.0,-78.0 12.5,-54.6 33.8,-70.3 34.9,-43.8 61.0,-48.6 50.5,-24.3 76.0,-17.4 56.0,0.0 76.0,17.4 50.5,24.3 61.0,48.6 34.9,43.8 33.8,70.3 12.5,54.6 0.0,78.0 -12.5,54.6 -33.8,70.3 -34.9,43.8 -61.0,48.6 -50.5,24.3 -76.0,17.4 -56.0,0.0 -76.0,-17.4 -50.5,-24.3 -61.0,-48.6 -34.9,-43.8 -33.8,-70.3 -12.5,-54.6" fill="#E5392F"/>
+    <polygon points="0.0,-62.0 10.2,-44.8 26.9,-55.9 28.7,-36.0 48.5,-38.7 41.4,-20.0 60.4,-13.8 46.0,0.0 60.4,13.8 41.4,20.0 48.5,38.7 28.7,36.0 26.9,55.9 10.2,44.8 0.0,62.0 -10.2,44.8 -26.9,55.9 -28.7,36.0 -48.5,38.7 -41.4,20.0 -60.4,13.8 -46.0,0.0 -60.4,-13.8 -41.4,-20.0 -48.5,-38.7 -28.7,-36.0 -26.9,-55.9 -10.2,-44.8" fill="#FF6A4D"/>
+    <text x="0" y="-2" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle">NEW</text>
+    <text x="0" y="26" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16" font-weight="700" fill="#FFE3DC" text-anchor="middle">新素材</text>
+  </g>
+
+  <!-- タイトル -->
+  <text x="410" y="598" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+        font-size="48" font-weight="900" fill="#3A2566" stroke="#FFFFFF" stroke-width="8" paint-order="stroke"
+        text-anchor="middle">新たな正極材料</text>
+</svg>
