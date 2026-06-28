@@ -1,0 +1,79 @@
+<svg width="1200" height="840" viewBox="0 0 1200 840" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="リチウムイオン電池でビデオカメラの撮影時間が伸びた図">
+  <title>リチウムイオン電池とビデオカメラの撮影時間</title>
+  <style>text{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;}</style>
+  <rect width="1200" height="840" fill="#FFFFFF"/>
+
+  <!-- タイトル -->
+  <text x="600" y="62" font-size="42" font-weight="800" fill="#1F2D3D" text-anchor="middle">ビデオカメラの撮影時間が大幅アップ</text>
+  <text x="600" y="104" font-size="26" fill="#5B6B7B" text-anchor="middle">── リチウムイオン電池の登場で <tspan font-weight="800" fill="#C0392B">30分</tspan> → <tspan font-weight="800" fill="#2E9E6B">数時間</tspan> に</text>
+
+  <!-- 左カード：従来の電池 -->
+  <rect x="70" y="150" width="460" height="560" rx="20" fill="#F7F8FA" stroke="#E0E5EC" stroke-width="2"/>
+  <rect x="70" y="150" width="460" height="64" rx="20" fill="#90A0B0"/>
+  <rect x="70" y="184" width="460" height="30" fill="#90A0B0"/>
+  <text x="300" y="193" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">従来の電池（ニカド等）</text>
+  
+    <g>
+      <rect x="200" y="304" width="32" height="22" rx="4" fill="#3A4750"/>
+      <rect x="225" y="292" width="132" height="74" rx="12" fill="#4A5963"/>
+      <rect x="278" y="274" width="48" height="20" rx="6" fill="#3A4750"/>
+      <rect x="346" y="298" width="26" height="56" rx="6" fill="#3A4750"/>
+      <circle cx="380" cy="326" r="23" fill="#2A343B"/>
+      <circle cx="380" cy="326" r="14" fill="#5B6E78"/>
+      <circle cx="380" cy="326" r="6" fill="#9DB3BF"/>
+      <circle cx="254" cy="312" r="6" fill="#E5392F"/>
+    </g>
+  
+    <g>
+      <rect x="240.0" y="412.0" width="120" height="56" rx="8" fill="#FFFFFF" stroke="#42536A" stroke-width="5"/>
+      <rect x="360.0" y="428" width="10" height="24" rx="3" fill="#42536A"/>
+      <rect x="246.0" y="418.0" width="19.439999999999998" height="44" rx="4" fill="#E5392F"/>
+    </g>
+  <text x="300" y="556" font-size="54" font-weight="900" fill="#C0392B" text-anchor="middle">約30分</text>
+  <text x="300" y="600" font-size="20" fill="#6E7E92" text-anchor="middle">連続撮影できる時間</text>
+  
+    <g>
+      <rect x="140.0" y="632" width="320" height="26" rx="13" fill="#E4E9EF"/>
+      <rect x="140.0" y="632" width="41.6" height="26" rx="13" fill="#E5736B"/>
+    </g>
+
+  <!-- 右カード：リチウムイオン電池 -->
+  <rect x="670" y="150" width="460" height="560" rx="20" fill="#F2FBF6" stroke="#CBEBD9" stroke-width="2"/>
+  <rect x="670" y="150" width="460" height="64" rx="20" fill="#2E9E6B"/>
+  <rect x="670" y="184" width="460" height="30" fill="#2E9E6B"/>
+  <text x="900" y="193" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">リチウムイオン電池</text>
+  
+    <g>
+      <rect x="800" y="304" width="32" height="22" rx="4" fill="#3A4750"/>
+      <rect x="825" y="292" width="132" height="74" rx="12" fill="#4A5963"/>
+      <rect x="878" y="274" width="48" height="20" rx="6" fill="#3A4750"/>
+      <rect x="946" y="298" width="26" height="56" rx="6" fill="#3A4750"/>
+      <circle cx="980" cy="326" r="23" fill="#2A343B"/>
+      <circle cx="980" cy="326" r="14" fill="#5B6E78"/>
+      <circle cx="980" cy="326" r="6" fill="#9DB3BF"/>
+      <circle cx="854" cy="312" r="6" fill="#E5392F"/>
+    </g>
+  
+    <g>
+      <rect x="840.0" y="412.0" width="120" height="56" rx="8" fill="#FFFFFF" stroke="#42536A" stroke-width="5"/>
+      <rect x="960.0" y="428" width="10" height="24" rx="3" fill="#42536A"/>
+      <rect x="846.0" y="418.0" width="108.0" height="44" rx="4" fill="#2E9E6B"/>
+    </g>
+  <text x="900" y="556" font-size="54" font-weight="900" fill="#1E8A57" text-anchor="middle">数時間</text>
+  <text x="900" y="600" font-size="20" fill="#5E8472" text-anchor="middle">連続撮影できる時間</text>
+  
+    <g>
+      <rect x="740.0" y="632" width="320" height="26" rx="13" fill="#E4E9EF"/>
+      <rect x="740.0" y="632" width="288.0" height="26" rx="13" fill="#34B97E"/>
+    </g>
+
+  <!-- 中央の矢印 -->
+  <g transform="translate(600 430)">
+    <path d="M-40 -34 L34 -34 L34 -56 L78 0 L34 56 L34 34 L-40 34 Z" fill="#F0A500" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" transform="translate(-19 0)"/>
+  </g>
+  <text x="600" y="250" font-size="22" font-weight="800" fill="#C96A0F" text-anchor="middle">電池の</text>
+  <text x="600" y="278" font-size="22" font-weight="800" fill="#C96A0F" text-anchor="middle">進化</text>
+
+  <!-- フッター -->
+  <text x="600" y="772" font-size="22" fill="#42536A" text-anchor="middle">小型・軽量で容量が大きいリチウムイオン電池により、長時間の撮影が可能に</text>
+</svg>
