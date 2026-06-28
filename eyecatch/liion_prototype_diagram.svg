@@ -11,26 +11,44 @@
 
   <!-- ===== 外部回路 ===== -->
   <g stroke="#37474F" stroke-width="6" fill="none">
-    <path d="M360 305 V165 H520"/>
-    <path d="M680 165 H840 V305"/>
+    <path d="M360 305 V200 H584"/>
+    <path d="M616 200 H840 V305"/>
   </g>
   <!-- 豆電球（負荷） -->
-  <g transform="translate(600 165)">
-    <circle cx="0" cy="0" r="44" fill="#FFF3C4" stroke="#E8A300" stroke-width="6"/>
-    <path d="M-15 16 q15 -36 0 -60 M15 16 q-15 -36 0 -60" stroke="#E8A300" stroke-width="4" fill="none"/>
-    <rect x="-15" y="16" width="30" height="14" rx="3" fill="#B5790F"/>
+  <g transform="translate(600 150)">
+    <!-- 光の線 -->
     <g stroke="#F4B400" stroke-width="5" stroke-linecap="round">
-      <line x1="0" y1="-60" x2="0" y2="-78"/>
-      <line x1="-48" y1="-32" x2="-66" y2="-42"/>
-      <line x1="48" y1="-32" x2="66" y2="-42"/>
+      <line x1="0" y1="-52" x2="0" y2="-74"/>
+      <line x1="-36" y1="-38" x2="-52" y2="-54"/>
+      <line x1="36" y1="-38" x2="52" y2="-54"/>
+      <line x1="-52" y1="-4" x2="-74" y2="-8"/>
+      <line x1="52" y1="-4" x2="74" y2="-8"/>
     </g>
+    <!-- ガラス球 -->
+    <circle cx="0" cy="0" r="42" fill="#FFE08A" stroke="#E8A300" stroke-width="5"/>
+    <!-- ハイライト -->
+    <ellipse cx="-15" cy="-16" rx="9" ry="14" fill="#FFFFFF" fill-opacity="0.65"/>
+    <!-- フィラメント -->
+    <g stroke="#C97A18" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-11 34 V6"/>
+      <path d="M11 34 V6"/>
+      <path d="M-11 6 l5.5 9 l5.5 -9 l5.5 9 l5.5 -9"/>
+    </g>
+    <!-- 口金（金属ねじ） -->
+    <path d="M-18 32 h36 v12 q0 6 -8 6 h-20 q-8 0 -8 -6 z" fill="#AEB6BD" stroke="#7E868E" stroke-width="2"/>
+    <g stroke="#7E868E" stroke-width="2.5">
+      <line x1="-16" y1="38" x2="16" y2="38"/>
+      <line x1="-14" y1="44" x2="14" y2="44"/>
+    </g>
+    <!-- 底の接点 -->
+    <rect x="-8" y="54" width="16" height="9" rx="3" fill="#6E767E"/>
   </g>
   <!-- 電子の流れ e- -->
   <g>
-    <path d="M430 150 h72" stroke="#2E7D32" stroke-width="6" marker-end="url(#agreen)"/>
-    <path d="M698 150 h72" stroke="#2E7D32" stroke-width="6" marker-end="url(#agreen)"/>
-    <text x="466" y="132" font-size="24" font-weight="700" fill="#2E7D32" text-anchor="middle">e⁻</text>
-    <text x="734" y="132" font-size="24" font-weight="700" fill="#2E7D32" text-anchor="middle">e⁻</text>
+    <path d="M428 180 h60" stroke="#2E7D32" stroke-width="6" marker-end="url(#agreen)"/>
+    <path d="M690 180 h60" stroke="#2E7D32" stroke-width="6" marker-end="url(#agreen)"/>
+    <text x="456" y="164" font-size="24" font-weight="700" fill="#2E7D32" text-anchor="middle">e⁻</text>
+    <text x="718" y="164" font-size="24" font-weight="700" fill="#2E7D32" text-anchor="middle">e⁻</text>
   </g>
 
   <!-- ===== セル本体 ===== -->
