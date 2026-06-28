@@ -60,17 +60,19 @@
   <line x1="600" y1="412" x2="600" y2="650" stroke="#9CC0E0" stroke-width="4" stroke-dasharray="10 10"/>
   <text x="600" y="678" font-size="20" fill="#6E8AA6" text-anchor="middle">セパレータ</text>
 
-  <!-- Li+ イオン移動（矢印は電極間に収め、文字と被らせない） -->
-  <text x="600" y="500" font-size="27" font-weight="800" fill="#C96A0F" text-anchor="middle">放電</text>
-  <path d="M470 560 H712" stroke="#E8861E" stroke-width="7" marker-end="url(#aorange)"/>
+  <!-- Li+ イオン移動（Li⁺の円と矢印を上下に分け、文字と被らせない） -->
+  <text x="600" y="498" font-size="27" font-weight="800" fill="#C96A0F" text-anchor="middle">放電</text>
+  <!-- Li⁺ の円（上段） -->
   <g>
-    <g><circle cx="500" cy="560" r="24" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
-       <text x="500" y="568" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
-    <g><circle cx="590" cy="560" r="24" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
-       <text x="590" y="568" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
-    <g><circle cx="680" cy="560" r="24" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
-       <text x="680" y="568" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
+    <g><circle cx="510" cy="548" r="22" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
+       <text x="510" y="556" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
+    <g><circle cx="590" cy="548" r="22" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
+       <text x="590" y="556" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
+    <g><circle cx="670" cy="548" r="22" fill="#F4A81E" stroke="#C97A18" stroke-width="3"/>
+       <text x="670" y="556" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">Li⁺</text></g>
   </g>
+  <!-- 方向矢印（下段・小さな矢じり） -->
+  <path d="M480 602 H700" stroke="#E8861E" stroke-width="6" marker-end="url(#aorange)"/>
 
   <!-- 充電の注記 -->
   <text x="600" y="742" font-size="22" fill="#6E7E92" text-anchor="middle">※ 充電時は逆向き（Li⁺は 正極 → 負極、電子も逆流）</text>
@@ -84,7 +86,7 @@
   <defs>
     <marker id="agreen" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
       <path d="M0 0 L10 5 L0 10 z" fill="#2E7D32"/></marker>
-    <marker id="aorange" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
-      <path d="M0 0 L10 5 L0 10 z" fill="#E8861E"/></marker>
+    <marker id="aorange" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="9" refY="9" orient="auto">
+      <path d="M0 0 L18 9 L0 18 z" fill="#E8861E"/></marker>
   </defs>
 </svg>
