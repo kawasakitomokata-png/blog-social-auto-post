@@ -2,6 +2,11 @@
   <title>アメリカの裁判記録（オリジナルイラスト）</title>
   <desc>米国の裁判所文書をイメージしたオリジナルイラスト。天秤・見出し・訴訟キャプション・FILEDスタンプ・署名欄・ガベル（背景透過）。</desc>
   <style>.serif{font-family:Georgia,'Times New Roman',serif;} .sans{font-family:'Helvetica Neue',Arial,sans-serif;}</style>
+  <defs>
+    <filter id="blurNtt" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
 
   <!-- 影 -->
   <rect x="146" y="84" width="500" height="510" rx="12" fill="#000000" fill-opacity="0.10"/>
@@ -34,7 +39,7 @@
       <text x="178" y="312" font-size="18" font-weight="700">OF TEXAS,</text>
       <text x="210" y="334" font-size="15" font-style="italic" fill="#5B6B7B">Plaintiff,</text>
       <text x="210" y="360" font-size="18" font-weight="700">v.</text>
-      <text x="178" y="386" font-size="18" font-weight="700">NTT CORPORATION,</text>
+      <text x="178" y="386" font-size="18" font-weight="700" filter="url(#blurNtt)">NTT CORPORATION,</text>
       <text x="210" y="408" font-size="15" font-style="italic" fill="#5B6B7B">Defendant.</text>
     </g>
     <g class="serif" fill="#8A97A5" font-size="18">
