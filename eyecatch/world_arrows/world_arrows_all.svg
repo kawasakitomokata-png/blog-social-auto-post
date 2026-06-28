@@ -1,0 +1,33 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="世界へ放たれる矢印5本">
+  <title>パソコンから世界へ広がる矢印（5本）</title>
+  <g fill="none">
+    <path d="M180 560 Q110 300 225.8 142.8" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="250.0,110.0 236.1,174.3 192.7,142.3" fill="#FFFFFF"/>
+    <path d="M180 560 Q110 300 225.8 142.8" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="250.0,110.0 238.4,161.1 204.6,136.2" fill="#E23B3B"/>
+  </g>
+  <g fill="none">
+    <path d="M180 560 Q250 250 447.2 104.3" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="480.0,80.0 447.8,137.4 415.7,94.0" fill="#FFFFFF"/>
+    <path d="M180 560 Q250 250 447.2 104.3" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="480.0,80.0 453.9,125.4 428.9,91.6" fill="#E23B3B"/>
+  </g>
+  <g fill="none">
+    <path d="M180 560 Q520 220 732.7 126.4" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="770.0,110.0 726.0,158.9 704.2,109.5" fill="#FFFFFF"/>
+    <path d="M180 560 Q520 220 732.7 126.4" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="770.0,110.0 734.5,148.6 717.6,110.1" fill="#E23B3B"/>
+  </g>
+  <g fill="none">
+    <path d="M180 560 Q700 300 1019.3 282.3" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="1060.0,280.0 1001.6,310.3 998.6,256.4" fill="#FFFFFF"/>
+    <path d="M180 560 Q700 300 1019.3 282.3" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="1060.0,280.0 1013.2,303.6 1010.9,261.7" fill="#E23B3B"/>
+  </g>
+  <g fill="none">
+    <path d="M180 560 Q650 440 941.0 528.2" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="980.0,540.0 914.7,548.4 930.4,496.8" fill="#FFFFFF"/>
+    <path d="M180 560 Q650 440 941.0 528.2" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="980.0,540.0 928.0,546.2 940.2,506.0" fill="#E23B3B"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="380" height="560" viewBox="140.0 40.0 380.0 560.0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="矢印2">
+  <title>世界へ放つ矢印 2</title>
+  <g fill="none">
+    <path d="M180 560 Q250 250 447.2 104.3" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round"/>
+    <polygon points="480.0,80.0 447.8,137.4 415.7,94.0" fill="#FFFFFF"/>
+    <path d="M180 560 Q250 250 447.2 104.3" stroke="#E23B3B" stroke-width="14" stroke-linecap="round"/>
+    <polygon points="480.0,80.0 453.9,125.4 428.9,91.6" fill="#E23B3B"/>
+  </g>
+</svg>
