@@ -1,66 +1,73 @@
 <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ロイヤリティをゼロとする条件">
   <title>ロイヤリティをゼロとする条件</title>
-  <desc>発明者キャラがショックを受け「0円」を指す、LINEスタンプ風イラスト（背景透過）</desc>
+  <desc>集中線で強調した大きな「0」とロイヤリティ帯（背景透過・スタンプ風）</desc>
 
-  <!-- ===== 上部テキスト：ロイヤリティ ===== -->
-  <g transform="rotate(-4 300 80)">
-    <rect x="64" y="44" width="472" height="78" rx="39" fill="#1F4E96" stroke="#FFFFFF" stroke-width="9"/>
-    <text x="300" y="100" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
-          font-size="50" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ロイヤリティ</text>
+  <!-- ===== 集中線（0を強調） ===== -->
+  <g fill="#F4A81E">
+      <polygon points="839.5,294.0 839.9,328.7 474.7,315.9"/>
+      <polygon points="838.9,352.5 834.0,398.5 463.0,335.5"/>
+      <polygon points="829.2,425.4 818.3,469.5 447.0,354.3"/>
+      <polygon points="802.4,515.9 789.7,545.6 441.0,378.5"/>
+      <polygon points="776.4,572.2 748.1,619.4 432.6,397.7"/>
+      <polygon points="740.1,631.0 709.8,669.6 446.5,432.6"/>
+      <polygon points="681.6,700.0 650.7,728.6 427.0,455.4"/>
+      <polygon points="647.1,731.6 602.4,765.4 397.0,446.5"/>
+      <polygon points="574.9,782.8 545.4,799.0 377.9,459.7"/>
+      <polygon points="486.4,824.8 452.6,836.0 354.0,481.4"/>
+      <polygon points="425.0,843.3 384.4,851.4 333.1,485.6"/>
+      <polygon points="369.2,853.6 337.4,856.7 315.6,475.1"/>
+      <polygon points="277.9,857.5 235.0,854.1 286.9,479.4"/>
+      <polygon points="208.5,850.2 165.6,841.0 266.2,475.8"/>
+      <polygon points="132.9,831.5 85.0,813.4 243.6,467.0"/>
+      <polygon points="69.7,806.4 28.9,785.0 214.8,480.3"/>
+      <polygon points="-2.5,765.3 -33.9,742.4 189.6,469.2"/>
+      <polygon points="-41.6,736.2 -73.7,707.9 181.5,451.9"/>
+      <polygon points="-95.5,685.6 -124.7,651.5 184.8,416.4"/>
+      <polygon points="-150.5,615.7 -177.6,569.9 152.2,405.5"/>
+      <polygon points="-193.0,538.3 -207.8,501.6 136.4,384.0"/>
+      <polygon points="-214.1,483.1 -226.7,437.1 138.6,362.1"/>
+      <polygon points="-232.5,407.8 -239.1,349.6 133.1,336.9"/>
+      <polygon points="-239.9,327.8 -239.5,295.8 123.4,316.0"/>
+      <polygon points="-237.8,268.8 -229.0,209.4 120.7,291.5"/>
+      <polygon points="-227.0,200.4 -216.4,160.0 130.4,273.2"/>
+      <polygon points="-209.9,140.1 -193.7,99.2 154.6,260.5"/>
+      <polygon points="-176.4,63.8 -160.6,36.1 144.5,229.0"/>
+      <polygon points="-138.8,3.3 -115.8,-26.5 169.5,217.3"/>
+      <polygon points="-70.3,-75.1 -45.9,-96.7 189.2,193.0"/>
+      <polygon points="-32.7,-107.3 13.8,-139.9 196.1,169.7"/>
+      <polygon points="46.6,-158.9 81.3,-175.7 227.5,168.9"/>
+      <polygon points="87.7,-178.5 141.1,-198.1 235.9,143.0"/>
+      <polygon points="160.1,-203.6 194.6,-211.6 263.9,163.3"/>
+      <polygon points="230.9,-217.6 275.5,-221.4 285.0,146.3"/>
+      <polygon points="312.8,-221.8 343.0,-220.3 308.6,152.3"/>
+      <polygon points="381.8,-215.8 428.1,-206.6 336.2,135.3"/>
+      <polygon points="466.0,-195.9 508.8,-180.0 360.3,155.3"/>
+      <polygon points="540.2,-165.6 568.2,-150.7 386.7,155.5"/>
+      <polygon points="596.8,-133.1 642.3,-99.7 406.8,172.7"/>
+      <polygon points="649.8,-93.4 680.8,-64.8 404.2,204.7"/>
+      <polygon points="711.9,-31.2 731.9,-6.2 419.2,222.8"/>
+      <polygon points="745.9,13.5 764.8,43.0 437.5,230.5"/>
+      <polygon points="781.7,74.0 794.6,101.2 440.8,251.5"/>
+      <polygon points="809.3,138.4 821.4,177.7 444.2,273.2"/>
+      <polygon points="833.5,234.4 838.8,282.7 454.7,300.8"/>
   </g>
 
   <!-- ===== コイン（アクセント） ===== -->
-  <g transform="translate(360 188)">
-    <circle cx="0" cy="0" r="54" fill="#FFD24D" stroke="#E8A300" stroke-width="8"/>
-    <circle cx="0" cy="0" r="40" fill="none" stroke="#F2B73A" stroke-width="4"/>
-    <text x="0" y="20" font-family="sans-serif" font-size="52" font-weight="900" fill="#B5790F" text-anchor="middle">¥</text>
+  <g transform="translate(452 196)">
+    <circle cx="0" cy="0" r="52" fill="#FFD24D" stroke="#E8A300" stroke-width="8"/>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#F2B73A" stroke-width="4"/>
+    <text x="0" y="19" font-family="sans-serif" font-size="50" font-weight="900" fill="#B5790F" text-anchor="middle">¥</text>
   </g>
 
-  <!-- ===== ヒーロー：0円 ===== -->
-  <text x="372" y="438" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
-        font-weight="900" fill="#E23B3B" stroke="#FFFFFF" stroke-width="16" paint-order="stroke"
-        text-anchor="middle" transform="rotate(-3 372 438)">
-    <tspan font-size="270">0</tspan><tspan font-size="120">円</tspan>
-  </text>
-  <!-- 強調の集中線（ちょい） -->
-  <g stroke="#E8A300" stroke-width="7" stroke-linecap="round">
-    <line x1="300" y1="250" x2="282" y2="232"/>
-    <line x1="520" y1="250" x2="540" y2="232"/>
-    <line x1="540" y1="330" x2="566" y2="330"/>
+  <!-- ===== 上部テキスト：ロイヤリティ ===== -->
+  <g transform="rotate(-4 300 80)">
+    <rect x="64" y="40" width="472" height="80" rx="40" fill="#1F4E96" stroke="#FFFFFF" stroke-width="9"/>
+    <text x="300" y="97" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+          font-size="51" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ロイヤリティ</text>
   </g>
 
-  <!-- ===== キャラクター（ショックを受ける発明者） ===== -->
-  <g stroke="#4A3A30" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
-    <!-- 体（シャツ） -->
-    <path d="M40 600 v-30 q0 -118 116 -118 q116 0 116 118 v30 z" fill="#3D7BD9"/>
-    <!-- 指さす腕 -->
-    <path d="M214 506 q70 -36 96 -96" fill="none" stroke="#3D7BD9" stroke-width="40"/>
-    <!-- 手（指さし） -->
-    <circle cx="318" cy="398" r="24" fill="#FBD9B0"/>
-    <!-- 首 -->
-    <rect x="132" y="452" width="48" height="36" rx="14" fill="#FBD9B0"/>
-    <!-- 頭 -->
-    <circle cx="156" cy="392" r="116" fill="#FBD9B0"/>
-    <!-- 髪 -->
-    <path d="M48 386 q4 -118 108 -118 q104 0 108 118 q-30 -52 -108 -52 q-78 0 -108 52 z" fill="#3A2D26" stroke="none"/>
-  </g>
-  <!-- 顔（驚き） -->
-  <g stroke="none">
-    <!-- 眉（上がり） -->
-    <path d="M104 348 q22 -16 44 -4" stroke="#4A3A30" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M176 344 q22 -12 42 4" stroke="#4A3A30" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <!-- 目（見開き） -->
-    <ellipse cx="124" cy="392" rx="13" ry="19" fill="#3A2D26"/>
-    <ellipse cx="196" cy="392" rx="13" ry="19" fill="#3A2D26"/>
-    <circle cx="120" cy="386" r="4.5" fill="#FFFFFF"/>
-    <circle cx="192" cy="386" r="4.5" fill="#FFFFFF"/>
-    <!-- 口（ガーン…と開く） -->
-    <ellipse cx="158" cy="446" rx="20" ry="26" fill="#7A3B2E"/>
-    <ellipse cx="158" cy="436" rx="14" ry="9" fill="#C76A55"/>
-    <!-- ほっぺ（青ざめ） -->
-    <ellipse cx="98" cy="430" rx="16" ry="11" fill="#9FC3E8" fill-opacity="0.7"/>
-    <ellipse cx="214" cy="430" rx="16" ry="11" fill="#9FC3E8" fill-opacity="0.7"/>
-  </g>
-  <!-- 汗 -->
-  <path d="M236 360 q14 20 0 30 q-14 -10 0 -30 z" fill="#5AA9E6" stroke="#3E88C4" stroke-width="3"/>
+  <!-- ===== ヒーロー：0 ===== -->
+  <text x="300" y="468" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+        font-size="400" font-weight="900" fill="#E23B3B" stroke="#FFFFFF" stroke-width="22" paint-order="stroke"
+        text-anchor="middle" transform="rotate(-3 300 318)">0</text>
 </svg>
