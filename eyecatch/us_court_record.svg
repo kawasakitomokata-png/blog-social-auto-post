@@ -1,0 +1,76 @@
+<svg width="780" height="660" viewBox="0 0 780 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="アメリカの裁判記録イラスト">
+  <title>アメリカの裁判記録（オリジナルイラスト）</title>
+  <desc>米国の裁判所文書をイメージしたオリジナルイラスト。天秤・見出し・訴訟キャプション・FILEDスタンプ・署名欄・ガベル（背景透過）。</desc>
+  <style>.serif{font-family:Georgia,'Times New Roman',serif;} .sans{font-family:'Helvetica Neue',Arial,sans-serif;}</style>
+
+  <!-- 影 -->
+  <rect x="146" y="84" width="500" height="510" rx="12" fill="#000000" fill-opacity="0.10"/>
+
+  <g transform="rotate(-1.5 396 330)">
+    <!-- 用紙 -->
+    <rect x="138" y="72" width="500" height="510" rx="12" fill="#FFFFFF" stroke="#D8DEE5" stroke-width="3"/>
+
+    <!-- 天秤（正義の象徴） -->
+    <g stroke="#1F2D54" stroke-width="4" fill="none" stroke-linecap="round">
+      <line x1="388" y1="104" x2="388" y2="150"/>
+      <line x1="356" y1="110" x2="420" y2="110"/>
+      <circle cx="388" cy="104" r="5" fill="#1F2D54"/>
+      <path d="M356 110 L344 134 L368 134 Z" fill="#1F2D54" stroke="none"/>
+      <path d="M420 110 L408 134 L432 134 Z" fill="#1F2D54" stroke="none"/>
+      <path d="M344 134 q12 14 24 0"/>
+      <path d="M408 134 q12 14 24 0"/>
+      <path d="M372 150 h32 M364 156 h48" />
+    </g>
+
+    <!-- 見出し -->
+    <text x="388" y="186" class="serif" font-size="27" font-weight="700" fill="#1F2D54" text-anchor="middle">UNITED STATES</text>
+    <text x="388" y="216" class="serif" font-size="27" font-weight="700" fill="#1F2D54" text-anchor="middle">DISTRICT COURT</text>
+    <text x="388" y="242" class="sans" font-size="15" fill="#6E7E92" text-anchor="middle" letter-spacing="3">COURT RECORD</text>
+    <line x1="180" y1="258" x2="596" y2="258" stroke="#C9D2DC" stroke-width="2"/>
+
+    <!-- 訴訟キャプション -->
+    <g class="serif" fill="#2C3A49">
+      <text x="178" y="292" font-size="18" font-weight="700">JANE DOE,</text>
+      <text x="210" y="314" font-size="16" font-style="italic" fill="#5B6B7B">Plaintiff,</text>
+      <text x="210" y="344" font-size="18" font-weight="700">v.</text>
+      <text x="178" y="372" font-size="18" font-weight="700">JOHN ROE,</text>
+      <text x="210" y="394" font-size="16" font-style="italic" fill="#5B6B7B">Defendant.</text>
+    </g>
+    <g class="serif" fill="#8A97A5" font-size="18">
+      <text x="372" y="292">)</text><text x="372" y="314">)</text><text x="372" y="336">)</text><text x="372" y="358">)</text><text x="372" y="380">)</text><text x="372" y="402">)</text>
+    </g>
+    <text x="404" y="336" class="serif" font-size="17" font-weight="700" fill="#2C3A49">Case No. 23-CV-1024</text>
+    <text x="404" y="362" class="serif" font-size="15" fill="#5B6B7B">COURT RECORD / OPINION</text>
+
+    <line x1="178" y1="420" x2="598" y2="420" stroke="#E2E8EF" stroke-width="2"/>
+
+    <!-- 本文（ダミー行） -->
+    <g fill="#DCE3EB">
+      <rect x="178" y="438" width="420" height="11" rx="5.5"/>
+      <rect x="178" y="462" width="420" height="11" rx="5.5"/>
+      <rect x="178" y="486" width="360" height="11" rx="5.5"/>
+      <rect x="178" y="510" width="400" height="11" rx="5.5"/>
+    </g>
+
+    <!-- 署名欄 -->
+    <line x1="386" y1="552" x2="598" y2="552" stroke="#9AA6B4" stroke-width="2"/>
+    <text x="492" y="548" class="serif" font-size="16" font-style="italic" fill="#2C3A49" text-anchor="middle">/s/  Hon. A. Judge</text>
+    <text x="492" y="572" class="sans" font-size="13" fill="#6E7E92" text-anchor="middle">U.S. District Judge</text>
+
+    <!-- FILED スタンプ -->
+    <g transform="translate(26 -44) rotate(-12 520 150)">
+      <rect x="448" y="120" width="144" height="60" rx="8" fill="none" stroke="#C0392B" stroke-width="4"/>
+      <text x="520" y="152" class="sans" font-size="30" font-weight="800" fill="#C0392B" text-anchor="middle" letter-spacing="3">FILED</text>
+      <text x="520" y="172" class="sans" font-size="13" font-weight="700" fill="#C0392B" text-anchor="middle">OCT 2024  ·  CLERK</text>
+    </g>
+  </g>
+
+  <!-- ガベル（小道具） -->
+  <g transform="translate(636 556) rotate(28)">
+    <rect x="-46" y="-15" width="70" height="30" rx="7" fill="#8A5A2B"/>
+    <rect x="-58" y="-21" width="16" height="42" rx="4" fill="#7A4E24"/>
+    <rect x="20" y="-21" width="16" height="42" rx="4" fill="#7A4E24"/>
+    <rect x="18" y="-6" width="86" height="13" rx="6" fill="#9C6A33"/>
+  </g>
+  <ellipse cx="636" cy="606" rx="70" ry="12" fill="#000000" fill-opacity="0.08"/>
+</svg>
