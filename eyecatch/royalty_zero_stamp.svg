@@ -1,0 +1,66 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ロイヤリティをゼロとする条件">
+  <title>ロイヤリティをゼロとする条件</title>
+  <desc>発明者キャラがショックを受け「0円」を指す、LINEスタンプ風イラスト（背景透過）</desc>
+
+  <!-- ===== 上部テキスト：ロイヤリティ ===== -->
+  <g transform="rotate(-4 300 80)">
+    <rect x="64" y="44" width="472" height="78" rx="39" fill="#1F4E96" stroke="#FFFFFF" stroke-width="9"/>
+    <text x="300" y="100" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+          font-size="50" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ロイヤリティ</text>
+  </g>
+
+  <!-- ===== コイン（アクセント） ===== -->
+  <g transform="translate(360 188)">
+    <circle cx="0" cy="0" r="54" fill="#FFD24D" stroke="#E8A300" stroke-width="8"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#F2B73A" stroke-width="4"/>
+    <text x="0" y="20" font-family="sans-serif" font-size="52" font-weight="900" fill="#B5790F" text-anchor="middle">¥</text>
+  </g>
+
+  <!-- ===== ヒーロー：0円 ===== -->
+  <text x="372" y="438" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif"
+        font-weight="900" fill="#E23B3B" stroke="#FFFFFF" stroke-width="16" paint-order="stroke"
+        text-anchor="middle" transform="rotate(-3 372 438)">
+    <tspan font-size="270">0</tspan><tspan font-size="120">円</tspan>
+  </text>
+  <!-- 強調の集中線（ちょい） -->
+  <g stroke="#E8A300" stroke-width="7" stroke-linecap="round">
+    <line x1="300" y1="250" x2="282" y2="232"/>
+    <line x1="520" y1="250" x2="540" y2="232"/>
+    <line x1="540" y1="330" x2="566" y2="330"/>
+  </g>
+
+  <!-- ===== キャラクター（ショックを受ける発明者） ===== -->
+  <g stroke="#4A3A30" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- 体（シャツ） -->
+    <path d="M40 600 v-30 q0 -118 116 -118 q116 0 116 118 v30 z" fill="#3D7BD9"/>
+    <!-- 指さす腕 -->
+    <path d="M214 506 q70 -36 96 -96" fill="none" stroke="#3D7BD9" stroke-width="40"/>
+    <!-- 手（指さし） -->
+    <circle cx="318" cy="398" r="24" fill="#FBD9B0"/>
+    <!-- 首 -->
+    <rect x="132" y="452" width="48" height="36" rx="14" fill="#FBD9B0"/>
+    <!-- 頭 -->
+    <circle cx="156" cy="392" r="116" fill="#FBD9B0"/>
+    <!-- 髪 -->
+    <path d="M48 386 q4 -118 108 -118 q104 0 108 118 q-30 -52 -108 -52 q-78 0 -108 52 z" fill="#3A2D26" stroke="none"/>
+  </g>
+  <!-- 顔（驚き） -->
+  <g stroke="none">
+    <!-- 眉（上がり） -->
+    <path d="M104 348 q22 -16 44 -4" stroke="#4A3A30" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M176 344 q22 -12 42 4" stroke="#4A3A30" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <!-- 目（見開き） -->
+    <ellipse cx="124" cy="392" rx="13" ry="19" fill="#3A2D26"/>
+    <ellipse cx="196" cy="392" rx="13" ry="19" fill="#3A2D26"/>
+    <circle cx="120" cy="386" r="4.5" fill="#FFFFFF"/>
+    <circle cx="192" cy="386" r="4.5" fill="#FFFFFF"/>
+    <!-- 口（ガーン…と開く） -->
+    <ellipse cx="158" cy="446" rx="20" ry="26" fill="#7A3B2E"/>
+    <ellipse cx="158" cy="436" rx="14" ry="9" fill="#C76A55"/>
+    <!-- ほっぺ（青ざめ） -->
+    <ellipse cx="98" cy="430" rx="16" ry="11" fill="#9FC3E8" fill-opacity="0.7"/>
+    <ellipse cx="214" cy="430" rx="16" ry="11" fill="#9FC3E8" fill-opacity="0.7"/>
+  </g>
+  <!-- 汗 -->
+  <path d="M236 360 q14 20 0 30 q-14 -10 0 -30 z" fill="#5AA9E6" stroke="#3E88C4" stroke-width="3"/>
+</svg>
