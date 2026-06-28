@@ -1,0 +1,62 @@
+<svg width="680" height="600" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="発表アイコン">
+  <title>発表アイコン</title>
+  <desc>発表者が指し棒でボード（グラフ）を示す発表シーンのアイコン（背景透過）。</desc>
+  <style>text{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;}</style>
+
+  <!-- 影 -->
+  <ellipse cx="360" cy="556" rx="250" ry="20" fill="#000000" fill-opacity="0.08"/>
+
+  <!-- イーゼル脚 -->
+  <g stroke="#8A97A5" stroke-width="12" stroke-linecap="round">
+    <line x1="330" y1="350" x2="300" y2="540"/>
+    <line x1="560" y1="350" x2="590" y2="540"/>
+    <line x1="320" y1="470" x2="570" y2="470"/>
+  </g>
+
+  <!-- ボード -->
+  <rect x="250" y="70" width="380" height="300" rx="16" fill="#FFFFFF" stroke="#C9D2DC" stroke-width="5"/>
+  <!-- タイトル帯 -->
+  <rect x="270" y="86" width="340" height="40" rx="10" fill="#2E6FB0"/>
+  <!-- 箇条書き -->
+  <rect x="272" y="150" width="190" height="14" rx="7" fill="#D9E0E8"/>
+  <rect x="272" y="182" width="190" height="14" rx="7" fill="#D9E0E8"/>
+  <rect x="272" y="214" width="140" height="14" rx="7" fill="#D9E0E8"/>
+  <!-- 棒グラフ -->
+  <g>
+    <rect x="470" y="290" width="34" height="40" rx="4" fill="#34B97E"/>
+    <rect x="514" y="258" width="34" height="72" rx="4" fill="#34B97E"/>
+    <rect x="558" y="216" width="34" height="114" rx="4" fill="#34B97E"/>
+    <!-- 上昇矢印 -->
+    <path d="M468 300 L598 196" fill="none" stroke="#E8861E" stroke-width="6" stroke-linecap="round"/>
+    <path d="M598 196 l-22 2 m22 -2 l-4 22" fill="none" stroke="#E8861E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 指し棒 -->
+  <line x1="172" y1="318" x2="300" y2="170" stroke="#6E767E" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="300" cy="170" r="7" fill="#E5392F"/>
+
+  <!-- 発表者 -->
+  <g>
+    <!-- 体（スーツ） -->
+    <path d="M70 540 v-44 q0 -96 78 -96 q78 0 78 96 v44 z" fill="#34495E"/>
+    <!-- シャツ襟＋ネクタイ -->
+    <path d="M126 404 l22 26 l22 -26 l-22 -10 z" fill="#FFFFFF"/>
+    <path d="M148 430 l-9 14 l9 44 l9 -44 z" fill="#C0392B"/>
+    <!-- 上げた腕（指し棒を持つ） -->
+    <path d="M150 430 q22 -70 24 -112" fill="none" stroke="#34495E" stroke-width="30" stroke-linecap="round"/>
+    <circle cx="176" cy="320" r="17" fill="#F7CFA6"/>
+    <!-- 首・頭 -->
+    <rect x="131" y="350" width="34" height="34" rx="12" fill="#F2C49B"/>
+    <circle cx="148" cy="320" r="44" fill="#F7CFA6"/>
+    <path d="M105 312 q4 -48 43 -48 q39 0 43 48 q-20 -22 -43 -22 q-23 0 -43 22 z" fill="#4A3B2E"/>
+    <circle cx="136" cy="320" r="5" fill="#3A2D26"/>
+    <circle cx="160" cy="320" r="5" fill="#3A2D26"/>
+    <path d="M138 338 q10 8 20 0" stroke="#7A3B2E" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- きらめき -->
+  <g fill="#F4B400">
+    <polygon points="612,60 618,78 636,84 618,90 612,108 606,90 588,84 606,78"/>
+    <polygon points="250,46 254,58 266,62 254,66 250,78 246,66 234,62 246,58"/>
+  </g>
+</svg>
