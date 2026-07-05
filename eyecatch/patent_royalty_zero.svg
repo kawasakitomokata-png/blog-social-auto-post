@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
+  <!-- ================= 特許出願書類 ================= -->
+  <g transform="translate(-85 0) rotate(-4 360 300)">
+    <!-- 影 -->
+    <rect x="218" y="78" width="330" height="460" rx="8" fill="#000000" opacity="0.12"/>
+    <!-- 用紙 -->
+    <rect x="205" y="65" width="330" height="460" rx="8" fill="#FFFFFF" stroke="#C9C2B2" stroke-width="3"/>
+    <!-- 上部帯 -->
+    <rect x="205" y="65" width="330" height="14" rx="7" fill="#2C4770"/>
+
+    <!-- タイトル -->
+    <text x="370" y="128" font-family="IPAGothic" font-size="34" font-weight="bold"
+          fill="#2C4770" text-anchor="middle" letter-spacing="6">特許出願書</text>
+    <line x1="255" y1="145" x2="485" y2="145" stroke="#2C4770" stroke-width="2.5"/>
+
+    <!-- 電球アイコン(発明) -->
+    <g transform="translate(370 205)">
+      <circle cx="0" cy="0" r="34" fill="#F7C948"/>
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#E0A800" stroke-width="3"/>
+      <rect x="-11" y="28" width="22" height="8" rx="3" fill="#8A94A6"/>
+      <rect x="-9" y="38" width="18" height="6" rx="3" fill="#8A94A6"/>
+      <path d="M -8 20 L -5 4 L -12 4 L 0 -18 L -3 2 L 4 2 Z" fill="#FFFFFF"/>
+      <!-- ひらめき線 -->
+      <line x1="-48" y1="-28" x2="-38" y2="-21" stroke="#F7C948" stroke-width="4" stroke-linecap="round"/>
+      <line x1="48" y1="-28" x2="38" y2="-21" stroke="#F7C948" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="-52" x2="0" y2="-42" stroke="#F7C948" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- 本文ダミー行 -->
+    <g fill="#B8C0CC">
+      <rect x="250" y="280" width="240" height="9" rx="4.5"/>
+      <rect x="250" y="302" width="240" height="9" rx="4.5"/>
+      <rect x="250" y="324" width="180" height="9" rx="4.5"/>
+      <rect x="250" y="360" width="240" height="9" rx="4.5"/>
+      <rect x="250" y="382" width="210" height="9" rx="4.5"/>
+    </g>
+
+    <!-- 条件欄 -->
+    <rect x="248" y="415" width="244" height="52" rx="6" fill="#EEF3FA" stroke="#2C4770" stroke-width="2"/>
+    <text x="370" y="448" font-family="IPAGothic" font-size="20" font-weight="bold"
+          fill="#2C4770" text-anchor="middle">条件：ロイヤリティー ０円</text>
+
+    <!-- 押印(はんこ) -->
+    <g transform="translate(475 495)">
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#D64545" stroke-width="2.5" opacity="0.85"/>
+      <text x="0" y="9" font-family="IPAGothic" font-size="24" font-weight="bold"
+            fill="#D64545" text-anchor="middle" opacity="0.85">印</text>
+    </g>
+  </g>
+
+  <!-- ================= ¥0 スタンプ ================= -->
+  <g transform="rotate(-12 615 420)">
+    <circle cx="615" cy="420" r="150" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="615" cy="420" r="150" fill="none" stroke="#C93A3A" stroke-width="10"/>
+    <circle cx="615" cy="420" r="132" fill="none" stroke="#C93A3A" stroke-width="4"/>
+
+    <line x1="497" y1="330" x2="733" y2="330" stroke="#C93A3A" stroke-width="4"/>
+    <text x="615" y="368" font-family="IPAGothic" font-size="27" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle" letter-spacing="1">ロイヤリティー</text>
+
+    <text x="615" y="478" font-family="IPAGothic" font-size="104" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle">¥0</text>
+
+    <line x1="490" y1="498" x2="740" y2="498" stroke="#C93A3A" stroke-width="4"/>
+    <text x="615" y="532" font-family="IPAGothic" font-size="25" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle" letter-spacing="8">条件付</text>
+  </g>
+
+  <!-- キラキラ -->
+  <g fill="#F7C948">
+    <path d="M 55 150 l 6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 Z"/>
+    <path d="M 700 110 l 5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 Z"/>
+    <path d="M 70 480 l 5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 Z"/>
+  </g>
+</svg>
