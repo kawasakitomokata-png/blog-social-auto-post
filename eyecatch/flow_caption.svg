@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="770" viewBox="0 0 1080 770">
+  <g transform="rotate(-4 190 300)">
+    <rect x="68" y="128" width="250" height="360" rx="7" fill="#000000" opacity="0.12"/>
+    <rect x="60" y="120" width="250" height="360" rx="7" fill="#FFFFFF" stroke="#C9C2B2" stroke-width="3"/>
+    <rect x="60" y="120" width="250" height="12" rx="6" fill="#2C4770"/>
+    <text x="185" y="172" font-family="IPAGothic" font-size="27" font-weight="bold"
+          fill="#2C4770" text-anchor="middle" letter-spacing="4">特許出願書</text>
+    <line x1="95" y1="185" x2="275" y2="185" stroke="#2C4770" stroke-width="2"/>
+    <g transform="translate(185 235) scale(0.75)">
+      <circle cx="0" cy="0" r="34" fill="#F7C948"/>
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#E0A800" stroke-width="3"/>
+      <rect x="-11" y="28" width="22" height="8" rx="3" fill="#8A94A6"/>
+      <path d="M -8 20 L -5 4 L -12 4 L 0 -18 L -3 2 L 4 2 Z" fill="#FFFFFF"/>
+    </g>
+    <g fill="#B8C0CC">
+      <rect x="92" y="300" width="186" height="7" rx="3.5"/>
+      <rect x="92" y="318" width="186" height="7" rx="3.5"/>
+      <rect x="92" y="336" width="140" height="7" rx="3.5"/>
+      <rect x="92" y="362" width="186" height="7" rx="3.5"/>
+    </g>
+    <rect x="88" y="392" width="194" height="42" rx="5" fill="#EEF3FA" stroke="#2C4770" stroke-width="2"/>
+    <text x="185" y="419" font-family="IPAGothic" font-size="16" font-weight="bold"
+          fill="#2C4770" text-anchor="middle">条件：ロイヤリティー ０円</text>
+  </g>
+  <g transform="rotate(-12 268 490)">
+    <circle cx="268" cy="490" r="82" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="268" cy="490" r="82" fill="none" stroke="#C93A3A" stroke-width="6"/>
+    <circle cx="268" cy="490" r="71" fill="none" stroke="#C93A3A" stroke-width="2.5"/>
+    <line x1="205" y1="441" x2="331" y2="441" stroke="#C93A3A" stroke-width="2.5"/>
+    <text x="268" y="462" font-family="IPAGothic" font-size="15" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle">ロイヤリティー</text>
+    <text x="268" y="522" font-family="IPAGothic" font-size="56" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle">¥0</text>
+    <line x1="200" y1="532" x2="336" y2="532" stroke="#C93A3A" stroke-width="2.5"/>
+    <text x="268" y="552" font-family="IPAGothic" font-size="14" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle" letter-spacing="4">条件付</text>
+  </g><path d="M 375 372 L 448 372 L 448 352 L 492 385 L 448 418 L 448 398 L 375 398 Z" fill="#ff4fae" opacity="0.9"/><rect x="520" y="50" width="520" height="155" rx="16" fill="#f2bedd" stroke="#e9a6cf" stroke-width="5"/><g transform="translate(615 128)"><rect x="-46" y="-36" width="38" height="16" rx="5" fill="#E0A800"/><rect x="-46" y="-26" width="92" height="60" rx="7" fill="#F7C948" stroke="#E0A800" stroke-width="3"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(0 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(45 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(90 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(135 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(180 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(225 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(270 30 22)"/><rect x="26" y="-3" width="8" height="10" rx="2" fill="#2C4770" transform="rotate(315 30 22)"/><circle cx="30" cy="22" r="19" fill="#2C4770"/><circle cx="30" cy="22" r="8" fill="#ffffff"/></g><text x="710" y="145" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ff4fae" stroke="#ff4fae" stroke-width="12.9" stroke-linejoin="round">管理のみ</text><text x="710" y="145" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ffffff">管理のみ</text><rect x="520" y="220" width="520" height="155" rx="16" fill="#d9bcef" stroke="#c7a3e6" stroke-width="5"/><g transform="translate(615 298)"><rect x="-4" y="-40" width="8" height="72" rx="3" fill="#2C4770"/><rect x="-46" y="-38" width="92" height="7" rx="3.5" fill="#2C4770"/><circle cx="0" cy="-42" r="6" fill="#F7C948" stroke="#E0A800" stroke-width="2"/><rect x="-28" y="30" width="56" height="9" rx="4" fill="#2C4770"/><line x1="-40" y1="-32" x2="-55" y2="-6" stroke="#2C4770" stroke-width="3"/><line x1="-40" y1="-32" x2="-25" y2="-6" stroke="#2C4770" stroke-width="3"/><path d="M -55 -6 A 15 15 0 0 0 -25 -6 Z" fill="#2C4770"/><line x1="40" y1="-32" x2="25" y2="-6" stroke="#2C4770" stroke-width="3"/><line x1="40" y1="-32" x2="55" y2="-6" stroke="#2C4770" stroke-width="3"/><path d="M 25 -6 A 15 15 0 0 0 55 -6 Z" fill="#2C4770"/></g><text x="710" y="315" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ff4fae" stroke="#ff4fae" stroke-width="12.9" stroke-linejoin="round">常識的</text><text x="710" y="315" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ffffff">常識的</text><rect x="520" y="390" width="520" height="155" rx="16" fill="#e0b3ea" stroke="#cf9adf" stroke-width="5"/><g transform="translate(615 468)"><polygon points="-50,-14 -1,-40 48,-14" fill="#2C4770"/><rect x="-50" y="-14" width="98" height="6" fill="#8A94A6"/><rect x="-42" y="-12" width="11" height="34" fill="#2C4770"/><rect x="-19" y="-12" width="11" height="34" fill="#2C4770"/><rect x="4" y="-12" width="11" height="34" fill="#2C4770"/><rect x="27" y="-12" width="11" height="34" fill="#2C4770"/><rect x="-50" y="22" width="98" height="8" rx="3" fill="#2C4770"/><rect x="-56" y="30" width="110" height="8" rx="3" fill="#8A94A6"/><circle cx="42" cy="-30" r="18" fill="#F7C948" stroke="#E0A800" stroke-width="3"/><text x="42" y="-22" font-family="IPAGothic" font-size="22" font-weight="bold" fill="#2C4770" text-anchor="middle">¥</text></g><text x="710" y="485" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ff4fae" stroke="#ff4fae" stroke-width="12.9" stroke-linejoin="round">国家財産</text><text x="710" y="485" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ffffff">国家財産</text><rect x="520" y="560" width="520" height="155" rx="16" fill="#f1c4d8" stroke="#e6a9c4" stroke-width="5"/><g transform="translate(615 638)"><path d="M -36 -38 L 36 -38 L 36 4 Q 36 30 0 44 Q -36 30 -36 4 Z" fill="#2C4770" stroke="#1E3252" stroke-width="3"/><path d="M -17 0 L -4 15 L 21 -15" fill="none" stroke="#F7C948" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g><text x="710" y="655" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ff4fae" stroke="#ff4fae" stroke-width="12.9" stroke-linejoin="round">正当</text><text x="710" y="655" font-family="IPAGothic" font-size="46" font-weight="bold" letter-spacing="4" text-anchor="start" fill="#ffffff">正当</text></svg>
