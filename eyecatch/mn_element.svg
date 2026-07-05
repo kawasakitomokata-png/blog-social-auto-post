@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="640" viewBox="0 0 1150 640">
+<defs>
+  <linearGradient id="bgdark" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#41464e"/><stop offset="1" stop-color="#1e2126"/>
+  </linearGradient>
+  <linearGradient id="metal0" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d8dbe0"/><stop offset="0.5" stop-color="#9ba1ab"/><stop offset="1" stop-color="#5f656f"/>
+  </linearGradient>
+  <linearGradient id="metal1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#cfd3da"/><stop offset="0.55" stop-color="#8d939d"/><stop offset="1" stop-color="#555b66"/>
+  </linearGradient>
+  <linearGradient id="metal2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e2e5e9"/><stop offset="0.5" stop-color="#a7adb6"/><stop offset="1" stop-color="#666c76"/>
+  </linearGradient>
+</defs>
+
+<!-- 写真風パネル -->
+<g transform="rotate(-3 310 320)">
+  <rect x="72" y="82" width="500" height="480" rx="6" fill="#000000" opacity="0.18"/>
+  <rect x="60" y="70" width="500" height="480" rx="6" fill="#ffffff"/>
+  <rect x="78" y="88" width="464" height="404" fill="url(#bgdark)"/>
+  <g clip-path="url(#clip)">
+    <polygon points="304.1,339.8 263.6,394.6 224.5,416.6 159.1,414.0 149.0,377.0 136.9,319.6 181.5,298.9 224.0,276.3 278.6,292.6" fill="url(#metal1)" stroke="#1b1e23" stroke-width="2"/><polygon points="136.9,319.6 181.5,298.9 183.2,323.0" fill="#6a707a" opacity="0.35"/><polygon points="181.5,298.9 224.0,276.3 220.6,376.7" fill="#c8ccd2" opacity="0.56"/><polygon points="224.0,276.3 278.6,292.6 235.0,353.0" fill="#7d838c" opacity="0.44"/><polygon points="159.1,414.0 149.0,377.0 224.9,375.8" fill="#c8ccd2" opacity="0.52"/><polygon points="278.6,292.6 304.1,339.8 234.1,327.2" fill="#7d838c" opacity="0.40"/><polygon points="136.9,319.6 181.5,298.9 232.5,377.0" fill="#6a707a" opacity="0.72"/><ellipse cx="186.25" cy="321.5" rx="26.6" ry="12.35" fill="#ffffff" opacity="0.5" transform="rotate(-20 210 350)"/>
+    <polygon points="482.1,315.2 440.6,334.6 375.7,386.7 320.1,361.8 273.6,325.4 291.1,274.3 321.3,234.6 399.1,208.5 455.1,258.5" fill="url(#metal2)" stroke="#1b1e23" stroke-width="2"/><polygon points="399.1,208.5 455.1,258.5 370.1,326.5" fill="#c8ccd2" opacity="0.50"/><polygon points="291.1,274.3 321.3,234.6 396.9,295.0" fill="#6a707a" opacity="0.42"/><polygon points="375.7,386.7 320.1,361.8 352.6,268.6" fill="#7d838c" opacity="0.42"/><polygon points="455.1,258.5 482.1,315.2 370.7,332.9" fill="#6a707a" opacity="0.42"/><polygon points="399.1,208.5 455.1,258.5 389.6,315.5" fill="#7d838c" opacity="0.67"/><polygon points="291.1,274.3 321.3,234.6 360.9,323.7" fill="#e4e7eb" opacity="0.41"/><ellipse cx="342.5" cy="267.0" rx="30.800000000000004" ry="14.3" fill="#ffffff" opacity="0.5" transform="rotate(-20 370 300)"/>
+    <polygon points="371.6,414.4 358.5,456.6 307.6,468.2 272.8,481.4 242.2,442.1 239.5,391.1 272.5,367.1 313.7,370.8 364.1,380.1" fill="url(#metal0)" stroke="#1b1e23" stroke-width="2"/><polygon points="364.1,380.1 371.6,414.4 294.7,396.7" fill="#c8ccd2" opacity="0.41"/><polygon points="371.6,414.4 358.5,456.6 290.5,397.5" fill="#7d838c" opacity="0.54"/><polygon points="272.5,367.1 313.7,370.8 310.3,440.2" fill="#e4e7eb" opacity="0.64"/><polygon points="313.7,370.8 364.1,380.1 322.3,402.4" fill="#7d838c" opacity="0.39"/><polygon points="307.6,468.2 272.8,481.4 299.8,408.4" fill="#e4e7eb" opacity="0.66"/><polygon points="242.2,442.1 239.5,391.1 296.2,436.0" fill="#6a707a" opacity="0.49"/><ellipse cx="280.0" cy="396.0" rx="22.400000000000002" ry="10.4" fill="#ffffff" opacity="0.5" transform="rotate(-20 300 420)"/>
+    <polygon points="498.8,411.2 489.6,440.2 468.0,458.0 410.1,456.0 400.1,425.6 400.7,399.7 420.6,382.8 454.8,360.5 503.6,386.2" fill="url(#metal1)" stroke="#1b1e23" stroke-width="2"/><polygon points="400.1,425.6 400.7,399.7 438.0,407.6" fill="#7d838c" opacity="0.38"/><polygon points="400.7,399.7 420.6,382.8 456.7,415.2" fill="#9aa0a8" opacity="0.45"/><polygon points="400.1,425.6 400.7,399.7 434.0,431.9" fill="#6a707a" opacity="0.69"/><polygon points="498.8,411.2 489.6,440.2 465.9,417.8" fill="#7d838c" opacity="0.69"/><polygon points="503.6,386.2 498.8,411.2 438.1,412.0" fill="#7d838c" opacity="0.52"/><polygon points="468.0,458.0 410.1,456.0 439.6,405.6" fill="#c8ccd2" opacity="0.38"/><ellipse cx="433.75" cy="395.5" rx="18.200000000000003" ry="8.450000000000001" fill="#ffffff" opacity="0.5" transform="rotate(-20 450 415)"/>
+  </g>
+  <clipPath id="clip"><rect x="78" y="88" width="464" height="404"/></clipPath>
+  <text x="310" y="528" font-family="IPAGothic" font-size="22" fill="#555555"
+        text-anchor="middle">マンガン金属（電解マンガン）のイメージ</text>
+</g>
+
+<!-- プラス記号 -->
+<g fill="#2C4770" opacity="0.85">
+  <rect x="592" y="302" width="56" height="14" rx="6"/>
+  <rect x="613" y="281" width="14" height="56" rx="6"/>
+</g>
+
+<!-- 周期表タイル -->
+<rect x="692" y="142" width="368" height="368" rx="18" fill="#F7F4EC" stroke="#2C4770" stroke-width="7"/>
+<text x="722" y="200" font-family="IPAGothic" font-size="40" font-weight="bold" fill="#2C4770">25</text>
+<text x="1030" y="200" font-family="IPAGothic" font-size="26" fill="#7a8494" text-anchor="end">遷移金属</text>
+<text x="876" y="352" font-family="IPAGothic" font-size="128" font-weight="bold"
+      fill="#2C4770" text-anchor="middle">Mn</text>
+<text x="876" y="418" font-family="IPAGothic" font-size="38" font-weight="bold"
+      fill="#2C4770" text-anchor="middle" letter-spacing="4">マンガン</text>
+<text x="876" y="452" font-family="IPAGothic" font-size="24" fill="#7a8494"
+      text-anchor="middle">Manganese</text>
+<text x="876" y="490" font-family="IPAGothic" font-size="28" font-weight="bold"
+      fill="#4a5568" text-anchor="middle">54.94</text>
+</svg>
