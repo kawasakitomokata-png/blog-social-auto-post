@@ -60,9 +60,9 @@
       <line x1="-310" y1="-138" x2="310" y2="-138" stroke="#CB3B32" stroke-width="9"/>
       <line x1="-310" y1="138" x2="310" y2="138" stroke="#CB3B32" stroke-width="9"/>
     </g>
-    <rect x="-240" y="-224" width="480" height="100" rx="26" fill="#FFFFFF"/>
-    <text x="0" y="-153" text-anchor="middle" font-size="58" font-weight="800" letter-spacing="2" fill="#CB3B32">ロイヤリティー</text>
-    <text x="0" y="92" text-anchor="middle" font-size="216" font-weight="800" fill="#CB3B32">￥0</text>
-    <text x="0" y="228" text-anchor="middle" font-size="64" font-weight="800" letter-spacing="22" fill="#CB3B32">条件付</text>
+    <rect x="-255" y="-250" width="510" height="112" rx="24" fill="#FFFFFF"/>
+    <text x="0" y="-170" text-anchor="middle" font-size="66" font-weight="900" letter-spacing="3" fill="#CB3B32">ロイヤリティー</text>
+    <text x="0" y="106" text-anchor="middle" font-size="248" font-weight="900" fill="#CB3B32" transform="scale(1.08 1)">￥0</text>
+    <text x="0" y="232" text-anchor="middle" font-size="70" font-weight="900" letter-spacing="26" fill="#CB3B32">条件付</text>
   </g>
 </svg>
