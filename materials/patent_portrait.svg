@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="1000" viewBox="0 0 700 1000">
+  <style>
+    text { font-family: "Rounded Mplus 1c", "Rounded Mplus 1c Bold", sans-serif; }
+    .navy { fill: #1F3B63; }
+  </style>
+
+  <!-- Document card (slightly rotated) -->
+  <g transform="rotate(3 350 480)">
+    <!-- shadow -->
+    <rect x="80" y="74" width="520" height="830" rx="16" fill="#D9D2C2"/>
+    <!-- card -->
+    <rect x="90" y="60" width="520" height="830" rx="16" fill="#FBFBF9" stroke="#E3DFD5" stroke-width="2"/>
+    <!-- navy top bar -->
+    <rect x="104" y="74" width="492" height="28" rx="14" fill="#1F3B63"/>
+
+    <!-- title -->
+    <text x="358" y="188" text-anchor="middle" font-size="58" font-weight="700" letter-spacing="14" class="navy">特許出願書</text>
+    <line x1="165" y1="216" x2="535" y2="216" stroke="#1F3B63" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- light bulb -->
+    <circle cx="350" cy="305" r="52" fill="#F8C64B"/>
+    <path d="M 360 277 L 336 309 L 348 309 L 340 333 L 364 299 L 352 299 Z" fill="#FFFFFF"/>
+    <rect x="336" y="354" width="28" height="10" rx="5" fill="#8E959F"/>
+
+    <!-- text lines -->
+    <rect x="150" y="428" width="400" height="18" rx="9" fill="#B6BDC9"/>
+    <rect x="150" y="470" width="400" height="18" rx="9" fill="#B6BDC9"/>
+    <rect x="150" y="512" width="300" height="18" rx="9" fill="#B6BDC9"/>
+    <rect x="150" y="554" width="400" height="18" rx="9" fill="#B6BDC9"/>
+
+    <!-- condition box -->
+    <rect x="128" y="618" width="444" height="84" rx="12" fill="#ECF1FA" stroke="#1F3B63" stroke-width="4"/>
+    <text x="350" y="672" text-anchor="middle" font-size="30" font-weight="700" class="navy">条件：ロイヤリティー　０円</text>
+  </g>
+
+  <!-- red stamp -->
+  <g transform="translate(522 848) rotate(-10)">
+    <circle cx="0" cy="0" r="143" fill="#FFFFFF" fill-opacity="0.96" stroke="#CB3B32" stroke-width="13"/>
+    <circle cx="0" cy="0" r="116" fill="none" stroke="#CB3B32" stroke-width="5"/>
+    <clipPath id="stampClipP"><circle cx="0" cy="0" r="137"/></clipPath>
+    <g clip-path="url(#stampClipP)">
+      <line x1="-155" y1="-68" x2="155" y2="-68" stroke="#CB3B32" stroke-width="5"/>
+      <line x1="-155" y1="68" x2="155" y2="68" stroke="#CB3B32" stroke-width="5"/>
+    </g>
+    <rect x="-124" y="-112" width="248" height="52" rx="14" fill="#FFFFFF"/>
+    <text x="0" y="-75" text-anchor="middle" font-size="32" font-weight="800" fill="#CB3B32">ロイヤリティー</text>
+    <text x="0" y="44" text-anchor="middle" font-size="106" font-weight="800" fill="#CB3B32">￥0</text>
+    <text x="0" y="112" text-anchor="middle" font-size="32" font-weight="800" letter-spacing="10" fill="#CB3B32">条件付</text>
+  </g>
+</svg>
