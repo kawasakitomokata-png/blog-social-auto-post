@@ -55,10 +55,10 @@
   <g transform="translate(1195 830) rotate(-12)">
     <circle cx="0" cy="0" r="318" fill="#FFFFFF"/>
     <circle cx="0" cy="0" r="270" fill="none" stroke="#CB3B32" stroke-width="19"/>
-    <line x1="-210" y1="148" x2="210" y2="148" stroke="#CB3B32" stroke-width="12"/>
-    <rect x="-216" y="-142" width="432" height="92" rx="26" fill="#FFFFFF" stroke="#CB3B32" stroke-width="9"/>
-    <text x="0" y="-77" text-anchor="middle" font-size="54" font-weight="900" letter-spacing="2" fill="#CB3B32">ロイヤリティー</text>
-    <text x="0" y="120" text-anchor="middle" font-size="210" font-weight="900" fill="#CB3B32" transform="scale(1.05 1)">￥0</text>
-    <text x="0" y="216" text-anchor="middle" font-size="56" font-weight="900" letter-spacing="16" fill="#CB3B32">条件付</text>
+    <line x1="-223" y1="148" x2="223" y2="148" stroke="#CB3B32" stroke-width="12" stroke-linecap="round"/>
+    <rect x="-203" y="-170" width="406" height="114" rx="27" fill="#FFFFFF" stroke="#CB3B32" stroke-width="9"/>
+    <text x="0" y="-94" text-anchor="middle" font-size="53" font-weight="900" letter-spacing="2" fill="#CB3B32">ロイヤリティー</text>
+    <text x="0" y="113" text-anchor="middle" font-size="210" font-weight="900" fill="#CB3B32" transform="scale(1.05 1)">￥0</text>
+    <text x="0" y="216" text-anchor="middle" font-size="59" font-weight="900" letter-spacing="16" fill="#CB3B32">条件付</text>
   </g>
 </svg>
