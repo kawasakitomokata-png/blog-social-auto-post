@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="495" viewBox="0 0 350 495"><g transform="translate(-25 -95)">
+  <g transform="rotate(-4 190 300)">
+    <rect x="68" y="128" width="250" height="360" rx="7" fill="#000000" opacity="0.12"/>
+    <rect x="60" y="120" width="250" height="360" rx="7" fill="#FFFFFF" stroke="#C9C2B2" stroke-width="3"/>
+    <rect x="60" y="120" width="250" height="12" rx="6" fill="#2C4770"/>
+    <text x="185" y="172" font-family="IPAGothic" font-size="27" font-weight="bold"
+          fill="#2C4770" text-anchor="middle" letter-spacing="4">特許出願書</text>
+    <line x1="95" y1="185" x2="275" y2="185" stroke="#2C4770" stroke-width="2"/>
+    <g transform="translate(185 235) scale(0.75)">
+      <circle cx="0" cy="0" r="34" fill="#F7C948"/>
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#E0A800" stroke-width="3"/>
+      <rect x="-11" y="28" width="22" height="8" rx="3" fill="#8A94A6"/>
+      <path d="M -8 20 L -5 4 L -12 4 L 0 -18 L -3 2 L 4 2 Z" fill="#FFFFFF"/>
+    </g>
+    <g fill="#B8C0CC">
+      <rect x="92" y="300" width="186" height="7" rx="3.5"/>
+      <rect x="92" y="318" width="186" height="7" rx="3.5"/>
+      <rect x="92" y="336" width="140" height="7" rx="3.5"/>
+      <rect x="92" y="362" width="186" height="7" rx="3.5"/>
+    </g>
+    <rect x="78" y="374" width="194" height="42" rx="5" fill="#EEF3FA" stroke="#2C4770" stroke-width="2"/>
+    <text x="175" y="401" font-family="IPAGothic" font-size="14" font-weight="bold"
+          fill="#2C4770" text-anchor="middle">条件：ロイヤリティー ０円</text>
+  </g>
+  <g transform="rotate(-12 268 490)">
+    <circle cx="268" cy="490" r="82" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="268" cy="490" r="82" fill="none" stroke="#C93A3A" stroke-width="6"/>
+    <circle cx="268" cy="490" r="71" fill="none" stroke="#C93A3A" stroke-width="2.5"/>
+    <line x1="205" y1="441" x2="331" y2="441" stroke="#C93A3A" stroke-width="2.5"/>
+    <text x="268" y="462" font-family="IPAGothic" font-size="15" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle">ロイヤリティー</text>
+    <text x="268" y="522" font-family="IPAGothic" font-size="56" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle">¥0</text>
+    <line x1="200" y1="532" x2="336" y2="532" stroke="#C93A3A" stroke-width="2.5"/>
+    <text x="268" y="552" font-family="IPAGothic" font-size="14" font-weight="bold"
+          fill="#C93A3A" text-anchor="middle" letter-spacing="4">条件付</text>
+  </g></g></svg>
