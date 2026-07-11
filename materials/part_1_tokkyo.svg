@@ -18,8 +18,8 @@
       <rect x="92" y="336" width="140" height="7" rx="3.5"/>
       <rect x="92" y="362" width="186" height="7" rx="3.5"/>
     </g>
-    <rect x="78" y="374" width="194" height="42" rx="5" fill="#EEF3FA" stroke="#2C4770" stroke-width="2"/>
-    <text x="175" y="401" font-family="IPAGothic" font-size="14" font-weight="bold"
+    <rect x="88" y="392" width="194" height="42" rx="5" fill="#EEF3FA" stroke="#2C4770" stroke-width="2"/>
+    <text x="185" y="419" font-family="IPAGothic" font-size="14" font-weight="bold"
           fill="#2C4770" text-anchor="middle">条件：ロイヤリティー ０円</text>
   </g>
   <g transform="rotate(-12 268 490)">
