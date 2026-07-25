@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="IPAPGothic, IPAGothic, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf7ec"/>
+      <stop offset="100%" stop-color="#f3e6cf"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6d5b8"/>
+      <stop offset="100%" stop-color="#dcc7a4"/>
+    </linearGradient>
+    <radialGradient id="egglight" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6e7c8"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect y="500" width="1200" height="130" fill="url(#floor)"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#cdb894" stroke-width="3"/>
+
+  <!-- ================= blackboard ================= -->
+  <g>
+    <rect x="424" y="22" width="352" height="176" rx="10" fill="#8a6a46"/>
+    <rect x="434" y="32" width="332" height="156" rx="6" fill="#33534c"/>
+    <!-- chalk cycle: egg -> chicken -> egg -->
+    <g stroke="#f4f1e6" fill="none" stroke-width="3" stroke-linecap="round">
+      <path d="M523 78 Q600 42 677 78" marker-end="url(#a1)"/>
+      <path d="M677 148 Q600 184 523 148" marker-end="url(#a2)"/>
+      <path d="M668 72 l12 8 l-13 7"/>
+      <path d="M532 154 l-12 -8 l13 -7"/>
+    </g>
+    <!-- chalk egg -->
+    <ellipse cx="513" cy="115" rx="21" ry="27" fill="none" stroke="#f4f1e6" stroke-width="3"/>
+    <!-- chalk chicken -->
+    <g fill="none" stroke="#f4f1e6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="692" cy="122" rx="26" ry="20"/>
+      <circle cx="670" cy="100" r="12"/>
+      <path d="M659 97 l-11 4 l11 5"/>
+      <path d="M666 89 l3 -7 l4 6 l4 -7 l3 7"/>
+      <path d="M684 141 v11 M700 141 v11"/>
+      <path d="M715 112 q13 -9 10 -22 q-4 13 -17 14"/>
+    </g>
+    <text x="600" y="130" text-anchor="middle" font-size="46" fill="#f4f1e6" opacity="0.9">?</text>
+  </g>
+
+  <!-- ================= speech bubbles ================= -->
+  <!-- left -->
+  <g>
+    <path d="M40 168 h300 a16 16 0 0 1 16 16 v78 a16 16 0 0 1 -16 16 h-104 l-22 30 l-6 -30 h-168 a16 16 0 0 1 -16 -16 v-78 a16 16 0 0 1 16 -16 z"
+          fill="#ffffff" stroke="#c9b596" stroke-width="3"/>
+    <text x="190" y="230" text-anchor="middle" font-size="42" fill="#3c3226">卵が先だ！</text>
+  </g>
+  <!-- right -->
+  <g>
+    <path d="M860 168 h300 a16 16 0 0 1 16 16 v78 a16 16 0 0 1 -16 16 h-176 l-8 30 l-24 -30 h-92 a16 16 0 0 1 -16 -16 v-78 a16 16 0 0 1 16 -16 z"
+          fill="#ffffff" stroke="#c9b596" stroke-width="3"/>
+    <text x="1010" y="230" text-anchor="middle" font-size="38" fill="#3c3226">いや、鶏が先だ！</text>
+  </g>
+  <!-- center -->
+  <g>
+    <path d="M452 220 h296 a16 16 0 0 1 16 16 v56 a16 16 0 0 1 -16 16 h-134 l-14 26 l-10 -26 h-138 a16 16 0 0 1 -16 -16 v-56 a16 16 0 0 1 16 -16 z"
+          fill="#fffdf6" stroke="#c9b596" stroke-width="3"/>
+    <text x="600" y="272" text-anchor="middle" font-size="32" fill="#3c3226">…定義次第では？</text>
+  </g>
+
+  <!-- ================= shadows ================= -->
+  <ellipse cx="205" cy="562" rx="86" ry="14" fill="#000" opacity="0.10"/>
+  <ellipse cx="600" cy="556" rx="74" ry="12" fill="#000" opacity="0.09"/>
+  <ellipse cx="985" cy="562" rx="86" ry="14" fill="#000" opacity="0.10"/>
+  <ellipse cx="758" cy="560" rx="52" ry="10" fill="#000" opacity="0.10"/>
+  <ellipse cx="366" cy="556" rx="30" ry="8" fill="#000" opacity="0.10"/>
+
+  <!-- ================= scientist B (center, back) ================= -->
+  <g>
+    <!-- legs -->
+    <rect x="574" y="470" width="21" height="82" rx="8" fill="#5a6478"/>
+    <rect x="605" y="470" width="21" height="82" rx="8" fill="#5a6478"/>
+    <ellipse cx="581" cy="552" rx="17" ry="8" fill="#3b4252"/>
+    <ellipse cx="619" cy="552" rx="17" ry="8" fill="#3b4252"/>
+    <!-- coat -->
+    <path d="M600 392 l46 16 q12 5 13 18 l6 62 q1 12 -11 12 h-108 q-12 0 -11 -12 l6 -62 q1 -13 13 -18 z"
+          fill="#fbfbfa" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M600 392 v98" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M584 394 l16 20 l16 -20 l-16 -8 z" fill="#83b8c9"/>
+    <!-- neck -->
+    <rect x="590" y="368" width="20" height="26" rx="8" fill="#e0a97f"/>
+    <!-- head -->
+    <circle cx="600" cy="342" r="38" fill="#efc39c"/>
+    <!-- hair + bun -->
+    <path d="M562 338 q4 -40 38 -40 q34 0 38 40 q-8 -20 -38 -20 q-30 0 -38 20 z" fill="#4a3b2f"/>
+    <circle cx="600" cy="294" r="15" fill="#4a3b2f"/>
+    <!-- eyes -->
+    <circle cx="587" cy="342" r="3.4" fill="#3b322a"/>
+    <circle cx="613" cy="342" r="3.4" fill="#3b322a"/>
+    <path d="M580 331 q7 -5 14 -1 M606 330 q7 -4 14 1" stroke="#4a3b2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M592 360 q8 6 16 0" stroke="#a9694c" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- arm right: hand to chin (thinking) -->
+    <path d="M644 414 q26 -6 4 -34 q-10 -12 -24 -12" stroke="#fbfbfa" stroke-width="21" fill="none" stroke-linecap="round"/>
+    <circle cx="620" cy="366" r="11" fill="#efc39c"/>
+    <!-- arm left holding clipboard -->
+    <path d="M556 414 q-18 28 4 42" stroke="#fbfbfa" stroke-width="21" fill="none" stroke-linecap="round"/>
+    <circle cx="563" cy="459" r="11" fill="#efc39c"/>
+    <g transform="rotate(-7 566 452)">
+      <rect x="536" y="424" width="58" height="72" rx="5" fill="#d7b482" stroke="#b7935f" stroke-width="3"/>
+      <rect x="552" y="418" width="26" height="11" rx="4" fill="#9aa0a6"/>
+      <g stroke="#fdfaf2" stroke-width="4" stroke-linecap="round">
+        <path d="M547 446 h36 M547 460 h36 M547 474 h22"/>
+      </g>
+    </g>
+    <path d="M540 462 q10 -6 20 -2" stroke="#efc39c" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= scientist A (left, holds an egg) ================= -->
+  <g>
+    <!-- legs -->
+    <rect x="176" y="474" width="24" height="86" rx="9" fill="#4a5568"/>
+    <rect x="212" y="474" width="24" height="86" rx="9" fill="#4a5568"/>
+    <ellipse cx="184" cy="560" rx="19" ry="9" fill="#2f3849"/>
+    <ellipse cx="228" cy="560" rx="19" ry="9" fill="#2f3849"/>
+    <!-- coat -->
+    <path d="M206 384 l52 18 q13 5 14 20 l7 68 q1 13 -12 13 h-122 q-13 0 -12 -13 l7 -68 q1 -15 14 -20 z"
+          fill="#fdfdfd" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M206 384 v119" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M188 386 l18 22 l18 -22 l-18 -9 z" fill="#7fa8d8"/>
+    <rect x="240" y="446" width="26" height="30" rx="4" fill="#f2f4f6" stroke="#d5d9de" stroke-width="2"/>
+    <path d="M247 450 v14 M254 450 v14 M261 450 v14" stroke="#5b8def" stroke-width="3" stroke-linecap="round"/>
+    <!-- neck -->
+    <rect x="194" y="356" width="24" height="30" rx="9" fill="#e0a97f"/>
+    <!-- head -->
+    <circle cx="206" cy="326" r="43" fill="#f2cba6"/>
+    <!-- hair (gray, balding) -->
+    <path d="M163 322 q6 -44 43 -44 q37 0 43 44 q-10 -26 -43 -26 q-33 0 -43 26 z" fill="#b9b3ab"/>
+    <path d="M163 322 q-6 20 2 34 q-10 -18 -2 -34 z" fill="#b9b3ab"/>
+    <path d="M249 322 q6 20 -2 34 q10 -18 2 -34 z" fill="#b9b3ab"/>
+    <!-- beard -->
+    <path d="M176 344 q4 44 30 44 q26 0 30 -44 q-8 26 -30 26 q-22 0 -30 -26 z" fill="#c9c4bd"/>
+    <!-- glasses -->
+    <g stroke="#3b3a38" stroke-width="3" fill="#ffffff" fill-opacity="0.35">
+      <circle cx="190" cy="326" r="13"/>
+      <circle cx="222" cy="326" r="13"/>
+      <path d="M203 326 h6" fill="none"/>
+      <path d="M177 322 l-12 -5 M235 322 l12 -5" fill="none"/>
+    </g>
+    <circle cx="190" cy="327" r="3.6" fill="#3b322a"/>
+    <circle cx="222" cy="327" r="3.6" fill="#3b322a"/>
+    <!-- open mouth (arguing) -->
+    <ellipse cx="206" cy="356" rx="9" ry="7" fill="#8f4a41"/>
+    <!-- right arm raised with egg -->
+    <path d="M258 404 q44 -12 44 -60" stroke="#fdfdfd" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <circle cx="302" cy="336" r="14" fill="#f2cba6"/>
+    <ellipse cx="302" cy="306" rx="18" ry="24" fill="url(#egglight)" stroke="#e4d3ad" stroke-width="2.5"/>
+    <!-- left arm down -->
+    <path d="M154 406 q-24 42 -18 76" stroke="#fdfdfd" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <circle cx="136" cy="492" r="13" fill="#f2cba6"/>
+  </g>
+
+  <!-- ================= scientist C (right, points at the chicken) ================= -->
+  <g>
+    <!-- legs -->
+    <rect x="956" y="474" width="24" height="86" rx="9" fill="#4f5b52"/>
+    <rect x="992" y="474" width="24" height="86" rx="9" fill="#4f5b52"/>
+    <ellipse cx="964" cy="560" rx="19" ry="9" fill="#333d36"/>
+    <ellipse cx="1008" cy="560" rx="19" ry="9" fill="#333d36"/>
+    <!-- coat -->
+    <path d="M986 384 l52 18 q13 5 14 20 l7 68 q1 13 -12 13 h-122 q-13 0 -12 -13 l7 -68 q1 -15 14 -20 z"
+          fill="#fdfdfd" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M986 384 v119" stroke="#d5d9de" stroke-width="3"/>
+    <path d="M968 386 l18 22 l18 -22 l-18 -9 z" fill="#e0956f"/>
+    <!-- neck -->
+    <rect x="974" y="356" width="24" height="30" rx="9" fill="#c98c58"/>
+    <!-- head -->
+    <circle cx="986" cy="326" r="43" fill="#dda06a"/>
+    <!-- hair -->
+    <path d="M943 326 q0 -48 43 -48 q43 0 43 48 q-6 -30 -22 -26 q-16 4 -30 -6 q-14 12 -22 6 q-8 -6 -12 26 z" fill="#2f2a26"/>
+    <!-- eyes -->
+    <circle cx="971" cy="328" r="3.8" fill="#2f2a26"/>
+    <circle cx="1001" cy="328" r="3.8" fill="#2f2a26"/>
+    <path d="M962 314 q9 -6 17 -1 M993 313 q9 -5 17 1" stroke="#2f2a26" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- open mouth -->
+    <ellipse cx="986" cy="352" rx="10" ry="8" fill="#8f4a41"/>
+    <!-- left arm pointing down-left at the chicken -->
+    <path d="M934 406 q-40 18 -58 54" stroke="#fdfdfd" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <circle cx="876" cy="462" r="14" fill="#dda06a"/>
+    <path d="M872 470 l-16 15" stroke="#dda06a" stroke-width="10" stroke-linecap="round"/>
+    <!-- right arm on hip -->
+    <path d="M1040 408 q30 36 14 72" stroke="#fdfdfd" stroke-width="25" fill="none" stroke-linecap="round"/>
+    <circle cx="1052" cy="486" r="13" fill="#dda06a"/>
+  </g>
+
+  <!-- ================= the chicken ================= -->
+  <g transform="translate(-42,0)">
+    <path d="M789 528 v26 M809 528 v26" stroke="#e2a53a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M789 554 l-10 4 M789 554 l10 4 M809 554 l-10 4 M809 554 l10 4" stroke="#e2a53a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M836 500 q28 -12 24 -38 q-2 26 -30 28 z" fill="#fdf6e5" stroke="#e0d6c2" stroke-width="2.5"/>
+    <path d="M842 512 q30 -4 32 -26 q4 24 -26 34 z" fill="#f6ecd8" stroke="#e0d6c2" stroke-width="2.5"/>
+    <ellipse cx="802" cy="504" rx="42" ry="34" fill="#fffdf6" stroke="#e0d6c2" stroke-width="3"/>
+    <ellipse cx="796" cy="508" rx="22" ry="14" fill="#f4ead6" stroke="#e0d6c2" stroke-width="2.5" transform="rotate(-8 796 508)"/>
+    <circle cx="766" cy="470" r="21" fill="#fffdf6" stroke="#e0d6c2" stroke-width="3"/>
+    <path d="M756 452 q4 -12 10 -4 q4 -12 10 -3 q6 -8 8 4 q-14 -4 -28 3 z" fill="#e05252"/>
+    <path d="M745 470 l-16 5 l16 6 z" fill="#f2a63c"/>
+    <path d="M752 483 q-6 8 2 11 q8 -2 6 -11 z" fill="#e05252"/>
+    <circle cx="761" cy="465" r="3.4" fill="#3b322a"/>
+  </g>
+
+  <!-- ================= the egg on the floor ================= -->
+  <g>
+    <ellipse cx="366" cy="522" rx="26" ry="34" fill="url(#egglight)" stroke="#e4d3ad" stroke-width="3"/>
+    <ellipse cx="357" cy="510" rx="7" ry="10" fill="#ffffff" opacity="0.8" transform="rotate(-20 357 510)"/>
+  </g>
+
+  <!-- caption -->
+  <text x="600" y="608" text-anchor="middle" font-size="26" fill="#8b7a5f" letter-spacing="4">卵が先か、鶏が先か</text>
+</svg>
