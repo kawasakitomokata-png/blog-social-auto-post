@@ -217,12 +217,17 @@ def generate_posts(title: str, url: str, summary: str) -> list:
 
 # ── 投稿時刻を決定 ───────────────────────────────────
 
-def get_post_times() -> list:
+def get_post_times(offset_minutes: int = 0) -> list:
     """
     SCHEDULE_ONLY=1 の場合（21時チェックのみ）:
         → 翌日の8・12・17時の3枠を返す（即時投稿なし）
     通常（8・12・17時の実行）:
         → 今すぐ + 次の2つのチェック時刻を返す
+
+    offset_minutes: 同じチェックで複数の新記事を処理する際、
+        2本目以降の記事の投稿時刻をずらすためのオフセット（分）。
+        同時刻に重複登録されるとThreads側で連投とみなされ
+        投稿が失敗することがあるため、記事ごとにずらす。
     """
     now = datetime.now(JST)
     schedule_only = os.environ.get("SCHEDULE_ONLY") == "1"
@@ -244,21 +249,27 @@ def get_post_times() -> list:
     if schedule_only:
         # 21時チェック: 即時投稿なし、翌日8・12・17時の3枠
         print("  [チェックのみモード] 翌日3枠にスケジュール登録")
-        return upcoming[:3]
+        times = upcoming[:3]
     else:
         # 通常: 今すぐ + 次の2枠
-        return [now - timedelta(seconds=10)] + upcoming[:2]
+        times = [now - timedelta(seconds=10)] + upcoming[:2]
+
+    if offset_minutes:
+        times = [t + timedelta(minutes=offset_minutes) for t in times]
+
+    return times
 
 # ── スケジュール登録 ──────────────────────────────────
 
-def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article_images: list):
+def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article_images: list,
+                    offset_minutes: int = 0):
     """
     投稿をスケジュール登録する。
     - 1枚目（9時 or 即時）: WordPressアイキャッチ画像
     - 2枚目（12時）: 記事内写真1枚目
     - 3枚目（17時）: 記事内写真2枚目（1枚しかない場合はアイキャッチで代替→2回目と被らない）
     """
-    times = get_post_times()
+    times = get_post_times(offset_minutes)
     scheduled = load_scheduled_posts()
 
     # アイキャッチと重複する画像を記事内写真から除外（ファイル名でも比較）
@@ -333,7 +344,7 @@ def main():
         print("新着記事なし")
         return
 
-    for entry in new_entries:
+    for slot, entry in enumerate(new_entries):
         title   = entry.title
         url     = entry.link
         summary = entry.get("summary", "")[:500]
@@ -346,7 +357,10 @@ def main():
             posts          = generate_posts(title, url, summary)
             eyecatch       = get_featured_image(url)
             article_images = get_article_images(url)
-            schedule_posts(title, url, posts, eyecatch, article_images)
+            # 同じチェックで複数の新記事がある場合、投稿時刻が完全に重複しないよう
+            # 2本目以降は20分ずつずらす（重複するとThreads側で連投とみなされ失敗しやすいため）
+            schedule_posts(title, url, posts, eyecatch, article_images,
+                            offset_minutes=slot * 20)
             save_posted_url(url)  # 成功時のみURLを記録
             print(f"  → 今すぐ＋9・12・17時にスケジュール登録しました（9時=アイキャッチ、12・17時=記事内写真）")
         except Exception as e:
