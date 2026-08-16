@@ -8,6 +8,7 @@ import os
 import json
 import logging
 import tempfile
+import time
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -25,6 +26,9 @@ BASE_DIR             = Path(__file__).parent
 SCHEDULED_POSTS_FILE = BASE_DIR / "scheduled_posts.json"
 LOG_FILE             = BASE_DIR / "send_posts.log"
 JST                  = ZoneInfo("Asia/Tokyo")
+
+# 同じ実行で複数件を連続送信する際、Threads側の連投判定を避けるための待機秒数
+POST_INTERVAL_SECONDS = 10
 
 logging.basicConfig(
     filename=LOG_FILE, level=logging.INFO,
@@ -110,7 +114,7 @@ def post_to_threads(text: str, image_url: str = None) -> bool:
         res.raise_for_status()
         container_id = res.json()["id"]
 
-        import time; time.sleep(3)
+        time.sleep(3)
 
         res2 = requests.post(
             f"https://graph.threads.net/v1.0/{user_id}/threads_publish",
@@ -136,14 +140,12 @@ def main():
     now     = datetime.now(JST)
     updated = False
 
-    for post in posts:
-        if post.get("sent"):
-            continue
+    due_posts = [
+        p for p in posts
+        if not p.get("sent") and datetime.fromisoformat(p["send_at"]) <= now
+    ]
 
-        send_at = datetime.fromisoformat(post["send_at"])
-        if now < send_at:
-            continue
-
+    for i, post in enumerate(due_posts):
         text      = post["text"]
         platforms = post.get("platforms", ["x"])
         angle     = post.get("angle", "")
@@ -168,6 +170,11 @@ def main():
             print(f"[送信完了] {angle} → {results}")
         else:
             logging.error(f"All platforms failed for: {angle}")
+
+        # 同じ実行内でまだ次の送信が控えている場合のみ待機
+        # （複数件を間を空けずに送るとThreads側が連投とみなし失敗しやすいため）
+        if i < len(due_posts) - 1:
+            time.sleep(POST_INTERVAL_SECONDS)
 
     if updated:
         SCHEDULED_POSTS_FILE.write_text(
