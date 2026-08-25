@@ -3403,7 +3403,7 @@
     "results": {}
   },
   {
-    "send_at": "2026-08-25T15:18:42.358648+09:00",
+    "send_at": "2026-08-25T17:00:00+09:00",
     "angle": "自動投稿再開",
     "text": "魔法のような｜Aiだからできる事\n\n久しぶりにスレッズを開いたら、ブログの自動投稿が止まっていたんです。AIのおかげでまたスムーズに流れ始めました！\nhttps://kawasakitomokata.life/archives/14446\n\n#AI活用 #自動投稿 #ブログ更新",
     "title": "魔法のような｜Aiだからできる事",
@@ -3420,11 +3420,12 @@
     "text": "魔法のような｜Aiだからできる事\n\n毎日のちょっとした手間、AIがサクッと解決してくれると本当に楽です。そんな便利さをブログでシェアします。\nhttps://kawasakitomokata.life/archives/14446\n\n#AI便利 #日常テック #ブログ",
     "title": "魔法のような｜Aiだからできる事",
     "url": "https://kawasakitomokata.life/archives/14446",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1311-TK035573-0006.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1311-TK035573-0006.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T09:00:00+09:00",
@@ -3432,11 +3433,12 @@
     "text": "魔法のような｜Aiだからできる事\n\nクロードコードでシステムを組んだあの日から、安定感が違います。経験を元に皆さんにも役立つ情報を届けます。\nhttps://kawasakitomokata.life/archives/14446\n\n#システム構築 #AI技術 #開発者向け",
     "title": "魔法のような｜Aiだからできる事",
     "url": "https://kawasakitomokata.life/archives/14446",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1147-TK035566-0004.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1147-TK035566-0004.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T15:39:16.000730+09:00",
@@ -3444,14 +3446,15 @@
     "text": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と\n\n朝6時に起きて、ゆっくりカレーを味わう時間ができました。小さな幸せが積み重なると、今日も頑張れる気がします。\nhttps://kawasakitomokata.life/archives/14432\n\n#朝活 #カレー好き #熊本グルメ",
     "title": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と",
     "url": "https://kawasakitomokata.life/archives/14432",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail52b.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail52b.jpg",
+    "cancelled": true
   },
   {
-    "send_at": "2026-08-25T17:20:00+09:00",
+    "send_at": "2026-08-25T17:02:00+09:00",
     "angle": "友人訪問",
     "text": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と\n\nよーこさんが遊びに来て、ホワイト餃子とカレーでおしゃべり。久々の再会に心がほっこり、散歩も楽しくなります！\nhttps://kawasakitomokata.life/archives/14432\n\n#友達時間 #餃子 #お散歩",
     "title": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と",
@@ -3468,11 +3471,12 @@
     "text": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と\n\n早起きできた自分をほめて、今日は新しいレシピに挑戦。小さな一歩が大きな成長に繋がると実感します。\nhttps://kawasakitomokata.life/archives/14432\n\n#自己成長 #料理日記 #日常",
     "title": "イチの成長｜美味しい熊本のカレーとホワイト餃子とお散歩と",
     "url": "https://kawasakitomokata.life/archives/14432",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4644.jpeg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4644.jpeg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T15:59:49.814416+09:00",
@@ -3480,11 +3484,12 @@
     "text": "アイピースキャップ・・・返品か悩む話\n\n撮影中にピントが合わなくなると焦りますよね。アイピースキャップが消えてしまった僕の小さな悩み、共感できたらぜひ読んでみて！\nhttps://kawasakitomokata.life/archives/14392\n\n#カメラ好き #撮影失敗 #日常の疑問",
     "title": "アイピースキャップ・・・返品か悩む話",
     "url": "https://kawasakitomokata.life/archives/14392",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail51.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail51.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T17:40:00+09:00",
@@ -3492,11 +3497,12 @@
     "text": "アイピースキャップ・・・返品か悩む話\n\n新しいアイテムを買うとき、返品を迷う気持ち、わかります。失くしたキャップと向き合うエピソード、ちょっとしたヒントがあるかも。\nhttps://kawasakitomokata.life/archives/14392\n\n#返品相談 #カメラ部品 #生活のコツ",
     "title": "アイピースキャップ・・・返品か悩む話",
     "url": "https://kawasakitomokata.life/archives/14392",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260821-1841-TKA_7170-0004-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260821-1841-TKA_7170-0004-1.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T09:40:00+09:00",
@@ -3504,11 +3510,12 @@
     "text": "アイピースキャップ・・・返品か悩む話\n\n何気ない日常で起きる小さな謎、皆さんも経験ありませんか。アイピースキャップがなくなった瞬間の戸惑い、読んで笑ってもらえたら嬉しいです。\nhttps://kawasakitomokata.life/archives/14392\n\n#日常共感 #カメラ雑談 #ちょっとした悩み",
     "title": "アイピースキャップ・・・返品か悩む話",
     "url": "https://kawasakitomokata.life/archives/14392",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260821-1854-TKA_7204-0029-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260821-1854-TKA_7204-0029-1.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T16:20:24.345996+09:00",
@@ -3516,11 +3523,12 @@
     "text": "夜のお散歩、愛犬イチの意外な一面\n\n仕事終わりの静かな夜、イチと歩くと心がほっこりします。いつもの散歩が、ちょっとした冒険に変わる瞬間です！\nhttps://kawasakitomokata.life/archives/14370\n\n#夜散歩 #愛犬ライフ #癒しタイム",
     "title": "夜のお散歩、愛犬イチの意外な一面",
     "url": "https://kawasakitomokata.life/archives/14370",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail50.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail50.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T18:00:00+09:00",
@@ -3528,11 +3536,12 @@
     "text": "夜のお散歩、愛犬イチの意外な一面\n\n在宅勤務で疲れた体に、イチの足音がリズムをくれる。ちょっとした散歩で、明日のエネルギーが湧いてきます。\nhttps://kawasakitomokata.life/archives/14370\n\n#在宅ワーク #犬と暮らす #リフレッシュ",
     "title": "夜のお散歩、愛犬イチの意外な一面",
     "url": "https://kawasakitomokata.life/archives/14370",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1322-TK035584-0015.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260813-1322-TK035584-0015.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T10:00:00+09:00",
@@ -3540,11 +3549,12 @@
     "text": "夜のお散歩、愛犬イチの意外な一面\n\n暗くなるとイチが急にスーパーヒーロー気取りで走り出すんです。そんな姿に笑いながら、今日の疲れもすっかり吹き飛びました。\nhttps://kawasakitomokata.life/archives/14370\n\n#犬のいたずら #夜の散歩 #笑顔",
     "title": "夜のお散歩、愛犬イチの意外な一面",
     "url": "https://kawasakitomokata.life/archives/14370",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260820-1910-TKA_7125-0022.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260820-1910-TKA_7125-0022.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T16:40:57.643388+09:00",
@@ -3552,11 +3562,12 @@
     "text": "プログラミング研訓は活かされているのか問題\n\n水曜の研修、課題に泣きながらも少しずつコードが見えてくる。レスポンシブの基本が分かると、スマホでも笑顔が広がります。\nhttps://kawasakitomokata.life/archives/14322\n\n#プログラミング #研修日記 #レスポンシブ",
     "title": "プログラミング研修は活かされているのか問題",
     "url": "https://kawasakitomokata.life/archives/14322",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail49.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail49.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T18:20:00+09:00",
@@ -3564,11 +3575,12 @@
     "text": "プログラミング研訓は活かされているのか問題\n\n課題でつまずくたびに、昨日の自分と比べて成長を実感。仕事と学びの間で揺れる心が、コードに落ち着きをくれるんです。\nhttps://kawasakitomokata.life/archives/14322\n\n#学びの過程 #コード生活 #成長実感",
     "title": "プログラミング研修は活かされているのか問題",
     "url": "https://kawasakitomokata.life/archives/14322",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1837-TKA_6985-0067-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1837-TKA_6985-0067-1.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T10:20:00+09:00",
@@ -3576,11 +3588,12 @@
     "text": "プログラミング研訓は活かされているのか問題\n\n実際に画面サイズを変えて動かすと、理論だけでは分からなかった感覚が身につく。研修で得た知識が、すぐに仕事に活きる瞬間です。\nhttps://kawasakitomokata.life/archives/14322\n\n#実務活用 #デザイン学習 #プログラミング研修",
     "title": "プログラミング研修は活かされているのか問題",
     "url": "https://kawasakitomokata.life/archives/14322",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1826-TKA_6971-0058-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1826-TKA_6971-0058-1.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T17:01:30.901863+09:00",
@@ -3588,11 +3601,12 @@
     "text": "昔からの憧れだったパンケーキ・・・レンズ\n\n新潟でカメラ屋さんに走ったあの日、ボーナスで手に入れたAF一眼が今も心に残ります。あの頃のワクワク感、みなさんも思い出せませんか？\nhttps://kawasakitomokata.life/archives/14249\n\n#カメラ好き #思い出 #AFレンズ",
     "title": "昔からの憧れだったパンケーキ・・・レンズ",
     "url": "https://kawasakitomokata.life/archives/14249",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail48.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail48.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T18:40:00+09:00",
@@ -3600,11 +3614,12 @@
     "text": "昔からの憧れだったパンケーキ・・・レンズ\n\n朝のパンケーキにかけるシロップの甘さと、初めて手にしたレンズの輝きは似ている。小さな幸せが積み重なる瞬間、共感できたら嬉しいです！\nhttps://kawasakitomokata.life/archives/14249\n\n#パンケーキ #写真好き #ノスタルジア",
     "title": "昔からの憧れだったパンケーキ・・・レンズ",
     "url": "https://kawasakitomokata.life/archives/14249",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260818-1930-TK035756-0007.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260818-1930-TK035756-0007.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T10:40:00+09:00",
@@ -3612,11 +3627,12 @@
     "text": "昔からの憧れだったパンケーキ・・・レンズ\n\n20年前の自分に挑戦したAF一眼は、今の自分を支える大切な土台。写真と同じく、日々の小さな挑戦が未来を作ります。\nhttps://kawasakitomokata.life/archives/14249\n\n#挑戦 #成長記録 #カメラライフ",
     "title": "昔からの憧れだったパンケーキ・・・レンズ",
     "url": "https://kawasakitomokata.life/archives/14249",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260818-1929-TK035755-0006.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260818-1929-TK035755-0006.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T17:22:04.261743+09:00",
@@ -3624,11 +3640,12 @@
     "text": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日\n\n毎月の支出がぼんやりして不安になるけど、マネーフォワードMEで一目で分かるとほっとします。これからは計画的に貯められそうです！\nhttps://kawasakitomokata.life/archives/14228\n\n#家計管理 #マネーフォワード #貯金",
     "title": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日",
     "url": "https://kawasakitomokata.life/archives/14228",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail47.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail47.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-25T19:00:00+09:00",
@@ -3636,11 +3653,12 @@
     "text": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日\n\n「来年の保険料や車検費用、どうやって積み立てる？」と悩んでいたら、アプリが自動で提案してくれました。小さな工夫で大きな安心が得られます。\nhttps://kawasakitomokata.life/archives/14228\n\n#節約術 #資産管理 #生活費",
     "title": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日",
     "url": "https://kawasakitomokata.life/archives/14228",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260815-1814-TKA_6817-0092.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260815-1814-TKA_6817-0092.jpg",
+    "cancelled": true
   },
   {
     "send_at": "2026-08-26T11:00:00+09:00",
@@ -3648,10 +3666,11 @@
     "text": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日\n\n家計簿は続かないと諦めてた私でも、シンプルな操作で続けられました。数字が苦手でも安心して使えるのが嬉しいです。\nhttps://kawasakitomokata.life/archives/14228\n\n#初心者向け #家計簿アプリ #マネーフォワード",
     "title": "されど家計簿｜マネーフォワードMEの便利さに脱帽した日",
     "url": "https://kawasakitomokata.life/archives/14228",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260815-1744-TKA_6682-0018.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260815-1744-TKA_6682-0018.jpg",
+    "cancelled": true
   }
 ]
