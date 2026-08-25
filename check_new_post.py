@@ -8,6 +8,7 @@ import os
 import json
 import logging
 import re
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -41,6 +42,15 @@ GROQ_MODELS = [
     "openai/gpt-oss-20b",
     "qwen/qwen3.6-27b",
 ]
+
+# Groq無料枠は「1分あたり8000トークン」。
+# 1回のリクエストで消費する量は「プロンプト＋max_tokens」で計算されるため、
+# プロンプト(約800)＋2000 = 約2800 に抑えて上限に余裕を持たせる。
+GROQ_MAX_TOKENS = 2000
+# 1分あたりの上限に引っかからないよう、記事と記事の間に置く待ち時間（秒）
+ARTICLE_INTERVAL_SECONDS = 30
+# レート制限に当たったときの待機秒数（1回目・2回目）
+RATE_LIMIT_WAITS = [25, 45]
 
 logging.basicConfig(
     filename=LOG_FILE, level=logging.INFO,
@@ -324,14 +334,21 @@ def _extract_posts(raw: str, fallback_title: str) -> list:
     return posts
 
 
+def _is_rate_limit_error(e) -> bool:
+    """1分あたりのトークン上限に当たったエラーかどうかを判定する。"""
+    s = str(e).lower()
+    return ("rate_limit" in s or "too large" in s
+            or "429" in s or "413" in s)
+
+
 def _call_groq(client, model: str, prompt: str, json_mode: bool) -> str:
-    """Groqを1回呼び出して、返答テキストを返す。"""
+    """Groqを呼び出して返答テキストを返す。レート制限時は待って再試行する。"""
     kwargs = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.7,
-        # gpt-oss系は思考にもトークンを使うため、本文が切れないよう多めに確保する
-        "max_tokens": 8192,
+        # 「プロンプト＋この値」が1分あたりの上限8000を超えないようにする
+        "max_tokens": GROQ_MAX_TOKENS,
     }
     if json_mode:
         kwargs["response_format"] = {"type": "json_object"}
@@ -339,46 +356,39 @@ def _call_groq(client, model: str, prompt: str, json_mode: bool) -> str:
         # 思考を短めにして、本文が出る前に打ち切られるのを防ぐ
         kwargs["reasoning_effort"] = "low"
 
-    response = client.chat.completions.create(**kwargs)
-    return (response.choices[0].message.content or "").strip()
+    for attempt in range(len(RATE_LIMIT_WAITS) + 1):
+        try:
+            response = client.chat.completions.create(**kwargs)
+            return (response.choices[0].message.content or "").strip()
+        except Exception as e:
+            if _is_rate_limit_error(e) and attempt < len(RATE_LIMIT_WAITS):
+                wait = RATE_LIMIT_WAITS[attempt]
+                logging.warning(f"レート制限のため{wait}秒待機して再試行: {model}")
+                print(f"    ⏳ 1分あたりの上限に到達。{wait}秒待って再試行します")
+                time.sleep(wait)
+                continue
+            raise
 
 
 def generate_posts(title: str, url: str, summary: str) -> list:
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
-    prompt = f"""以下のブログ記事をSNS（Threads）で紹介する投稿文を「3つの異なる切り口」で作成してください。
+    prompt = f"""以下のブログ記事をThreadsで紹介する投稿文を「3つの異なる切り口」で作ってください。
 
 【記事タイトル】{title}
 【内容概要】{summary}
 
-【投稿フォーマット】
-各投稿は必ず以下の順番で構成してください：
-1. タイトル行：記事タイトルをそのまま1行目に
-2. 紹介文：2〜3文で、読んだ人が「読んでみたい」と自然に思えるような文章
-3. ハッシュタグ：3〜4個
-
-【紹介文の書き方】
-- 必ず2文以上で書く（1文だけはNG）
-- まるで日記や手紙のような、温かく親しみやすい語り口
-- 読者が「あ、わかるな」と共感できるような日常的な視点を盛り込む
+【書き方】
+- 紹介文は必ず2文以上、40〜80字。日記や手紙のような温かく親しみやすい語り口で
+- 読者が「あ、わかるな」と共感できる日常的な視点を入れる
 - 「！」は1投稿に1個まで
-
-【紹介文の良い例】
-- 「うまくいかない日が続いても、少しずつ前に進んでいる気がします。今日の出来事、よかったら読んでみてください。」
-- 「試行錯誤しながらも、ちゃんと解決できた。そんな小さな積み重ねが、毎日を少し豊かにしてくれる気がしています。」
-
-【制約】
-- 紹介文は40字以上・80字以内の完全な文章で書く
 - URLは含めない（別途付加します）
-- ハッシュタグはブログの内容に合ったものを選ぶ
-- 3つの切り口はそれぞれ異なる視点で
+- ハッシュタグは記事内容に合うものを3〜4個
+- 3つの切り口はそれぞれ違う視点で
 
-回答はJSONのみで返してください。説明文やコードブロック記号は不要です。
-次の形式ちょうどで返してください:
-{{"posts":[
-  {{"angle":"切り口（10字以内）","title":"{title}","body":"紹介文（60字以内）","hashtags":["タグ1","タグ2","タグ3"]}},
-  {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}},
-  {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}}
-]}}"""
+紹介文の例：「うまくいかない日が続いても、少しずつ前に進んでいる気がします。今日の出来事、よかったら読んでみてください。」
+
+回答はJSONのみ。説明文やコードブロック記号は不要です:
+{{"posts":[{{"angle":"切り口（10字以内）","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}},{{"angle":"切り口2","title":"{title}","body":"紹介文2","hashtags":["タグ"]}},{{"angle":"切り口3","title":"{title}","body":"紹介文3","hashtags":["タグ"]}}]}}"""
 
     last_error = None
     for model in GROQ_MODELS:
@@ -397,6 +407,11 @@ def generate_posts(title: str, url: str, summary: str) -> list:
                 logging.warning(f"Groqモデル {model}（{mode_label}）で失敗: {e}")
                 print(f"    ⚠ Groqモデル {model}（{mode_label}）で失敗: {e}")
                 last_error = e
+                # 1分あたりの上限はアカウント全体に掛かるため、
+                # 待っても解消しない場合は他のモデルを試しても無駄。
+                # 次回のチェックに回す。
+                if _is_rate_limit_error(e):
+                    raise
                 continue
 
     raise last_error
@@ -531,9 +546,14 @@ def main():
         return
 
     for slot, entry in enumerate(new_entries):
+        # 1分あたりのトークン上限に引っかからないよう、2件目以降は間隔をあける
+        if slot > 0:
+            print(f"  （トークン上限対策で{ARTICLE_INTERVAL_SECONDS}秒待機）")
+            time.sleep(ARTICLE_INTERVAL_SECONDS)
+
         title   = entry.title
         url     = entry.link
-        summary = entry.get("summary", "")[:500]
+        summary = entry.get("summary", "")[:300]
 
         logging.info(f"New post detected: {title} ({url})")
         print(f"[新記事検知] {title}")
