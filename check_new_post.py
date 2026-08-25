@@ -34,12 +34,11 @@ CHECK_HOURS          = [9, 12, 17]
 
 # Groqはモデルを頻繁に入れ替える／廃止するため、上から順に試して
 # 最初に成功したものを使う（1つ廃止されても自動で次に切り替わる）
+# 2026-08-25時点でGroqの公式モデル一覧（Production Models）で
+# Enterprise専用ではないことを確認済みの2つのみを使用
 GROQ_MODELS = [
-    "llama-3.3-70b-versatile",
-    "meta-llama/llama-4-maverick-17b-128e-instruct",
-    "meta-llama/llama-4-scout-17b-16e-instruct",
     "openai/gpt-oss-120b",
-    "llama-3.1-8b-instant",
+    "openai/gpt-oss-20b",
 ]
 
 logging.basicConfig(
@@ -229,6 +228,7 @@ def generate_posts(title: str, url: str, summary: str) -> list:
             return json.loads(raw)
         except Exception as e:
             logging.warning(f"Groqモデル {model} で失敗: {e}")
+            print(f"    ⚠ Groqモデル {model} で失敗: {e}")
             last_error = e
             continue
     raise last_error
