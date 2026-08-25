@@ -222,15 +222,15 @@ def generate_posts(title: str, url: str, summary: str) -> list:
                 max_tokens=1024, temperature=0.7,
                 messages=[{"role": "user", "content": prompt}]
             )
+            raw = response.choices[0].message.content.strip()
+            match = re.search(r'\[.*\]', raw, re.DOTALL)
+            if match:
+                raw = match.group(0)
+            return json.loads(raw)
         except Exception as e:
-            logging.warning(f"Groqモデル {model} が使用不可: {e}")
+            logging.warning(f"Groqモデル {model} で失敗: {e}")
             last_error = e
             continue
-        raw = response.choices[0].message.content.strip()
-        match = re.search(r'\[.*\]', raw, re.DOTALL)
-        if match:
-            raw = match.group(0)
-        return json.loads(raw)
     raise last_error
 
 # ── 投稿時刻を決定 ───────────────────────────────────
