@@ -32,6 +32,16 @@ LOG_FILE             = BASE_DIR / "check_new_post.log"
 JST                  = ZoneInfo("Asia/Tokyo")
 CHECK_HOURS          = [9, 12, 17]
 
+# Groqはモデルを頻繁に入れ替える／廃止するため、上から順に試して
+# 最初に成功したものを使う（1つ廃止されても自動で次に切り替わる）
+GROQ_MODELS = [
+    "llama-3.3-70b-versatile",
+    "meta-llama/llama-4-maverick-17b-128e-instruct",
+    "meta-llama/llama-4-scout-17b-16e-instruct",
+    "openai/gpt-oss-120b",
+    "llama-3.1-8b-instant",
+]
+
 logging.basicConfig(
     filename=LOG_FILE, level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -204,16 +214,24 @@ def generate_posts(title: str, url: str, summary: str) -> list:
   {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}}
 ]"""
 
-    response = client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
-        max_tokens=1024, temperature=0.7,
-        messages=[{"role": "user", "content": prompt}]
-    )
-    raw = response.choices[0].message.content.strip()
-    match = re.search(r'\[.*\]', raw, re.DOTALL)
-    if match:
-        raw = match.group(0)
-    return json.loads(raw)
+    last_error = None
+    for model in GROQ_MODELS:
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                max_tokens=1024, temperature=0.7,
+                messages=[{"role": "user", "content": prompt}]
+            )
+        except Exception as e:
+            logging.warning(f"Groqモデル {model} が使用不可: {e}")
+            last_error = e
+            continue
+        raw = response.choices[0].message.content.strip()
+        match = re.search(r'\[.*\]', raw, re.DOTALL)
+        if match:
+            raw = match.group(0)
+        return json.loads(raw)
+    raise last_error
 
 # ── 投稿時刻を決定 ───────────────────────────────────
 
@@ -310,8 +328,8 @@ def schedule_posts(title: str, url: str, posts: list, eyecatch_url: str, article
 
         image_url = image_map[i] if i < len(image_map) else eyecatch_url
 
-        # X は9時（i=0）と17時（i=2）のみ、12時（i=1）はThreadsのみ
-        platforms = ["x", "threads"] if i != 1 else ["threads"]
+        # Xはトークン切れのため無効化中（post_to_x 自体は残してあるので、復活する場合はここを ["x", "threads"] if i != 1 else ["threads"] に戻す）
+        platforms = ["threads"]
 
         scheduled.append({
             "send_at": send_at.isoformat(),
