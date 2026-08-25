@@ -205,7 +205,7 @@ def generate_posts(title: str, url: str, summary: str) -> list:
 ]"""
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
         max_tokens=1024, temperature=0.7,
         messages=[{"role": "user", "content": prompt}]
     )
