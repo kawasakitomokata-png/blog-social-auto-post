@@ -34,11 +34,12 @@ CHECK_HOURS          = [9, 12, 17]
 
 # Groqはモデルを頻繁に入れ替える／廃止するため、上から順に試して
 # 最初に成功したものを使う（1つ廃止されても自動で次に切り替わる）
-# 2026-08-25時点でGroqの公式モデル一覧（Production Models）で
-# Enterprise専用ではないことを確認済みの2つのみを使用
+# ※ llama-3.3-70b-versatile / llama-3.1-8b-instant は2026-08時点で
+#    Enterprise専用になっており、通常のAPIキーでは404になるため使わない
 GROQ_MODELS = [
     "openai/gpt-oss-120b",
     "openai/gpt-oss-20b",
+    "qwen/qwen3.6-27b",
 ]
 
 logging.basicConfig(
@@ -177,9 +178,174 @@ def get_article_images(article_url: str) -> list:
 
 # ── Groq API で投稿文生成 ─────────────────────────────
 
+def _find_balanced_objects(text: str) -> list:
+    """
+    文字列の中から、括弧の対応が取れている { ... } を全て切り出す。
+    返答が途中で切れていても、完成している分だけを回収できる。
+    """
+    objects = []
+    stack = []
+    in_string = False
+    escaped = False
+
+    for i, ch in enumerate(text):
+        if in_string:
+            if escaped:
+                escaped = False
+            elif ch == '\\':
+                escaped = True
+            elif ch == '"':
+                in_string = False
+            continue
+
+        if ch == '"':
+            in_string = True
+        elif ch == '{':
+            stack.append(i)
+        elif ch == '}':
+            if stack:
+                start = stack.pop()
+                objects.append(text[start:i + 1])
+
+    return objects
+
+
+def _normalize_posts(data) -> list:
+    """JSONとして読めた中身から、投稿の配列を取り出す。"""
+    if isinstance(data, list):
+        return [x for x in data if isinstance(x, dict)]
+
+    if isinstance(data, dict):
+        # {"posts": [...]} のように配列を包んでいる形
+        for key in ("posts", "items", "results", "data"):
+            if isinstance(data.get(key), list):
+                return [x for x in data[key] if isinstance(x, dict)]
+        # キー名が違っても、配列になっている値があればそれを使う
+        for value in data.values():
+            if isinstance(value, list) and any(isinstance(x, dict) for x in value):
+                return [x for x in value if isinstance(x, dict)]
+        # 投稿1件がそのまま返ってきた形
+        if "body" in data or "angle" in data:
+            return [data]
+
+    return []
+
+
+def _clean_post(item: dict, fallback_title: str) -> dict:
+    """1件分の投稿データを、必ず使える形に整える。"""
+    body = str(item.get("body") or item.get("text") or "").strip()
+    if not body:
+        return None
+
+    angle = str(item.get("angle") or "紹介").strip()[:20] or "紹介"
+    post_title = str(item.get("title") or fallback_title).strip() or fallback_title
+
+    raw_tags = item.get("hashtags") or item.get("tags") or []
+    if isinstance(raw_tags, str):
+        raw_tags = [t for t in re.split(r'[,\s]+', raw_tags) if t]
+    hashtags = []
+    for tag in raw_tags:
+        tag = str(tag).strip().lstrip('#')
+        if tag and tag not in hashtags:
+            hashtags.append(tag)
+    if not hashtags:
+        hashtags = ["ブログ"]
+
+    return {"angle": angle, "title": post_title, "body": body,
+            "hashtags": hashtags[:4]}
+
+
+def _extract_posts(raw: str, fallback_title: str) -> list:
+    """
+    モデルの返答テキストから投稿データを取り出す。
+    返答が空・途中で切れている・前後に余計な文字がある、といった
+    どのケースでも、拾える分だけは拾えるようにする。
+    """
+    if not raw or not raw.strip():
+        raise ValueError("モデルの返答が空でした")
+
+    text = raw.strip()
+
+    # ```json ... ``` で囲まれている場合は中身だけ取り出す
+    fence = re.search(r'```(?:json)?\s*(.*?)(?:```|$)', text, re.DOTALL)
+    if fence and fence.group(1).strip():
+        text = fence.group(1).strip()
+
+    candidates = []
+
+    # ① まず素直にJSONとして読んでみる
+    try:
+        candidates = _normalize_posts(json.loads(text))
+    except Exception:
+        pass
+
+    # ② 前後に説明文が付いている場合、最も外側の [...] / {...} を切り出す
+    if not candidates:
+        for pattern in (r'\[.*\]', r'\{.*\}'):
+            match = re.search(pattern, text, re.DOTALL)
+            if not match:
+                continue
+            try:
+                candidates = _normalize_posts(json.loads(match.group(0)))
+                if candidates:
+                    break
+            except Exception:
+                continue
+
+    # ③ 途中で切れている・区切り文字が壊れている場合、
+    #    完成している { ... } だけを個別に回収する
+    if not candidates:
+        post_like = []
+        wrapped = []
+        for chunk in _find_balanced_objects(text):
+            try:
+                obj = json.loads(chunk)
+            except Exception:
+                continue
+            if not isinstance(obj, dict):
+                continue
+            if "body" in obj or "text" in obj or "angle" in obj:
+                post_like.append(obj)
+            else:
+                wrapped.extend(_normalize_posts(obj))
+        candidates = post_like or wrapped
+
+    posts = []
+    for item in candidates:
+        cleaned = _clean_post(item, fallback_title)
+        if cleaned:
+            posts.append(cleaned)
+        if len(posts) == 3:
+            break
+
+    if not posts:
+        raise ValueError("返答から投稿データを取り出せませんでした")
+
+    return posts
+
+
+def _call_groq(client, model: str, prompt: str, json_mode: bool) -> str:
+    """Groqを1回呼び出して、返答テキストを返す。"""
+    kwargs = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.7,
+        # gpt-oss系は思考にもトークンを使うため、本文が切れないよう多めに確保する
+        "max_tokens": 8192,
+    }
+    if json_mode:
+        kwargs["response_format"] = {"type": "json_object"}
+    if "gpt-oss" in model:
+        # 思考を短めにして、本文が出る前に打ち切られるのを防ぐ
+        kwargs["reasoning_effort"] = "low"
+
+    response = client.chat.completions.create(**kwargs)
+    return (response.choices[0].message.content or "").strip()
+
+
 def generate_posts(title: str, url: str, summary: str) -> list:
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
-    prompt = f"""以下のブログ記事をSNS（X・Threads）で紹介する投稿文を「3つの異なる切り口」で作成してください。
+    prompt = f"""以下のブログ記事をSNS（Threads）で紹介する投稿文を「3つの異なる切り口」で作成してください。
 
 【記事タイトル】{title}
 【内容概要】{summary}
@@ -206,31 +372,33 @@ def generate_posts(title: str, url: str, summary: str) -> list:
 - ハッシュタグはブログの内容に合ったものを選ぶ
 - 3つの切り口はそれぞれ異なる視点で
 
-以下のJSON形式のみで返してください（前後に余分な文字・```は不要）:
-[
+回答はJSONのみで返してください。説明文やコードブロック記号は不要です。
+次の形式ちょうどで返してください:
+{{"posts":[
   {{"angle":"切り口（10字以内）","title":"{title}","body":"紹介文（60字以内）","hashtags":["タグ1","タグ2","タグ3"]}},
   {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}},
   {{"angle":"切り口","title":"{title}","body":"紹介文","hashtags":["タグ1","タグ2","タグ3"]}}
-]"""
+]}}"""
 
     last_error = None
     for model in GROQ_MODELS:
-        try:
-            response = client.chat.completions.create(
-                model=model,
-                max_tokens=1024, temperature=0.7,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            raw = response.choices[0].message.content.strip()
-            match = re.search(r'\[.*\]', raw, re.DOTALL)
-            if match:
-                raw = match.group(0)
-            return json.loads(raw)
-        except Exception as e:
-            logging.warning(f"Groqモデル {model} で失敗: {e}")
-            print(f"    ⚠ Groqモデル {model} で失敗: {e}")
-            last_error = e
-            continue
+        # JSONモードで試し、それが通らなければ通常モードでもう一度試す
+        for json_mode in (True, False):
+            try:
+                raw = _call_groq(client, model, prompt, json_mode)
+                posts = _extract_posts(raw, title)
+                if len(posts) < 3:
+                    logging.warning(
+                        f"{model}: 投稿を{len(posts)}件しか取得できませんでした")
+                    print(f"    ⚠ {model}: 投稿は{len(posts)}件のみ取得")
+                return posts
+            except Exception as e:
+                mode_label = "JSONモード" if json_mode else "通常モード"
+                logging.warning(f"Groqモデル {model}（{mode_label}）で失敗: {e}")
+                print(f"    ⚠ Groqモデル {model}（{mode_label}）で失敗: {e}")
+                last_error = e
+                continue
+
     raise last_error
 
 # ── 投稿時刻を決定 ───────────────────────────────────
