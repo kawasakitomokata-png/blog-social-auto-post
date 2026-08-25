@@ -95,9 +95,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T12:00:00+09:00",
@@ -110,9 +108,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T17:00:00+09:00",
@@ -125,9 +121,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T09:00:00+09:00",
@@ -140,9 +134,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T12:00:00+09:00",
@@ -155,9 +147,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T17:00:00+09:00",
@@ -170,9 +160,7 @@
       "x",
       "threads"
     ],
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-04-10T09:20:00+09:00",
@@ -689,9 +677,7 @@
       "x",
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260501-1844-TKA_2702-0004-1.jpg",
-    "sent_at": null,
-    "results": {}
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260501-1844-TKA_2702-0004-1.jpg"
   },
   {
     "send_at": "2026-05-03T17:00:00+09:00",
@@ -844,9 +830,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260506-1754-TKA_3661-0039.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-09T17:00:00+09:00",
@@ -860,9 +844,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260506-1801-TKA_3694-0051.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-11T09:00:00+09:00",
@@ -876,9 +858,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail6_v2.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-11T12:00:00+09:00",
@@ -891,9 +871,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/thumbnail6.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-11T17:00:00+09:00",
@@ -907,9 +885,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/IMG_3807.jpeg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-19T12:48:26.633129+09:00",
@@ -923,9 +899,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/95a5799db5c038da71679a8d3e85811e.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-19T17:00:00+09:00",
@@ -938,9 +912,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/1779074299000_TK033688.jpeg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-20T09:00:00+09:00",
@@ -954,9 +926,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/1779074344000_TK033694.jpeg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-19T19:55:33.293756+09:00",
@@ -970,9 +940,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/6849e7b9328b7c00b0e312d9dcdbf0bb.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-20T09:00:00+09:00",
@@ -985,9 +953,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260519-1619-TOM_5097-0006_1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-20T12:00:00+09:00",
@@ -1001,9 +967,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260519-1616-TOM_5088-0003_1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-21T09:00:00+09:00",
@@ -1017,9 +981,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/3c0ad6f7762d9c9706b11e779d0738ba.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-21T12:00:00+09:00",
@@ -1032,9 +994,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260518-1217-TK033683-0041.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-21T17:00:00+09:00",
@@ -1048,9 +1008,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260518-1218-TK033693-0049.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-21T20:00:17.558449+09:00",
@@ -1064,9 +1022,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/9e74118a2277b9474f944ada39968722-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-22T09:00:00+09:00",
@@ -1079,9 +1035,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/9e74118a2277b9474f944ada39968722.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-22T12:00:00+09:00",
@@ -1095,9 +1049,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/TOM_5105-2.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-23T18:45:03.710565+09:00",
@@ -1111,9 +1063,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/2762a38f69aca81ae222e67a0c4a69ca.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-24T09:00:00+09:00",
@@ -1126,9 +1076,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260516-0853-TK033620-0008.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-24T12:00:00+09:00",
@@ -1142,9 +1090,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260518-1105-TK033667-0034-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-25T09:00:00+09:00",
@@ -1158,9 +1104,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/84130cafcfbe8c2f7f13c698d4703de0.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-25T12:00:00+09:00",
@@ -1173,9 +1117,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260523-1648-TK033712-0011.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-25T17:00:00+09:00",
@@ -1189,9 +1131,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260520-1242-TK033706-0007.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-29T09:00:00+09:00",
@@ -1205,9 +1145,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/094b1f96a379bb89f7d55703766804fe.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-29T12:00:00+09:00",
@@ -1220,9 +1158,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260528-1224-TKA_4587-0006.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-29T17:00:00+09:00",
@@ -1236,9 +1172,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260528-1915-TKA_4611-0022.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-30T12:37:52.819944+09:00",
@@ -1252,9 +1186,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/eyecatch_maemuki_B.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-30T17:00:00+09:00",
@@ -1267,9 +1199,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260523-1649-TK033717-0015-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-31T09:00:00+09:00",
@@ -1283,9 +1213,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260528-1914-TKA_4602-0015.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-31T09:00:00+09:00",
@@ -1299,9 +1227,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/eyecatch_sotsugyou.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-31T12:00:00+09:00",
@@ -1314,9 +1240,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260530-1118-TK033755-0016.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-05-31T17:00:00+09:00",
@@ -1330,9 +1254,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260530-1118-TK033752-0014-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-01T09:00:00+09:00",
@@ -1346,9 +1268,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/eyecatch_arigatou.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-01T12:00:00+09:00",
@@ -1361,9 +1281,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260528-1931-TKA_4613-0001.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-01T17:00:00+09:00",
@@ -1377,9 +1295,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/05/260531-1758-TKA_4637-0005.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-02T16:25:36.934313+09:00",
@@ -1393,9 +1309,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail7b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-02T17:00:00+09:00",
@@ -1408,9 +1322,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260601-1845-TK033805-0006-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-03T09:00:00+09:00",
@@ -1424,9 +1336,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260601-1820-TK033799-0003.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-07T13:09:55.032123+09:00",
@@ -1440,9 +1350,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail8b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-07T17:00:00+09:00",
@@ -1455,9 +1363,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260605-1658-TOM_5329-0037.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-08T09:00:00+09:00",
@@ -1471,9 +1377,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260605-1713-TOM_5379-0066.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-13T09:00:00+09:00",
@@ -1487,9 +1391,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail9b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-13T12:00:00+09:00",
@@ -1502,9 +1404,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260612-1009-TK034019-0006.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-13T17:00:00+09:00",
@@ -1518,9 +1418,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260612-1406-TK034044-0010.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-15T22:48:16.151099+09:00",
@@ -1534,9 +1432,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail10.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-16T09:00:00+09:00",
@@ -1549,9 +1445,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260614-1659-TOM_5599-0023.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-16T12:00:00+09:00",
@@ -1565,9 +1459,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260614-1618-TOM_5468-0007.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-18T20:45:40.202019+09:00",
@@ -1581,9 +1473,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail11.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-19T09:00:00+09:00",
@@ -1596,9 +1486,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/IMG_4246-1.jpeg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-19T12:00:00+09:00",
@@ -1612,9 +1500,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/IMG_4244-1.jpeg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-20T19:27:39.158006+09:00",
@@ -1628,9 +1514,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/ab1f4950baeae317a16c4064d2b3855f-2.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-21T09:00:00+09:00",
@@ -1643,9 +1527,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/ab1f4950baeae317a16c4064d2b3855f-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-21T12:00:00+09:00",
@@ -1659,9 +1541,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/ab1f4950baeae317a16c4064d2b3855f.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-23T09:00:00+09:00",
@@ -1675,9 +1555,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail12.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-23T12:00:00+09:00",
@@ -1690,9 +1568,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260617-1408-TK034106-0021.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-23T17:00:00+09:00",
@@ -1706,9 +1582,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260620-1642-TKA_5123-0013.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-23T12:46:09.230071+09:00",
@@ -1722,9 +1596,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail13.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-23T17:00:00+09:00",
@@ -1737,9 +1609,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260620-1642-TKA_5110-0001.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-24T09:00:00+09:00",
@@ -1753,9 +1623,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260620-1432-TK034160-0044.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-24T09:00:00+09:00",
@@ -1769,9 +1637,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail14.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-24T12:00:00+09:00",
@@ -1784,9 +1650,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260611-2140-TK034005-0013.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-24T17:00:00+09:00",
@@ -1800,9 +1664,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260606-1958-TK033981-0002.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-26T12:56:07.027175+09:00",
@@ -1816,9 +1678,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail15.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-26T17:00:00+09:00",
@@ -1831,9 +1691,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260624-1257-TK034291-0003.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-27T09:00:00+09:00",
@@ -1847,9 +1705,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260622-1044-TKA_5176-0005.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-27T12:38:57.303823+09:00",
@@ -1863,9 +1719,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail16.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-27T17:00:00+09:00",
@@ -1878,9 +1732,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260626-1238-TK034326-0010.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-28T09:00:00+09:00",
@@ -1894,9 +1746,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260626-1350-TKA_5352-0027.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-28T13:02:26.753832+09:00",
@@ -1910,9 +1760,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/thumbnail17c.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-28T17:00:00+09:00",
@@ -1925,9 +1773,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260626-1349-TKA_5347-0025-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-06-29T09:00:00+09:00",
@@ -1941,9 +1787,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/06/260626-1238-TK034326-0010-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-01T20:18:11.652851+09:00",
@@ -1957,9 +1801,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail18b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-02T09:00:00+09:00",
@@ -1972,9 +1814,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260626-1230-TKA_5324-0017.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-02T12:00:00+09:00",
@@ -1988,9 +1828,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260626-1349-TKA_5345-0024.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-03T12:28:27.951437+09:00",
@@ -2004,9 +1842,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail19.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-03T17:00:00+09:00",
@@ -2019,9 +1855,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260626-1055-TKA_5302-0011.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-04T09:00:00+09:00",
@@ -2035,9 +1869,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260625-1343-TK034307-0002-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-04T12:21:15.646872+09:00",
@@ -2051,9 +1883,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail20.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-04T17:00:00+09:00",
@@ -2066,9 +1896,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-0957-TKA_5438-0001.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-05T09:00:00+09:00",
@@ -2082,9 +1910,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1753-TKA_5533-0007.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-05T12:37:35.058587+09:00",
@@ -2098,9 +1924,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail21.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-05T17:00:00+09:00",
@@ -2113,9 +1937,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260704-1352-TKA_5667-0008.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-06T09:00:00+09:00",
@@ -2129,9 +1951,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1934-TKA_5546-0002.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-05T19:04:44.812135+09:00",
@@ -2145,9 +1965,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail22.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-06T09:00:00+09:00",
@@ -2160,9 +1978,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1742-TKA_5510-0014.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-06T12:00:00+09:00",
@@ -2176,9 +1992,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1935-TKA_5554-0003.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-06T20:56:53.060872+09:00",
@@ -2192,9 +2006,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail23.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-07T09:00:00+09:00",
@@ -2207,9 +2019,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1742-TKA_5508-0013.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-07T12:00:00+09:00",
@@ -2223,9 +2033,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1742-TKA_5503-0012.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-08T09:00:00+09:00",
@@ -2239,9 +2047,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail24.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-08T12:00:00+09:00",
@@ -2254,9 +2060,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260707-1840-TK034480-0037.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-08T17:00:00+09:00",
@@ -2270,9 +2074,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260707-1759-TK034405-0019.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-09T09:00:00+09:00",
@@ -2286,9 +2088,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail25.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-09T12:00:00+09:00",
@@ -2301,9 +2101,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260708-1740-TK034489-0001.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-09T17:00:00+09:00",
@@ -2317,9 +2115,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260708-1751-TK034514-0005.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-10T09:00:00+09:00",
@@ -2333,9 +2129,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail26.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-10T12:00:00+09:00",
@@ -2348,9 +2142,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260708-1758-TK034528-0028.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-10T17:00:00+09:00",
@@ -2364,9 +2156,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260708-1755-TK034524-0024.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-11T09:00:00+09:00",
@@ -2380,9 +2170,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail27.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-11T12:00:00+09:00",
@@ -2395,9 +2183,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260710-0820-TKA_5791-0002.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-11T17:00:00+09:00",
@@ -2411,9 +2197,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260710-0818-TKA_5771-0001.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-12T09:00:00+09:00",
@@ -2427,9 +2211,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260710-2015-TK034742-0001-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-12T12:00:00+09:00",
@@ -2442,9 +2224,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/7639f39258f9f2df78a482bbdccd736e.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-12T17:00:00+09:00",
@@ -2458,9 +2238,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260711-1551-TK034789-0008.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-13T15:20:59.566452+09:00",
@@ -2474,9 +2252,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail29.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-13T17:00:00+09:00",
@@ -2489,9 +2265,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260703-1742-TKA_5510-0014-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-14T09:00:00+09:00",
@@ -2505,9 +2279,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260711-1552-TK034796-0036.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-14T11:39:07.670639+09:00",
@@ -2521,9 +2293,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail30.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-14T12:00:00+09:00",
@@ -2536,9 +2306,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260713-1723-TK034885-0025.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-14T17:00:00+09:00",
@@ -2552,9 +2320,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260713-1721-TK034884-0024.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-15T18:53:23.656351+09:00",
@@ -2568,9 +2334,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail31b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-16T09:00:00+09:00",
@@ -2583,9 +2347,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail31.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-16T12:00:00+09:00",
@@ -2599,9 +2361,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260714-1828-TK034958-0022.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-19T09:00:00+09:00",
@@ -2615,9 +2375,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail32.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-19T12:00:00+09:00",
@@ -2630,9 +2388,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260714-1836-TK034969-0032.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-19T17:00:00+09:00",
@@ -2646,9 +2402,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260714-1834-TK034967-0030.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-19T14:54:34.045590+09:00",
@@ -2662,9 +2416,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail33.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-19T17:00:00+09:00",
@@ -2677,9 +2429,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260716-1051-TK035013-0007.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-20T09:00:00+09:00",
@@ -2693,9 +2443,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260716-1044-TK035010-0006.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-24T19:09:08.028088+09:00",
@@ -2709,9 +2457,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail34b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-25T09:00:00+09:00",
@@ -2724,9 +2470,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail34.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-25T12:00:00+09:00",
@@ -2740,9 +2484,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260723-0833-TK035150-0018.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-30T19:15:32.881099+09:00",
@@ -2756,9 +2498,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail38.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T09:00:00+09:00",
@@ -2771,9 +2511,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260727-2007-TKA_6173-0040.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T12:00:00+09:00",
@@ -2787,9 +2525,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260727-0844-TKA_6100-0018.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-30T19:15:36.166636+09:00",
@@ -2803,9 +2539,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail37b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T09:00:00+09:00",
@@ -2818,9 +2552,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail37.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T12:00:00+09:00",
@@ -2834,9 +2566,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260728-1901-TKA_6201-0015.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-30T19:15:40.739981+09:00",
@@ -2850,9 +2580,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail35.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T09:00:00+09:00",
@@ -2865,9 +2593,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260725-1305-TKA_6027-0060.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T12:00:00+09:00",
@@ -2881,9 +2607,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260725-1305-TKA_6019-0055.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T11:57:21.255476+09:00",
@@ -2897,9 +2621,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail36b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T12:00:00+09:00",
@@ -2912,9 +2634,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail36.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-07-31T17:00:00+09:00",
@@ -2928,9 +2648,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260727-0844-TKA_6101-0019.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-01T14:55:46.254445+09:00",
@@ -2944,9 +2662,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/thumbnail39.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-01T17:00:00+09:00",
@@ -2959,9 +2675,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260729-1856-TKA_6246-0010-2.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-02T09:00:00+09:00",
@@ -2975,9 +2689,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/07/260729-1857-TKA_6257-0012.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-03T09:00:00+09:00",
@@ -2991,9 +2703,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail40.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-03T12:00:00+09:00",
@@ -3006,9 +2716,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260801-1434-TKA_6438-0020.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-03T17:00:00+09:00",
@@ -3022,9 +2730,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260801-1434-TKA_6437-0019.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-03T20:14:11.945173+09:00",
@@ -3038,9 +2744,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/GRIII.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-04T09:00:00+09:00",
@@ -3053,9 +2757,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260802-1907-TK035301-0024-1.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-04T12:00:00+09:00",
@@ -3069,9 +2771,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260802-1904-TK035294-0019.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-04T09:00:00+09:00",
@@ -3085,9 +2785,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/733ad6bb32a9cfbc7816cab5de22319a.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-04T12:00:00+09:00",
@@ -3100,9 +2798,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/8634b8c3cece3cea0741bcc25136b523.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-04T17:00:00+09:00",
@@ -3116,9 +2812,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260803-1243-TK035322-0003.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-06T09:00:00+09:00",
@@ -3132,9 +2826,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail41.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-06T12:00:00+09:00",
@@ -3147,9 +2839,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260805-2057-TKA_6590-0007.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-06T17:00:00+09:00",
@@ -3163,9 +2853,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260805-2058-TKA_6595-0009.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-09T09:00:00+09:00",
@@ -3179,9 +2867,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail42.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-09T12:00:00+09:00",
@@ -3194,9 +2880,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260807-0910-TK035386-0004.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-09T17:00:00+09:00",
@@ -3210,9 +2894,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260807-1911-TK035397-0011.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-11T09:00:00+09:00",
@@ -3226,9 +2908,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail43.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-11T12:00:00+09:00",
@@ -3241,9 +2921,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260810-1707-TK035536-0088.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-11T17:00:00+09:00",
@@ -3257,9 +2935,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260810-1450-TK035501-0066.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-13T09:00:00+09:00",
@@ -3273,9 +2949,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail44.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-13T12:00:00+09:00",
@@ -3288,9 +2962,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260809-1902-TK035454-0033.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-13T17:00:00+09:00",
@@ -3304,9 +2976,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260809-1907-TK035463-0041.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T09:00:00+09:00",
@@ -3320,9 +2990,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail45.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T12:00:00+09:00",
@@ -3335,9 +3003,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1851-TKA_6992-0070.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T17:00:00+09:00",
@@ -3351,9 +3017,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260816-1852-TKA_6993-0071.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T10:21:01.584836+09:00",
@@ -3367,9 +3031,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail46d.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T12:00:00+09:00",
@@ -3382,9 +3044,7 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail46c.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   },
   {
     "send_at": "2026-08-17T17:00:00+09:00",
@@ -3398,8 +3058,6 @@
       "threads"
     ],
     "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail46b.jpg",
-    "cancelled": true,
-    "sent_at": null,
-    "results": {}
+    "cancelled": true
   }
 ]
