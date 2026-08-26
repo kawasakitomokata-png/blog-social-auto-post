@@ -3757,10 +3757,14 @@
     "text": "色々と動き出しました〜動く時は一度に動く〜\n\nみなさん、ボランティアが大募集です！パネル展のサポートや機材回収のお手伝い、少しの時間でも歓迎します。ぜひ一緒に動きましょう。\nhttps://kawasakitomokata.life/archives/14465\n\n#ボランティア募集 #協力感謝 #一緒に動く",
     "title": "色々と動き出しました〜動く時は一度に動く〜",
     "url": "https://kawasakitomokata.life/archives/14465",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260825-1840-TKA_7291-0017.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260825-1840-TKA_7291-0017.jpg",
+    "sent_at": "2026-08-26T17:46:35.052133+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
