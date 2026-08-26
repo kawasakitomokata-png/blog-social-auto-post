@@ -3741,11 +3741,15 @@
     "text": "色々と動き出しました〜動く時は一度に動く〜\n\n朝のコーヒーを飲みながら、今日のタスクをチェック。写真納品と回収キットの手続きで、ちょっとした忙しさを感じていますが、充実感もあります。\nhttps://kawasakitomokata.life/archives/14465\n\n#今日のやること #忙しい日常 #充実感",
     "title": "色々と動き出しました〜動く時は一度に動く〜",
     "url": "https://kawasakitomokata.life/archives/14465",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260825-1847-TKA_7308-0032.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260825-1847-TKA_7308-0032.jpg",
+    "sent_at": "2026-08-26T12:59:27.923918+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-08-26T17:00:00+09:00",
