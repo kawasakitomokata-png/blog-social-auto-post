@@ -3773,11 +3773,15 @@
     "text": "斧を研ぐ｜段取り８割とは本当だ！\n\n今日も機材設定に四苦八苦。だけどTourBoxが動いた瞬間、ほっと一息です！ぜひ読んでみてください。\nhttps://kawasakitomokata.life/archives/14490\n\n#YMM4 #TourBox #作業効率",
     "title": "斧を研ぐ｜段取り８割とは本当だ！",
     "url": "https://kawasakitomokata.life/archives/14490",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail55c.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/thumbnail55c.jpg",
+    "sent_at": "2026-08-27T23:05:04.750437+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-08-28T09:00:00+09:00",
