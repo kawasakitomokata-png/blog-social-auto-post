@@ -3853,10 +3853,14 @@
     "text": "上手い話には裏がある｜スマホ契約の裏の話\n\n友達の口コミを聞いてLINEMOに興味が湧き、実際に試してみたら期待以上でした。選び方のコツが分かると、もっと楽になるかも。\nhttps://kawasakitomokata.life/archives/14510\n\n#口コミ #スマホ選び #LINEMO",
     "title": "上手い話には裏がある｜スマホ契約の裏の話",
     "url": "https://kawasakitomokata.life/archives/14510",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260827-1346-TK035849-0018.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/260827-1346-TK035849-0018.jpg",
+    "sent_at": "2026-08-29T18:58:31.128688+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
