@@ -3885,11 +3885,15 @@
     "text": "チームプレイチームプレイ｜離れていても心は近い\n\nノジマ電気で聞いたあの小さなエピソード、思わず頷いちゃった。普段の買い物でも、相手の視点に立てば共感が広がって、自然とチーム感が生まれるんだなと実感しました。\nhttps://kawasakitomokata.life/archives/14528\n\n#電気屋さん #共感 #チームプレイ",
     "title": "チームプレイチームプレイ｜離れていても心は近い",
     "url": "https://kawasakitomokata.life/archives/14528",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4725.jpeg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4725.jpeg",
+    "sent_at": "2026-08-31T14:20:23.235657+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-08-31T12:00:00+09:00",
@@ -3897,10 +3901,14 @@
     "text": "チームプレイチームプレイ｜離れていても心は近い\n\n結局、二人ともiPhone15をそのまま選んだんだけど、同じものを手にした瞬間に「これでまた話が合うね」って笑顔がこぼれたよ。小さな選択が、仲間意識をさらに深めてくれるんだね！\nhttps://kawasakitomokata.life/archives/14528\n\n#iPhone15 #仲間感 #選択の楽しさ #日常共感",
     "title": "チームプレイチームプレイ｜離れていても心は近い",
     "url": "https://kawasakitomokata.life/archives/14528",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4727.jpeg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/08/IMG_4727.jpeg",
+    "sent_at": "2026-08-31T14:20:23.235657+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
