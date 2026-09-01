@@ -3965,11 +3965,15 @@
     "text": "午睡 | シエスタに溺れる日々\n\n仕事が終わって、ふとソファで目を閉じた瞬間、心がほっこり。短いシエスタが午後のエネルギーになるんです！\nhttps://kawasakitomokata.life/archives/14566\n\n#昼寝 #リフレッシュ #シエスタ",
     "title": "午睡 | シエスタに溺れる日々",
     "url": "https://kawasakitomokata.life/archives/14566",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail59.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail59.jpg",
+    "sent_at": "2026-09-01T22:13:27.752516+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-02T09:00:00+09:00",
