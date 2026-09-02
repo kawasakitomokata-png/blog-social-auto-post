@@ -3981,11 +3981,15 @@
     "text": "午睡 | シエスタに溺れる日々\n\n9秒動画の書き出しに40分待ち、イライラしながらも小さな仮眠でリセット。時間が足りなくても、ひと息でまた頑張れる。\nhttps://kawasakitomokata.life/archives/14566\n\n#AI作業 #時間管理 #午後の休息",
     "title": "午睡 | シエスタに溺れる日々",
     "url": "https://kawasakitomokata.life/archives/14566",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260831TK035980.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260831TK035980.jpg",
+    "sent_at": "2026-09-02T13:16:40.745685+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-02T12:00:00+09:00",
@@ -3993,10 +3997,14 @@
     "text": "午睡 | シエスタに溺れる日々\n\n9時から15時の時短勤務、仕事の合間にちょっとしたシエスタ。短い時間でも自分を甘やかす余裕が大事です。\nhttps://kawasakitomokata.life/archives/14566\n\n#時短勤務 #セルフケア #午後のひととき",
     "title": "午睡 | シエスタに溺れる日々",
     "url": "https://kawasakitomokata.life/archives/14566",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260831TK035987.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260831TK035987.jpg",
+    "sent_at": "2026-09-02T13:16:40.745685+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
