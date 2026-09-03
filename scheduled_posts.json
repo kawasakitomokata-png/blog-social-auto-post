@@ -4045,10 +4045,14 @@
     "text": "よくわかっていないけど、形にはなっているプログラミング問題\n\nAdobe XDのカンプを手に、コードと向き合う毎日。ツールと格闘しながらも、少しずつ形が見えてくる喜びがあります。\nhttps://kawasakitomokata.life/archives/14595\n\n#AdobeXD #フロントエンド #開発日記",
     "title": "よくわかっていないけど、形にはなっているプログラミング問題",
     "url": "https://kawasakitomokata.life/archives/14595",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260902_006_TKA_7417.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260902_006_TKA_7417.jpg",
+    "sent_at": "2026-09-03T21:40:38.488521+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
