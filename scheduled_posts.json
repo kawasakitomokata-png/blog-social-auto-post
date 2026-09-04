@@ -4093,10 +4093,14 @@
     "text": "リズム｜緩急つけてぼちぼちですね\n\n1ヶ月前と比べて、朝の目覚めがスムーズになったのを実感しています。ゆっくりとしたペースで変わっていく自分に、ちょっぴりほっこりです。\nhttps://kawasakitomokata.life/archives/14628\n\n#変化 #ゆっくり #日常",
     "title": "リズム｜緩急つけてぼちぼちですね",
     "url": "https://kawasakitomokata.life/archives/14628",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260902_011_TKA_7422.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260902_011_TKA_7422.jpg",
+    "sent_at": "2026-09-04T21:34:25.507544+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
