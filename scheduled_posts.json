@@ -4141,10 +4141,14 @@
     "text": "壁打ちの日々|相棒はちょっととぼけたAiさん\n\n毎日のちょっとした壁打ちが、少しずつ自分を磨く時間に。AIと話すたびに新しい視点が生まれ、次のステップへと導いてくれます。共感できたらぜひ読んでみてください！\nhttps://kawasakitomokata.life/archives/14645\n\n#自己成長 #AIパートナー #日々の学び",
     "title": "壁打ちの日々|相棒はちょっととぼけたAiさん",
     "url": "https://kawasakitomokata.life/archives/14645",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/TKA_7395.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/TKA_7395.jpg",
+    "sent_at": "2026-09-05T20:42:39.325872+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
