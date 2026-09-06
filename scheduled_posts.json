@@ -4157,11 +4157,15 @@
     "text": "武器はきっと写真だった｜撮影依頼ページにカレンダー実装\n\n仕事の合間にカレンダーを組み込んだ撮影依頼ページ、ちょっとした挑戦でした。思い通りにいかないときも、やりがいを感じます！\nhttps://kawasakitomokata.life/archives/14660\n\n#Web開発 #カレンダー実装 #撮影依頼",
     "title": "武器はきっと写真だった｜撮影依頼ページにカレンダー実装",
     "url": "https://kawasakitomokata.life/archives/14660",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail63.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail63.jpg",
+    "sent_at": "2026-09-06T13:23:40.366395+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-06T17:00:00+09:00",
