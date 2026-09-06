@@ -4173,11 +4173,15 @@
     "text": "武器はきっと写真だった｜撮影依頼ページにカレンダー実装\n\n来月から忙しくなる前に、予約が見える化できるカレンダーを導入。スケジュール管理が楽になって、ちょっとほっとしています。\nhttps://kawasakitomokata.life/archives/14660\n\n#スケジュール管理 #フリーランス #効率化",
     "title": "武器はきっと写真だった｜撮影依頼ページにカレンダー実装",
     "url": "https://kawasakitomokata.life/archives/14660",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260905_064_TKA_7630-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260905_064_TKA_7630-1.jpg",
+    "sent_at": "2026-09-06T21:00:40.936631+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-07T09:00:00+09:00",
