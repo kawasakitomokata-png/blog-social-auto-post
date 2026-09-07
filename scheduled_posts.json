@@ -4237,10 +4237,14 @@
     "text": "はじめてのトランジション｜ダビンチリゾルブと日曜日\n\nダビンチリゾルブで初めてのトランジションに挑み、失敗と成功を繰り返す日。小さな一歩が大きな成長に、そんな気持ちが湧きます。\nhttps://kawasakitomokata.life/archives/14695\n\n#初心者歓迎 #トランジション #成長日記",
     "title": "はじめてのトランジション｜ダビンチリゾルブと日曜日",
     "url": "https://kawasakitomokata.life/archives/14695",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260905_009_TKA_7533.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260905_009_TKA_7533.jpg",
+    "sent_at": "2026-09-07T17:12:10.026567+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
