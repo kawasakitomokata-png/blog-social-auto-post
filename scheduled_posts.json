@@ -4349,11 +4349,15 @@
     "text": "ちいかわにハマった日｜ニコへのご挨拶とすみだジャズ\n\n仕事の後、ちょっとしたシエスタでリフレッシュ。散髪中にハマったちいかわがほっこり癒しです！\nhttps://kawasakitomokata.life/archives/14733\n\n#散髪 #ちいかわ #日常",
     "title": "ちいかわにハマった日｜ニコへのご挨拶とすみだジャズ",
     "url": "https://kawasakitomokata.life/archives/14733",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail67.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail67.jpg",
+    "sent_at": "2026-09-13T13:36:23.014957+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-13T17:00:00+09:00",
