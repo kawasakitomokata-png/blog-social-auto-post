@@ -4429,10 +4429,14 @@
     "text": "休息半分、作業半分｜千葉現展、明日搬入です\n\n作業の合間に自分だけの時間を取ると、次のステップが見えてくる。ちょっとした眠りがエネルギーに。\nhttps://kawasakitomokata.life/archives/14737\n\n#自分時間 #リフレッシュ #千葉展",
     "title": "休息半分、作業半分｜千葉現展、明日搬入です",
     "url": "https://kawasakitomokata.life/archives/14737",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260912TK036069.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260912TK036069.jpg",
+    "sent_at": "2026-09-14T17:49:04.911525+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
