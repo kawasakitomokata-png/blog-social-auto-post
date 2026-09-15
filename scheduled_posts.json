@@ -4489,11 +4489,15 @@
     "text": "ショート動画101本目｜PCトラブルとプログラミング研修延長\n\n液晶が熱で歪んでしまい、今日もちょっぴり危うい状態です。そんな中でも、プログラミング研修が延長されたことにちょっとほっとしています。\nhttps://kawasakitomokata.life/archives/14770\n\n#PCトラブル #プログラミング研修 #日常の悩み",
     "title": "ショート動画101本目｜PCトラブルとプログラミング研修延長",
     "url": "https://kawasakitomokata.life/archives/14770",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail70.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail70.jpg",
+    "sent_at": "2026-09-15T22:15:35.805788+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-16T09:00:00+09:00",
