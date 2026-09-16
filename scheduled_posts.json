@@ -4477,11 +4477,15 @@
     "text": "千葉現展、搬入完了しました｜イチとの初めての朝散歩\n\nイチとの初めての朝散歩で、いつもの風景が少し違って見えました。そのまま続く搬入作業も順調で、これからの展示が楽しみです。小さな変化が大きな一歩になると実感しています。\nhttps://kawasakitomokata.life/archives/14751\n\n#新しい始まり #千葉展 #日々の発見",
     "title": "千葉現展、搬入完了しました｜イチとの初めての朝散歩",
     "url": "https://kawasakitomokata.life/archives/14751",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260914_020_TKA_7855.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260914_020_TKA_7855.jpg",
+    "sent_at": "2026-09-16T13:39:05.895299+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-15T22:01:02.947990+09:00",
@@ -4505,11 +4509,15 @@
     "text": "ショート動画101本目｜PCトラブルとプログラミング研修延長\n\n外部スピーカーが急に聞こえなくなって、作業が止まってしまいました。だけど、次の研修で新しいスキルを身につけられると考えると、前向きになれます！\nhttps://kawasakitomokata.life/archives/14770\n\n#音響トラブル #研修延長 #やる気アップ",
     "title": "ショート動画101本目｜PCトラブルとプログラミング研修延長",
     "url": "https://kawasakitomokata.life/archives/14770",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260914TK036196.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260914TK036196.jpg",
+    "sent_at": "2026-09-16T13:39:05.895299+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-16T12:00:00+09:00",
@@ -4517,10 +4525,14 @@
     "text": "ショート動画101本目｜PCトラブルとプログラミング研修延長\n\n外付けモニターが不具合を起こし、画面がちらつく毎日です。そんなときこそ、ちょっとした工夫で仕事を続ける力を感じます。\nhttps://kawasakitomokata.life/archives/14770\n\n#モニター故障 #テレワーク #頑張る日々",
     "title": "ショート動画101本目｜PCトラブルとプログラミング研修延長",
     "url": "https://kawasakitomokata.life/archives/14770",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260914TK036108.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260914TK036108.jpg",
+    "sent_at": "2026-09-16T13:39:05.895299+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
