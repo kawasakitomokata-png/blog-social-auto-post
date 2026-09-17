@@ -4573,10 +4573,14 @@
     "text": "CSS擬似要素と擬似クラスに挑戦｜明日は撮影会でモデルも？\n\n明日の撮影会に向けて、コードとカメラの両方を準備中です。擬似要素の知識が少しでも役立てば、皆さんも笑顔になれますね。\nhttps://kawasakitomokata.life/archives/14781\n\n#撮影会 #CSS学習 #クリエイティブ",
     "title": "CSS擬似要素と擬似クラスに挑戦｜明日は撮影会でモデルも？",
     "url": "https://kawasakitomokata.life/archives/14781",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260914_030_TKA_7867.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260914_030_TKA_7867.jpg",
+    "sent_at": "2026-09-17T17:34:48.729112+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
