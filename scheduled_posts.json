@@ -4685,11 +4685,15 @@
     "text": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴\n\n朝のアラームが聞こえず、気づいたら10時。布団の中でのんびり過ごす時間、誰もが経験したことあるはずです！そんなゆるい朝を笑って読んでみてください。\nhttps://kawasakitomokata.life/archives/14826\n\n#寝坊 #朝のゆとり #Suzuriアルバム",
     "title": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴",
     "url": "https://kawasakitomokata.life/archives/14826",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail74.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail74.jpg",
+    "sent_at": "2026-09-20T21:55:43.002300+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-21T09:00:00+09:00",
