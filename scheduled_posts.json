@@ -4701,11 +4701,15 @@
     "text": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴\n\n写真共有が便利すぎて、つい時間を忘れがち。私もSuzuriアルバムの使いすぎで、朝の予定がずれ込みました。共感できる方はぜひ記事で共鳴してください。\nhttps://kawasakitomokata.life/archives/14826\n\n#写真共有 #Suzuri #生活の落とし穴",
     "title": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴",
     "url": "https://kawasakitomokata.life/archives/14826",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260917TK036248.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260917TK036248.jpg",
+    "sent_at": "2026-09-21T13:43:38.333076+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-21T12:00:00+09:00",
@@ -4713,10 +4717,14 @@
     "text": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴\n\n今日は7時に起きようとしたけど、結局10時まで寝てしまった。そんなのんびりした朝のエピソード、みんなもあるよね。記事でほっこり読んでみて。\nhttps://kawasakitomokata.life/archives/14826\n\n#ゆる日記 #朝の失敗 #共感",
     "title": "10時まで大寝坊｜写真共有で便利だったSuzuriアルバムの落とし穴",
     "url": "https://kawasakitomokata.life/archives/14826",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260917TK036214.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260917TK036214.jpg",
+    "sent_at": "2026-09-21T13:43:38.333076+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
