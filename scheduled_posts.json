@@ -4733,11 +4733,15 @@
     "text": "マニュアルはAiにお任せ｜台風明けの千葉現展、明日最終日です\n\n台風が去って、千葉の展示が落ち着いたね。AIに任せたマニュアル作りで、ちょっとした不具合もすぐに解決できたよ！\nhttps://kawasakitomokata.life/archives/14848\n\n#AI #マニュアル #千葉展",
     "title": "マニュアルはAiにお任せ｜台風明けの千葉現展、明日最終日です",
     "url": "https://kawasakitomokata.life/archives/14848",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail75.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/thumbnail75.jpg",
+    "sent_at": "2026-09-22T22:11:54.407108+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-23T09:00:00+09:00",
