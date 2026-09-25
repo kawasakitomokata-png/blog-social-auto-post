@@ -4797,11 +4797,15 @@
     "text": "千葉現展、閉幕しました｜誰かと食べるご飯っていいな\n\n久しぶりに家族が来て、展示の話で盛り上がった。忙しい日々でも、みんなで食卓を囲む時間がやっぱり大事だと感じました。\nhttps://kawasakitomokata.life/archives/14858\n\n#家族時間 #アートと暮らし #共感",
     "title": "千葉現展、閉幕しました｜誰かと食べるご飯っていいな",
     "url": "https://kawasakitomokata.life/archives/14858",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260923TK036294-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260923TK036294-1.jpg",
+    "sent_at": "2026-09-25T17:44:28.232333+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-26T09:00:00+09:00",
