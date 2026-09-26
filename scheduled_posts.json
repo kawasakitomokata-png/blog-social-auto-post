@@ -4813,11 +4813,15 @@
     "text": "千葉現展、閉幕しました｜誰かと食べるご飯っていいな\n\n展示搬出の帰り、駐車場の大混雑にちょっとイライラ。でも、そんな時こそ笑顔で乗り切るのが日常の醍醐味です！\nhttps://kawasakitomokata.life/archives/14858\n\n#千葉現展 #日常の風景 #笑顔で乗り切る",
     "title": "千葉現展、閉幕しました｜誰かと食べるご飯っていいな",
     "url": "https://kawasakitomokata.life/archives/14858",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260923TK036298-1.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/260923TK036298-1.jpg",
+    "sent_at": "2026-09-26T13:46:11.020793+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-25T22:08:10.762772+09:00",
@@ -4841,11 +4845,15 @@
     "text": "こんな週末も悪くない｜ペット保険見直しとホームセンター\n\nホームセンターで工具を手に取ったら、思わず作業がしたくなったんです。小さなDIYが、心のリフレッシュに繋がります！\nhttps://kawasakitomokata.life/archives/14877\n\n#DIY #ホームセンター #リフレッシュ",
     "title": "こんな週末も悪くない｜ペット保険見直しとホームセンター",
     "url": "https://kawasakitomokata.life/archives/14877",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/IMG_4903.jpeg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/IMG_4903.jpeg",
+    "sent_at": "2026-09-26T13:46:11.020793+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-09-26T12:00:00+09:00",
@@ -4853,10 +4861,14 @@
     "text": "こんな週末も悪くない｜ペット保険見直しとホームセンター\n\n動画マニュアルがほぼ完成し、指導員さんに提出した瞬間の達成感。忙しい週末でも、やりがいを感じられる瞬間があります。\nhttps://kawasakitomokata.life/archives/14877\n\n#動画制作 #マニュアル完成 #週末の達成感",
     "title": "こんな週末も悪くない｜ペット保険見直しとホームセンター",
     "url": "https://kawasakitomokata.life/archives/14877",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260924_0005_TKA_8857.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/09/20260924_0005_TKA_8857.jpg",
+    "sent_at": "2026-09-26T13:46:11.020793+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
