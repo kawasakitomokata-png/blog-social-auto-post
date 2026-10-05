@@ -4925,11 +4925,15 @@
     "text": "治験に協力することにしました｜同じ病気の誰かのために\n\n昨日、友人が家に来てくれた温かな時間を思い出しながら、治験への一歩を踏み出しました。自分の体験が誰かの希望になると信じて、少し勇気が湧きました。\nhttps://kawasakitomokata.life/archives/14888\n\n#治験 #仲間の力 #小さな勇気",
     "title": "治験に協力することにしました｜同じ病気の誰かのために",
     "url": "https://kawasakitomokata.life/archives/14888",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/thumbnail79.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/thumbnail79.jpg",
+    "sent_at": "2026-10-06T01:54:25.307210+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-10-06T09:00:00+09:00",
