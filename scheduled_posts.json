@@ -4941,11 +4941,15 @@
     "text": "治験に協力することにしました｜同じ病気の誰かのために\n\n桃ジャムの甘さに癒されたあの日、ふと自分の病と向き合うことを決めました。日々のちょっとした出来事が、大きな一歩につながるんですね。\nhttps://kawasakitomokata.life/archives/14888\n\n#日常 #治験参加 #共感",
     "title": "治験に協力することにしました｜同じ病気の誰かのために",
     "url": "https://kawasakitomokata.life/archives/14888",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/20260924_0050_TKA_8994.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/20260924_0050_TKA_8994.jpg",
+    "sent_at": "2026-10-06T15:08:15.091984+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-10-06T12:00:00+09:00",
@@ -4953,10 +4957,14 @@
     "text": "治験に協力することにしました｜同じ病気の誰かのために\n\n家族や友人の温かい訪問が背中を押してくれました。自分が協力することで、同じ病気の誰かの未来が少しでも明るくなると信じています！\nhttps://kawasakitomokata.life/archives/14888\n\n#支え合い #治験の力 #希望",
     "title": "治験に協力することにしました｜同じ病気の誰かのために",
     "url": "https://kawasakitomokata.life/archives/14888",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/20260924_0066_TKA_9017.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/20260924_0066_TKA_9017.jpg",
+    "sent_at": "2026-10-06T15:08:15.091984+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
