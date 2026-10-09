@@ -4973,11 +4973,15 @@
     "text": "ポータブルHDDが切れる原因は変換アダプターだった｜PC大掃除の記録\n\n変換アダプターが原因でHDDが切れたんです。ちょっとした部品の見落としが大きなトラブルに！\nhttps://kawasakitomokata.life/archives/14919\n\n#PCメンテ #データ保護 #日常のヒント",
     "title": "ポータブルHDDが切れる原因は変換アダプターだった｜PC大掃除の記録",
     "url": "https://kawasakitomokata.life/archives/14919",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/thumbnail80.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/thumbnail80.jpg",
+    "sent_at": "2026-10-10T00:03:31.125220+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-10-10T09:00:00+09:00",
