@@ -32,8 +32,6 @@
     <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7fb6ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fb6ff" stop-opacity="0"/></radialGradient>
   </defs>
 
-  <rect width="1280" height="720" fill="#efe6d6"/>
-  <rect y="560" width="1280" height="160" fill="#e3d6bf"/>
 
   <!-- 雑誌 -->
   <g transform="translate(640,365) rotate(-2)" filter="url(#shadow)">
