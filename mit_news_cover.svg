@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="'Noto Sans JP',sans-serif">
+  <defs>
+    <pattern id="hex" width="24" height="41.57" patternUnits="userSpaceOnUse" patternTransform="scale(0.9)">
+      <path d="M0,0 L6,10.39 L18,10.39 L24,0 M6,10.39 L0,20.78 L6,31.18 L18,31.18 L24,20.78 L18,10.39 M6,31.18 L0,41.57 M18,31.18 L24,41.57" fill="none" stroke="#3e4a5a" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="tubeShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".0"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#22212a" stop-opacity=".35"/>
+    </linearGradient>
+    <!-- ナノチューブ（中心原点、幅280） -->
+    <g id="tube">
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="#c9d3df"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="url(#hex)"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="url(#tubeShade)"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="none" stroke="#22212a" stroke-width="4"/>
+      <!-- 電極 -->
+      <rect x="-178" y="-58" width="50" height="116" rx="8" fill="#f2c230" stroke="#22212a" stroke-width="4"/>
+      <rect x="128" y="-58" width="50" height="116" rx="8" fill="#f2c230" stroke="#22212a" stroke-width="4"/>
+    </g>
+    <g id="electron">
+      <circle r="15" fill="#4f8fe0" stroke="#22212a" stroke-width="3"/>
+      <rect x="-7" y="-2" width="14" height="4" fill="#fff"/>
+    </g>
+    <g id="molecule">
+      <circle r="20" fill="#e2504f" stroke="#22212a" stroke-width="3.5"/>
+      <circle cx="-6" cy="-7" r="5" fill="#fff" opacity=".7"/>
+    </g>
+  
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="10" dy="14" stdDeviation="10" flood-color="#22212a" flood-opacity=".28"/></filter>
+    <linearGradient id="coverBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14284a"/><stop offset="1" stop-color="#23497a"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7fb6ff" stop-opacity=".55"/><stop offset="1" stop-color="#7fb6ff" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="#efe6d6"/>
+  <rect y="560" width="1280" height="160" fill="#e3d6bf"/>
+
+  <!-- 雑誌 -->
+  <g transform="translate(640,365) rotate(-2)" filter="url(#shadow)">
+    <rect x="-250" y="-330" width="500" height="660" rx="6" fill="url(#coverBg)"/>
+    <!-- 誌名 -->
+    <text x="-222" y="-232" font-size="110" font-weight="900" fill="#fff" letter-spacing="2">MIT</text>
+    <text x="-222" y="-232" dx="232" font-size="76" font-weight="900" fill="#f2c230">News</text>
+    <line x1="-222" y1="-212" x2="222" y2="-212" stroke="#f2c230" stroke-width="4"/>
+
+    <!-- 表紙アート -->
+    <ellipse cx="0" cy="-20" rx="230" ry="150" fill="url(#glow)"/>
+    <g transform="translate(0,-20) scale(1.25) rotate(-12)">
+      <use href="#tube"/>
+      <use href="#molecule" x="-90" y="-50"/><use href="#molecule" x="-10" y="-54"/>
+      <use href="#molecule" x="70" y="-50"/><use href="#molecule" x="-50" y="48"/><use href="#molecule" x="40" y="50"/>
+    </g>
+
+    <!-- 見出し -->
+    <text x="-222" y="190" font-size="58" font-weight="900" fill="#fff">ナノチューブが</text>
+    <text x="-222" y="262" font-size="58" font-weight="900" fill="#f2c230">有害物質を発見</text>
+    <rect x="-222" y="292" width="170" height="10" fill="#e2504f"/>
+  </g>
+
+  <text x="1250" y="700" text-anchor="end" font-size="24" font-weight="700" fill="#8a7d66">※イメージ</text>
+</svg>
