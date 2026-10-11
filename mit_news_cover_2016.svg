@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="'Noto Sans JP',sans-serif">
+  <defs>
+    <pattern id="hex" width="24" height="41.57" patternUnits="userSpaceOnUse" patternTransform="scale(0.9)">
+      <path d="M0,0 L6,10.39 L18,10.39 L24,0 M6,10.39 L0,20.78 L6,31.18 L18,31.18 L24,20.78 L18,10.39 M6,31.18 L0,41.57 M18,31.18 L24,41.57" fill="none" stroke="#3e4a5a" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="tubeShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".0"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#22212a" stop-opacity=".35"/>
+    </linearGradient>
+    <!-- ナノチューブ（中心原点、幅280） -->
+    <g id="tube">
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="#c9d3df"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="url(#hex)"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="url(#tubeShade)"/>
+      <rect x="-140" y="-42" width="280" height="84" rx="42" fill="none" stroke="#22212a" stroke-width="4"/>
+      <!-- 電極 -->
+      <rect x="-178" y="-58" width="50" height="116" rx="8" fill="#f2c230" stroke="#22212a" stroke-width="4"/>
+      <rect x="128" y="-58" width="50" height="116" rx="8" fill="#f2c230" stroke="#22212a" stroke-width="4"/>
+    </g>
+    <g id="electron">
+      <circle r="15" fill="#4f8fe0" stroke="#22212a" stroke-width="3"/>
+      <rect x="-7" y="-2" width="14" height="4" fill="#fff"/>
+    </g>
+    <g id="molecule">
+      <circle r="20" fill="#e2504f" stroke="#22212a" stroke-width="3.5"/>
+      <circle cx="-6" cy="-7" r="5" fill="#fff" opacity=".7"/>
+    </g>
+  
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="10" dy="14" stdDeviation="10" flood-color="#22212a" flood-opacity=".28"/></filter>
+    <radialGradient id="artBg" cx=".5" cy=".45" r=".7"><stop offset="0" stop-color="#3a3f47"/><stop offset="1" stop-color="#15171b"/></radialGradient>
+    <clipPath id="artClip"><rect x="-250" y="-200" width="500" height="330"/></clipPath>
+  </defs>
+
+  <rect width="1280" height="720" fill="#efe6d6"/>
+  <rect y="560" width="1280" height="160" fill="#e3d6bf"/>
+
+  <g transform="translate(640,365) rotate(-2)" filter="url(#shadow)">
+    <rect x="-250" y="-330" width="500" height="660" fill="#fff"/>
+    <!-- 誌名帯 -->
+    <rect x="-250" y="-330" width="500" height="130" fill="#111214"/>
+    <text x="-222" y="-232" font-size="92" font-weight="900" fill="#fff" letter-spacing="-1">MIT</text>
+    <text x="-222" y="-232" dx="196" font-size="92" font-weight="400" fill="#fff">News</text>
+    <rect x="-250" y="-206" width="500" height="6" fill="#a31f34"/>
+    <text x="222" y="-302" text-anchor="end" font-size="20" font-weight="700" fill="#b9bcc2" letter-spacing="3">2016</text>
+
+    <!-- 表紙アート -->
+    <g clip-path="url(#artClip)">
+      <rect x="-250" y="-200" width="500" height="330" fill="url(#artBg)"/>
+      <!-- 有毒ガス -->
+      <g fill="#7fbf6a" opacity=".35">
+        <circle cx="-170" cy="-120" r="60"/><circle cx="-110" cy="-150" r="48"/><circle cx="-200" cy="-60" r="44"/>
+      </g>
+      <g opacity=".95">
+        <use href="#molecule" x="-170" y="-110" transform="scale(1)"/>
+        <use href="#molecule" x="-110" y="-150"/><use href="#molecule" x="-205" y="-50"/>
+      </g>
+      <!-- センサー（タグ） -->
+      <g transform="translate(-80,30) rotate(-8)">
+        <rect x="-70" y="-46" width="140" height="92" rx="12" fill="#f4f1ea" stroke="#22212a" stroke-width="4"/>
+        <rect x="-50" y="-28" width="100" height="22" rx="11" fill="#c9d3df"/>
+        <rect x="-50" y="-28" width="100" height="22" rx="11" fill="url(#hex)"/>
+        <path d="M-50,18 h100 M-50,30 h70" stroke="#a31f34" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- 電波 -->
+      <g fill="none" stroke="#f2c230" stroke-width="7" stroke-linecap="round">
+        <path d="M20,-10 q22,26 0,52"/><path d="M42,-30 q40,46 0,92"/>
+      </g>
+      <!-- スマホ -->
+      <g transform="translate(150,-10) rotate(10)">
+        <rect x="-62" y="-118" width="124" height="236" rx="18" fill="#22252b" stroke="#000" stroke-width="3"/>
+        <rect x="-52" y="-100" width="104" height="196" rx="6" fill="#fff"/>
+        <rect x="-52" y="-100" width="104" height="44" rx="6" fill="#a31f34"/>
+        <text y="-70" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">ALERT</text>
+        <path d="M-36,40 A36,36 0 0 1 36,40" fill="none" stroke="#d5dde7" stroke-width="12"/>
+        <path d="M-36,40 A36,36 0 0 1 25,14" fill="none" stroke="#e2504f" stroke-width="12"/>
+        <line x1="0" y1="40" x2="24" y2="12" stroke="#22212a" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- 見出し -->
+    <text x="-222" y="186" font-size="54" font-weight="900" fill="#111214">スマホで</text>
+    <text x="-222" y="250" font-size="54" font-weight="900" fill="#111214"><tspan fill="#a31f34">有毒ガス</tspan>を検知</text>
+    <text x="-222" y="290" font-size="19" font-weight="700" fill="#6b6f76">Wireless, wearable toxic-gas detector</text>
+    <line x1="-222" y1="306" x2="222" y2="306" stroke="#d0d2d6" stroke-width="2"/>
+    <text x="-222" y="326" font-size="20" font-weight="900" fill="#a31f34">ALSO</text>
+    <text x="-158" y="326" font-size="20" font-weight="900" fill="#33363b">重力波を初観測</text>
+  </g>
+
+  <text x="1250" y="700" text-anchor="end" font-size="24" font-weight="700" fill="#8a7d66">※イメージ</text>
+</svg>
