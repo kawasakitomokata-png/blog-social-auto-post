@@ -5085,11 +5085,15 @@
     "text": "すみだジャズ、ニコンZ8で動画撮影に再挑戦した3日間\n\nリハーサルの合間に機材と格闘しながら、ちょっとしたハプニングも笑いに変えました。そんな裏話、読んでみませんか？\nhttps://kawasakitomokata.life/archives/14976\n\n#音楽イベント #カメラ好き #撮影裏話",
     "title": "すみだジャズ、ニコンZ8で動画撮影に再挑戦した3日間",
     "url": "https://kawasakitomokata.life/archives/14976",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/261017TK036502.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/261017TK036502.jpg",
+    "sent_at": "2026-10-20T13:37:14.256695+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-10-20T12:00:00+09:00",
@@ -5097,10 +5101,14 @@
     "text": "すみだジャズ、ニコンZ8で動画撮影に再挑戦した3日間\n\nステージの灯りがカメラに映る瞬間、心が躍ります。3日間の記録が、あなたの音楽体験に彩りを添えると嬉しいです。\nhttps://kawasakitomokata.life/archives/14976\n\n#ライブ映像 #音楽好き #思い出",
     "title": "すみだジャズ、ニコンZ8で動画撮影に再挑戦した3日間",
     "url": "https://kawasakitomokata.life/archives/14976",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/261017TK036489.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/10/261017TK036489.jpg",
+    "sent_at": "2026-10-20T13:37:14.256695+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
