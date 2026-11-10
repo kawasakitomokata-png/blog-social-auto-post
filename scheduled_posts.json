@@ -5117,11 +5117,15 @@
     "text": "少しずつ少しずつ｜1Password導入と家計の見える化、自分磨きの日々\n\nパスワード管理を始めて、毎日がちょっと楽になった気がします。家計も見える化できて、無駄遣いに気づく毎日です。\nhttps://kawasakitomokata.life/archives/15004\n\n#1Password #家計管理 #自分磨き",
     "title": "少しずつ少しずつ｜1Password導入と家計の見える化、自分磨きの日々",
     "url": "https://kawasakitomokata.life/archives/15004",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15004.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15004.jpg",
+    "sent_at": "2026-11-10T16:03:20.786196+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-11-10T17:00:00+09:00",
