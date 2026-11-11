@@ -5149,10 +5149,14 @@
     "text": "少しずつ少しずつ｜1Password導入と家計の見える化、自分磨きの日々\n\n忙しい毎日でも、少しずつ自分をアップデート。見える化した家計と新しいツールで、前向きに進めています。\nhttps://kawasakitomokata.life/archives/15004\n\n#日々の成長 #見える化 #ライフハック",
     "title": "少しずつ少しずつ｜1Password導入と家計の見える化、自分磨きの日々",
     "url": "https://kawasakitomokata.life/archives/15004",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/20261101_0046_TKA_9437.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/20261101_0046_TKA_9437.jpg",
+    "sent_at": "2026-11-11T14:56:31.935499+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
