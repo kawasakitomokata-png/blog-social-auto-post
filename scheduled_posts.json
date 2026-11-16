@@ -5181,11 +5181,15 @@
     "text": "一歩戻って一歩進む。3ヶ月ぶりの出社と、今の自分を大切に\n\nゆっくり休んだ後、やっと仕事に戻れた。自分を大事にしながら、また新しいことに挑む日々が始まります。\nhttps://kawasakitomokata.life/archives/15023\n\n#休養後 #新たな挑戦 #自己ケア",
     "title": "一歩戻って一歩進む。3ヶ月ぶりの出社と、今の自分を大切に",
     "url": "https://kawasakitomokata.life/archives/15023",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036581.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036581.jpg",
+    "sent_at": "2026-11-16T15:08:34.736551+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-11-16T12:00:00+09:00",
@@ -5193,10 +5197,14 @@
     "text": "一歩戻って一歩進む。3ヶ月ぶりの出社と、今の自分を大切に\n\n毎日のルーティンが少し変わるだけで、心が軽くなるんだと気づきました。小さな変化が大きな前進に繋がりますね。\nhttps://kawasakitomokata.life/archives/15023\n\n#日常 #変化 #前進",
     "title": "一歩戻って一歩進む。3ヶ月ぶりの出社と、今の自分を大切に",
     "url": "https://kawasakitomokata.life/archives/15023",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036577.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036577.jpg",
+    "sent_at": "2026-11-16T15:08:34.736551+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
