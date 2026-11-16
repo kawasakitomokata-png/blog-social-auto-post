@@ -5213,11 +5213,15 @@
     "text": "大器晩成を信じて｜久しぶりのYouTubeショート制作とイチの夜散歩\n\n久しぶりに動画を作ってみました。ダビンチリゾルブでの編集は慣れないけど、やっぱり楽しいです！夜の散歩で見つけた小さな光景も添えて、ゆっくり読んでみてください。\nhttps://kawasakitomokata.life/archives/15049\n\n#YouTube #動画制作 #夜散歩",
     "title": "大器晩成を信じて｜久しぶりのYouTubeショート制作とイチの夜散歩",
     "url": "https://kawasakitomokata.life/archives/15049",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15049.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15049.jpg",
+    "sent_at": "2026-11-17T03:03:41.718470+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-11-17T09:00:00+09:00",
