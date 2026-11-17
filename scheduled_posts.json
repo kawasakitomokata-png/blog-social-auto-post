@@ -5261,11 +5261,15 @@
     "text": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ\n\nAIで動画作りが楽になったと実感する毎日。昔の町工場時代を思い出しながら、ちょっぴり懐かしい気持ちで進んでいます！\nhttps://kawasakitomokata.life/archives/15098\n\n#AI動画 #クリエイティブ #懐かしの工場",
     "title": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ",
     "url": "https://kawasakitomokata.life/archives/15098",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15098.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/eyecatch-15098.jpg",
+    "sent_at": "2026-11-18T02:27:19.205289+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-11-18T09:00:00+09:00",
