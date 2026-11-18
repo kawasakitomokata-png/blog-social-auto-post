@@ -5277,11 +5277,15 @@
     "text": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ\n\n仕事でChatGPTを使いこなすのが日課です。趣味の動画制作にもAIを取り入れ、時間が足りないと嘆く自分に小さな翼が生まれました。\nhttps://kawasakitomokata.life/archives/15098\n\n#ChatGPT #動画制作 #働く人",
     "title": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ",
     "url": "https://kawasakitomokata.life/archives/15098",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036607.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261112TK036607.jpg",
+    "sent_at": "2026-11-18T16:08:19.711827+09:00",
+    "results": {
+      "threads": true
+    }
   },
   {
     "send_at": "2026-11-18T12:00:00+09:00",
@@ -5289,10 +5293,14 @@
     "text": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ\n\n昔は手作業で苦労していたけど、今はAIが手伝ってくれる。自分の成長を感じる瞬間が増えて、毎日が少しずつ軽くなります。\nhttps://kawasakitomokata.life/archives/15098\n\n#AI活用 #自己成長 #デジタル転換",
     "title": "空を飛べる翼があるのに｜AIと作る動画制作と、町工場時代の自分へ",
     "url": "https://kawasakitomokata.life/archives/15098",
-    "sent": false,
+    "sent": true,
     "platforms": [
       "threads"
     ],
-    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261116TK036649.jpg"
+    "image_url": "https://kawasakitomokata.life/wp-content/uploads/2026/11/261116TK036649.jpg",
+    "sent_at": "2026-11-18T16:08:19.711827+09:00",
+    "results": {
+      "threads": true
+    }
   }
 ]
